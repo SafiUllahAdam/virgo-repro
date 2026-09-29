@@ -1,0 +1,18 @@
+dataset,homophily_adjusted,avg_clustering,rule1_pred,exception_pred,decided_by,predicted_verdict,actual_verdict,rule1_correct,exception_correct,combined_correct,original,best_augmented,best_variant,gap_sigma
+reed98,0.0219,,augment,,gate,keep original,pending,pending,pending,pending,,,,
+amherst41,0.0598,,augment,,gate,augment,pending,pending,pending,pending,,,,
+johnshopkins55,0.0972,,augment,,gate,augment,pending,pending,pending,pending,,,,
+cornell5,0.0907,,augment,,gate,augment,pending,pending,pending,pending,,,,
+wiki_attr,0.564,0.3758,keep original,augment,rule 1 veto,keep original,pending,pending,pending,pending,,,,
+crocodile,0.0154,0.3365,augment,augment,clustering exception,augment,pending,pending,pending,pending,,,,
+cora_full,0.5558,0.2607,keep original,augment,rule 1 veto,keep original,pending,pending,pending,pending,,,,
+penn94,0.0209,0.2117,augment,augment,clustering exception,augment,pending,pending,pending,pending,,,,
+genius,-0.0527,0.0281,augment,augment,clustering exception,augment,pending,pending,pending,pending,,,,
+twitch_gamers,0.0899,0.1599,augment,augment,clustering exception,augment,pending,pending,pending,pending,,,,
+celegans_neural,0.1673,0.3058,augment,augment,clustering exception,augment,keep original,False,False,False,0.6688,0.6478,hybrid,-1.28
+messal_shale,-0.0025,0.1015,augment,augment,clustering exception,augment,tie,no decision,no decision,no decision,0.5742,0.5682,hybrid,-0.45
+plant_pol_robertson,-1.0,0.0,augment,augment,clustering exception,augment,augment,True,True,True,0.3825,0.5539,hybrid,18.87
+escorts,-1.0,0.0,augment,augment,clustering exception,augment,augment,True,True,True,0.5686,0.6262,degree,2.75
+nematode_mammal,-1.0,0.0,augment,augment,clustering exception,augment,augment,True,True,True,0.5835,0.6299,degree,1.88
+bag_of_words_kos,-1.0,0.0,augment,augment,clustering exception,augment,augment,True,True,True,0.3976,0.5185,hybrid,5.82
+artnet_exp,0.1553,0.0772,augment,augment,clustering exception,augment,augment,True,True,True,0.5892,0.6764,degree,12.02

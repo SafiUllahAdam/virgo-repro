@@ -1,0 +1,3 @@
+model,dataset,version,task,seed,micro_f1,macro_f1,weighted_f1,auc,auc_logreg,auc_cosine
+identity2vec,cora,orig,nodeclass,42,0.7183271832718328,0.7038476967843293,0.7159523319145803,,,
+identity2vec,cora,orig,linkpred,42,,,,0.8143194488210418,0.8162503387810626,0.8143194488210418

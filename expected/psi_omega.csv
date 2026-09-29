@@ -1,0 +1,13 @@
+dataset,arm,omega,nodes,clamped_frac,sig_min,sig_max,nonfinite,rho_vs_psi,rho_vs_degree,jaccard_vs_psi,overlap_ratio
+cora,psi,deg_ev,2708,0.1237,-1097.96,-1.0,0,1.0,-0.4508,1.0,1.3733
+cora,psi_w_deg,deg,2708,0.1237,-1096.96,-1.0,0,1.0,-0.451,0.7334,1.0072
+cora,psi_w_ev,ev,2708,0.1237,-24388646863596.92,-1.02,0,-0.6534,-0.0261,0.0061,0.0084
+cora,psi_w_delta,delta_ev,2708,0.1237,-33785.82,-1.0,0,0.3833,-0.3761,0.0806,0.1107
+twitch_ptbr,psi,deg_ev,1912,0.8938,-25525.02,-1.86,0,1.0,-0.9665,1.0,2.4752
+twitch_ptbr,psi_w_deg,deg,1912,0.8938,-25525.02,-1.86,0,1.0,-0.9665,0.9994,2.4737
+twitch_ptbr,psi_w_ev,ev,1912,0.8938,-193347.08,-1.51,0,0.9498,-0.8884,0.3636,0.8999
+twitch_ptbr,psi_w_delta,delta_ev,1912,0.8938,-25525.02,-1.0,0,0.9912,-0.9283,0.358,0.886
+squirrel_filtered,psi,deg_ev,2223,0.3666,-15378.58,-1.0,0,1.0,-0.8871,1.0,1.2404
+squirrel_filtered,psi_w_deg,deg,2223,0.3666,-15378.58,-1.0,0,1.0,-0.8871,0.9865,1.2236
+squirrel_filtered,psi_w_ev,ev,2223,0.3666,-58470142509.66,-1.38,0,-0.1551,0.0476,0.0921,0.1142
+squirrel_filtered,psi_w_delta,delta_ev,2223,0.3666,-15378.58,-1.01,0,0.8014,-0.6651,0.2013,0.2497

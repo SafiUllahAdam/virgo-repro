@@ -1,0 +1,4 @@
+descriptor,n_augmenting,n_degree,spearman_rho,threshold,degree_side,n_exceptions,loo_accuracy,loo_correct,loo_folds,majority_baseline,loo_majority,p_shuffle_as_good,matches_declared_side,rho_d5,side_d5,self_rho_across_passes,sign_stable,rule,survives
+nbr_degree,38,9,-0.4487,0.0084,low,6,0.7895,30,38,0.7632,0.7632,0.0335,False,0.2343,high,-0.0148,False,use degree when nbr_degree separation is low (< 0.0084),False
+clustering,38,9,-0.2598,-0.0111,low,8,0.7895,30,38,0.7632,0.7632,0.475,False,0.0282,high,0.6171,False,use degree when clustering separation is low (< -0.0111),False
+role_vector,38,9,0.1947,0.2794,high,9,0.6316,24,38,0.7632,0.7632,0.748,True,0.1835,high,0.9055,True,use degree when role_vector separation is high (> 0.2794),False

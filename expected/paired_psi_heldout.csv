@@ -1,0 +1,781 @@
+contrast,target,predictor,tier,rule,dataset,value,predicted,winner_signals,actual,seeds,scored,correct
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),artnet_exp,11.1238,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),bag_of_words_kos,68.3359,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),bag_of_words_nips,107.237,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),board_directors,1.9577,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),celegans_neural,18.4194,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),cora_full,6.4084,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),crocodile,29.3651,psi,psi,psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),escorts,4.6675,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),foursquare_checkin,5.445,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),foursquare_tips,2.9491,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),genius,4.3742,not psi,psi,psi,3,True,False
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),messal_shale,18.3003,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),nematode_mammal,4.037,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),penn94,65.5643,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),plant_pol_kato,3.1244,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),plant_pol_robertson,16.1943,psi,psi,psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),ppi_mouse,7.9106,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),ppi_rat,4.1938,not psi,psi,psi,3,True,False
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),twitch_gamers,80.8684,psi,psi,psi,3,True,True
+psi_vs_rest,member,avg_degree,primary,use psi when avg_degree is high (> 15.3224),wiki_attr,9.6432,not psi,original,no augmentation,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),artnet_exp,0.1882,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),bag_of_words_kos,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),bag_of_words_nips,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),board_directors,0.1119,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),celegans_neural,0.4016,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),cora_full,0.1285,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),crocodile,0.5581,not psi,psi,psi,3,True,False
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),escorts,0.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),foursquare_checkin,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),foursquare_tips,0.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),genius,0.1734,not psi,psi,psi,3,True,False
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),messal_shale,0.4088,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),nematode_mammal,0.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),penn94,0.8891,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),plant_pol_kato,0.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),plant_pol_robertson,0.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),ppi_mouse,0.0483,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),ppi_rat,0.0605,not psi,psi,psi,3,True,False
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),twitch_gamers,0.8647,psi,psi,psi,3,True,True
+psi_vs_rest,member,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6337),wiki_attr,0.2219,not psi,original,no augmentation,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),artnet_exp,0.0268,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),bag_of_words_kos,-0.0624,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),bag_of_words_nips,-0.1523,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),board_directors,-0.6508,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),celegans_neural,0.0619,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),cora_full,-0.045,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),crocodile,-0.2766,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),escorts,-0.1097,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),foursquare_checkin,-0.0238,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),foursquare_tips,-0.0386,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),genius,-0.1025,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),messal_shale,-0.1597,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),nematode_mammal,-0.0265,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),penn94,-0.0013,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),plant_pol_kato,-0.3019,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),plant_pol_robertson,-0.3152,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),ppi_mouse,-0.1053,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),ppi_rat,-0.2034,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),twitch_gamers,-0.0869,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.0611),wiki_attr,-0.094,psi,original,no augmentation,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),artnet_exp,0.7481,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),bag_of_words_kos,0.553,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),bag_of_words_nips,0.7302,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),board_directors,0.3853,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),celegans_neural,0.3785,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),cora_full,0.5111,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),crocodile,0.6563,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),escorts,0.6232,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),foursquare_checkin,0.4757,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),foursquare_tips,0.4856,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),genius,0.7215,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),messal_shale,0.4307,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),nematode_mammal,0.6252,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),penn94,0.4892,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),plant_pol_kato,0.611,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),plant_pol_robertson,0.6903,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),ppi_mouse,0.6951,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),ppi_rat,0.6444,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),twitch_gamers,0.6809,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_gini,exploratory,use psi when degree_gini is high (> 0.6051),wiki_attr,0.53,not psi,original,no augmentation,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),artnet_exp,0.000221,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),bag_of_words_kos,0.006612,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),bag_of_words_nips,0.007705,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),board_directors,0.00109,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),celegans_neural,0.040751,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),cora_full,0.000324,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),crocodile,0.002525,not psi,psi,psi,3,True,False
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),escorts,0.000279,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),foursquare_checkin,0.001105,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),foursquare_tips,0.000461,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),genius,1e-05,not psi,psi,psi,3,True,False
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),messal_shale,0.026716,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),nematode_mammal,0.000132,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),penn94,0.001578,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),plant_pol_kato,0.004052,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),plant_pol_robertson,0.0086,psi,psi,psi,3,True,True
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),ppi_mouse,0.00042,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),ppi_rat,0.000595,not psi,psi,psi,3,True,False
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),twitch_gamers,0.000481,not psi,psi,psi,3,True,False
+psi_vs_rest,member,density,exploratory,use psi when density is high (> 0.0029),wiki_attr,0.004011,psi,original,no augmentation,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),artnet_exp,0.1553,psi,degree,not psi,3,True,False
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),bag_of_words_kos,-1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),bag_of_words_nips,-1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),board_directors,-0.6161,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),celegans_neural,0.1673,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),cora_full,0.5558,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),crocodile,0.0154,psi,psi,psi,3,True,True
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),escorts,-1.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),foursquare_checkin,-1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),foursquare_tips,-1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),genius,-0.0527,not psi,psi,psi,3,True,False
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),messal_shale,-0.0025,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),nematode_mammal,-1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),penn94,0.0209,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),plant_pol_kato,-1.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),plant_pol_robertson,-1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),ppi_mouse,-0.2589,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),ppi_rat,-0.2504,not psi,psi,psi,3,True,False
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),twitch_gamers,0.0899,psi,psi,psi,3,True,True
+psi_vs_rest,member,homophily_adjusted,primary,use psi when homophily_adjusted is high (> -0.0132),wiki_attr,0.564,psi,original,no augmentation,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),artnet_exp,2.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),bag_of_words_kos,2.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),bag_of_words_nips,2.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),board_directors,3.0,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),celegans_neural,7.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),cora_full,70.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),crocodile,5.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),escorts,2.0,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),foursquare_checkin,2.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),foursquare_tips,2.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),genius,2.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),messal_shale,152.0,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),nematode_mammal,2.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),penn94,2.0,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),plant_pol_kato,2.0,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),plant_pol_robertson,2.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),ppi_mouse,10.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),ppi_rat,9.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),twitch_gamers,2.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,n_classes,primary,use psi when n_classes is low (< 3.0),wiki_attr,17.0,not psi,original,no augmentation,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),artnet_exp,4.0589,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),bag_of_words_kos,5.7636,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),bag_of_words_nips,2.2354,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),board_directors,2.0527,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),celegans_neural,1.6591,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),cora_full,7.8749,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),crocodile,16.1619,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),escorts,10.7829,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),foursquare_checkin,3.4689,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),foursquare_tips,15.9933,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),genius,106.192,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),messal_shale,3.6767,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),nematode_mammal,11.0472,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),penn94,14.3463,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),plant_pol_kato,12.5439,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),plant_pol_robertson,4.2962,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),ppi_mouse,55.3483,psi,degree,not psi,3,True,False
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),ppi_rat,25.0739,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),twitch_gamers,42.3749,psi,psi,psi,3,True,True
+psi_vs_rest,member,degree_skew,exploratory,use psi when degree_skew is high (> 2.1387),wiki_attr,7.7776,psi,original,no augmentation,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),artnet_exp,50405.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),bag_of_words_kos,10336.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),bag_of_words_nips,13919.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),board_directors,1797.0,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),celegans_neural,453.0,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),cora_full,19793.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),crocodile,11631.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),escorts,16730.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),foursquare_checkin,4930.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),foursquare_tips,6404.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),genius,421961.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),messal_shale,686.0,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),nematode_mammal,30516.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),penn94,41554.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),plant_pol_kato,772.0,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),plant_pol_robertson,1884.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),ppi_mouse,18838.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),ppi_rat,7050.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),twitch_gamers,168114.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,nodes,exploratory,use psi when nodes is low (< 12755.0),wiki_attr,2405.0,psi,original,no augmentation,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),artnet_exp,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),bag_of_words_kos,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),bag_of_words_nips,0.9968,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),board_directors,0.5459,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),celegans_neural,0.9845,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),cora_full,0.9498,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),crocodile,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),escorts,0.945,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),foursquare_checkin,0.9937,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),foursquare_tips,0.8371,psi,degree,not psi,3,True,False
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),genius,0.9998,not psi,psi,psi,3,True,False
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),messal_shale,1.0,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),nematode_mammal,0.8585,psi,degree,not psi,3,True,False
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),penn94,0.9996,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),plant_pol_kato,0.9948,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),plant_pol_robertson,0.9989,not psi,psi,psi,3,True,False
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),ppi_mouse,0.9887,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),ppi_rat,0.965,psi,psi,psi,3,True,True
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),twitch_gamers,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.9698),wiki_attr,0.98,not psi,original,no augmentation,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),artnet_exp,0.8317,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),bag_of_words_kos,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),bag_of_words_nips,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),board_directors,0.0,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),celegans_neural,0.3655,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),cora_full,0.567,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),crocodile,0.2288,psi,psi,psi,3,True,True
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),escorts,0.0,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),foursquare_checkin,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),foursquare_tips,0.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),genius,0.5932,psi,psi,psi,3,True,True
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),messal_shale,0.0379,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),nematode_mammal,0.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),penn94,0.5106,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),plant_pol_kato,0.0,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),plant_pol_robertson,0.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),ppi_mouse,0.5607,psi,degree,not psi,3,True,False
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),ppi_rat,0.5105,psi,psi,psi,3,True,True
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),twitch_gamers,0.5453,psi,psi,psi,3,True,True
+psi_vs_rest,member,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.6761),wiki_attr,0.6097,psi,original,no augmentation,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),artnet_exp,0.9,psi,degree,not psi,3,True,False
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),bag_of_words_kos,0.6682,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),bag_of_words_nips,0.8922,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),board_directors,0.5081,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),celegans_neural,0.2384,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),cora_full,0.0469,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),crocodile,0.2119,not psi,psi,psi,3,True,False
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),escorts,0.6041,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),foursquare_checkin,0.5822,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),foursquare_tips,0.5141,psi,degree,not psi,3,True,False
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),genius,0.8001,psi,psi,psi,3,True,True
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),messal_shale,0.1778,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),nematode_mammal,0.6109,psi,degree,not psi,3,True,False
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),penn94,0.5265,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),plant_pol_kato,0.8795,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),plant_pol_robertson,0.758,psi,psi,psi,3,True,True
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),ppi_mouse,0.5719,psi,degree,not psi,3,True,False
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),ppi_rat,0.6433,psi,psi,psi,3,True,True
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),twitch_gamers,0.5299,psi,psi,psi,3,True,True
+psi_vs_rest,member,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.507),wiki_attr,0.1688,not psi,original,no augmentation,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),artnet_exp,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),bag_of_words_kos,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),bag_of_words_nips,45.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),board_directors,136.0,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),celegans_neural,8.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),cora_full,364.0,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),crocodile,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),escorts,418.0,psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),foursquare_checkin,17.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),foursquare_tips,424.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),genius,100.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),messal_shale,1.0,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),nematode_mammal,1591.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),penn94,10.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),plant_pol_kato,4.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),plant_pol_robertson,2.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),ppi_mouse,111.0,psi,degree,not psi,3,True,False
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),ppi_rat,105.0,psi,psi,psi,3,True,True
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),twitch_gamers,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,components,primary,use psi when components is high (> 11.5),wiki_attr,45.0,psi,original,no augmentation,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),artnet_exp,0.0617,psi,degree,not psi,3,True,False
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),bag_of_words_kos,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),bag_of_words_nips,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),board_directors,0.4038,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),celegans_neural,0.6923,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),cora_full,0.6569,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),crocodile,0.1379,psi,psi,psi,3,True,True
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),escorts,1.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),foursquare_checkin,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),foursquare_tips,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),genius,-0.0028,psi,psi,psi,3,True,True
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),messal_shale,0.2411,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),nematode_mammal,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),penn94,0.1152,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),plant_pol_kato,1.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),plant_pol_robertson,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),ppi_mouse,0.0764,psi,degree,not psi,3,True,False
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),ppi_rat,-0.0696,psi,psi,psi,3,True,True
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),twitch_gamers,0.2155,psi,psi,psi,3,True,True
+psi_vs_rest,member,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< 0.8108),wiki_attr,0.6599,psi,original,no augmentation,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),artnet_exp,0.0772,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),bag_of_words_kos,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),bag_of_words_nips,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),board_directors,0.0,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),celegans_neural,0.3058,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),cora_full,0.2607,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),crocodile,0.3365,psi,psi,psi,3,True,True
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),escorts,0.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),foursquare_checkin,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),foursquare_tips,0.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),genius,0.0281,not psi,psi,psi,3,True,False
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),messal_shale,0.1015,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),nematode_mammal,0.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),penn94,0.2117,psi,centrality,not psi,3,True,False
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),plant_pol_kato,0.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),plant_pol_robertson,0.0,not psi,psi,psi,3,True,False
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),ppi_mouse,0.0992,not psi,degree,not psi,3,True,True
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),ppi_rat,0.0725,not psi,psi,psi,3,True,False
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),twitch_gamers,0.1599,psi,psi,psi,3,True,True
+psi_vs_rest,member,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),wiki_attr,0.3758,psi,original,no augmentation,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),artnet_exp,0.1882,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),bag_of_words_kos,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),bag_of_words_nips,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),board_directors,0.1119,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),celegans_neural,0.4016,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),cora_full,0.1285,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),crocodile,0.5581,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),escorts,0.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),foursquare_checkin,0.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),foursquare_tips,0.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),genius,0.1734,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),messal_shale,0.4088,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),nematode_mammal,0.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),penn94,0.8891,psi,centrality,not psi,3,True,False
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),plant_pol_kato,0.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),plant_pol_robertson,0.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),ppi_mouse,0.0483,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),ppi_rat,0.0605,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),twitch_gamers,0.8647,psi,psi,psi,3,True,True
+psi_vs_rest,sole,nbr_label_entropy,exploratory,use psi when nbr_label_entropy is high (> 0.6764),wiki_attr,0.2219,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),artnet_exp,11.1238,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),bag_of_words_kos,68.3359,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),bag_of_words_nips,107.237,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),board_directors,1.9577,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),celegans_neural,18.4194,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),cora_full,6.4084,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),crocodile,29.3651,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),escorts,4.6675,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),foursquare_checkin,5.445,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),foursquare_tips,2.9491,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),genius,4.3742,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),messal_shale,18.3003,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),nematode_mammal,4.037,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),penn94,65.5643,psi,centrality,not psi,3,True,False
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),plant_pol_kato,3.1244,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),plant_pol_robertson,16.1943,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),ppi_mouse,7.9106,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),ppi_rat,4.1938,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),twitch_gamers,80.8684,psi,psi,psi,3,True,True
+psi_vs_rest,sole,avg_degree,primary,use psi when avg_degree is high (> 64.7015),wiki_attr,9.6432,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),artnet_exp,2.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),bag_of_words_kos,2.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),bag_of_words_nips,2.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),board_directors,3.0,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),celegans_neural,7.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),cora_full,70.0,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),crocodile,5.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),escorts,2.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),foursquare_checkin,2.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),foursquare_tips,2.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),genius,2.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),messal_shale,152.0,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),nematode_mammal,2.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),penn94,2.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),plant_pol_kato,2.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),plant_pol_robertson,2.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),ppi_mouse,10.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),ppi_rat,9.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),twitch_gamers,2.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,n_classes,primary,use psi when n_classes is high (> 30.0),wiki_attr,17.0,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),artnet_exp,0.9,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),bag_of_words_kos,0.6682,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),bag_of_words_nips,0.8922,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),board_directors,0.5081,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),celegans_neural,0.2384,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),cora_full,0.0469,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),crocodile,0.2119,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),escorts,0.6041,psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),foursquare_checkin,0.5822,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),foursquare_tips,0.5141,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),genius,0.8001,psi,psi,psi,3,True,True
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),messal_shale,0.1778,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),nematode_mammal,0.6109,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),penn94,0.5265,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),plant_pol_kato,0.8795,psi,centrality,not psi,3,True,False
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),plant_pol_robertson,0.758,psi,psi,psi,3,True,True
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),ppi_mouse,0.5719,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),ppi_rat,0.6433,psi,psi,psi,3,True,True
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),twitch_gamers,0.5299,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,majority_class_frac,exploratory,use psi when majority_class_frac is high (> 0.5751),wiki_attr,0.1688,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),artnet_exp,0.0617,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),bag_of_words_kos,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),bag_of_words_nips,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),board_directors,0.4038,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),celegans_neural,0.6923,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),cora_full,0.6569,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),crocodile,0.1379,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),escorts,1.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),foursquare_checkin,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),foursquare_tips,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),genius,-0.0028,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),messal_shale,0.2411,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),nematode_mammal,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),penn94,0.1152,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),plant_pol_kato,1.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),plant_pol_robertson,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),ppi_mouse,0.0764,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),ppi_rat,-0.0696,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),twitch_gamers,0.2155,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nbr_predictability_adjusted,primary,use psi when nbr_predictability_adjusted is low (< -0.1658),wiki_attr,0.6599,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),artnet_exp,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),bag_of_words_kos,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),bag_of_words_nips,45.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),board_directors,136.0,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),celegans_neural,8.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),cora_full,364.0,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),crocodile,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),escorts,418.0,psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),foursquare_checkin,17.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),foursquare_tips,424.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),genius,100.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),messal_shale,1.0,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),nematode_mammal,1591.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),penn94,10.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),plant_pol_kato,4.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),plant_pol_robertson,2.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),ppi_mouse,111.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),ppi_rat,105.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),twitch_gamers,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,components,primary,use psi when components is high (> 335.0),wiki_attr,45.0,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),artnet_exp,1.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),bag_of_words_kos,1.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),bag_of_words_nips,0.9968,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),board_directors,0.5459,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),celegans_neural,0.9845,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),cora_full,0.9498,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),crocodile,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),escorts,0.945,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),foursquare_checkin,0.9937,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),foursquare_tips,0.8371,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),genius,0.9998,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),messal_shale,1.0,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),nematode_mammal,0.8585,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),penn94,0.9996,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),plant_pol_kato,0.9948,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),plant_pol_robertson,0.9989,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),ppi_mouse,0.9887,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),ppi_rat,0.965,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),twitch_gamers,1.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,largest_component_frac,primary,use psi when largest_component_frac is low (< 0.8934),wiki_attr,0.98,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),artnet_exp,0.000221,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),bag_of_words_kos,0.006612,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),bag_of_words_nips,0.007705,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),board_directors,0.00109,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),celegans_neural,0.040751,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),cora_full,0.000324,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),crocodile,0.002525,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),escorts,0.000279,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),foursquare_checkin,0.001105,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),foursquare_tips,0.000461,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),genius,1e-05,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),messal_shale,0.026716,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),nematode_mammal,0.000132,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),penn94,0.001578,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),plant_pol_kato,0.004052,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),plant_pol_robertson,0.0086,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),ppi_mouse,0.00042,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),ppi_rat,0.000595,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),twitch_gamers,0.000481,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,density,exploratory,use psi when density is high (> 0.0966),wiki_attr,0.004011,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),artnet_exp,0.0268,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),bag_of_words_kos,-0.0624,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),bag_of_words_nips,-0.1523,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),board_directors,-0.6508,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),celegans_neural,0.0619,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),cora_full,-0.045,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),crocodile,-0.2766,psi,psi,psi,3,True,True
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),escorts,-0.1097,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),foursquare_checkin,-0.0238,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),foursquare_tips,-0.0386,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),genius,-0.1025,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),messal_shale,-0.1597,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),nematode_mammal,-0.0265,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),penn94,-0.0013,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),plant_pol_kato,-0.3019,psi,centrality,not psi,3,True,False
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),plant_pol_robertson,-0.3152,psi,psi,psi,3,True,True
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),ppi_mouse,-0.1053,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),ppi_rat,-0.2034,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),twitch_gamers,-0.0869,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.23),wiki_attr,-0.094,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),artnet_exp,0.0772,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),bag_of_words_kos,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),bag_of_words_nips,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),board_directors,0.0,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),celegans_neural,0.3058,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),cora_full,0.2607,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),crocodile,0.3365,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),escorts,0.0,psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),foursquare_checkin,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),foursquare_tips,0.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),genius,0.0281,psi,psi,psi,3,True,True
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),messal_shale,0.1015,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),nematode_mammal,0.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),penn94,0.2117,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),plant_pol_kato,0.0,psi,centrality,not psi,3,True,False
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),plant_pol_robertson,0.0,psi,psi,psi,3,True,True
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),ppi_mouse,0.0992,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),ppi_rat,0.0725,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),twitch_gamers,0.1599,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,avg_clustering,primary,use psi when avg_clustering is low (< 0.0454),wiki_attr,0.3758,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),artnet_exp,50405.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),bag_of_words_kos,10336.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),bag_of_words_nips,13919.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),board_directors,1797.0,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),celegans_neural,453.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),cora_full,19793.0,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),crocodile,11631.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),escorts,16730.0,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),foursquare_checkin,4930.0,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),foursquare_tips,6404.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),genius,421961.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),messal_shale,686.0,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),nematode_mammal,30516.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),penn94,41554.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),plant_pol_kato,772.0,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),plant_pol_robertson,1884.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),ppi_mouse,18838.0,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),ppi_rat,7050.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),twitch_gamers,168114.0,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,nodes,exploratory,use psi when nodes is low (< 265.0),wiki_attr,2405.0,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),artnet_exp,0.1553,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),bag_of_words_kos,-1.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),bag_of_words_nips,-1.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),board_directors,-0.6161,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),celegans_neural,0.1673,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),cora_full,0.5558,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),crocodile,0.0154,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),escorts,-1.0,psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),foursquare_checkin,-1.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),foursquare_tips,-1.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),genius,-0.0527,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),messal_shale,-0.0025,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),nematode_mammal,-1.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),penn94,0.0209,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),plant_pol_kato,-1.0,psi,centrality,not psi,3,True,False
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),plant_pol_robertson,-1.0,psi,psi,psi,3,True,True
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),ppi_mouse,-0.2589,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),ppi_rat,-0.2504,psi,psi,psi,3,True,True
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),twitch_gamers,0.0899,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,homophily_adjusted,primary,use psi when homophily_adjusted is low (< -0.0605),wiki_attr,0.564,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),artnet_exp,0.8317,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),bag_of_words_kos,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),bag_of_words_nips,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),board_directors,0.0,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),celegans_neural,0.3655,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),cora_full,0.567,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),crocodile,0.2288,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),escorts,0.0,psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),foursquare_checkin,0.0,psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),foursquare_tips,0.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),genius,0.5932,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),messal_shale,0.0379,psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),nematode_mammal,0.0,psi,degree,not psi,3,True,False
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),penn94,0.5106,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),plant_pol_kato,0.0,psi,centrality,not psi,3,True,False
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),plant_pol_robertson,0.0,psi,psi,psi,3,True,True
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),ppi_mouse,0.5607,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),ppi_rat,0.5105,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),twitch_gamers,0.5453,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,edge_homophily,exploratory,use psi when edge_homophily is low (< 0.1345),wiki_attr,0.6097,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),artnet_exp,4.0589,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),bag_of_words_kos,5.7636,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),bag_of_words_nips,2.2354,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),board_directors,2.0527,not psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),celegans_neural,1.6591,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),cora_full,7.8749,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),crocodile,16.1619,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),escorts,10.7829,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),foursquare_checkin,3.4689,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),foursquare_tips,15.9933,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),genius,106.192,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),messal_shale,3.6767,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),nematode_mammal,11.0472,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),penn94,14.3463,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),plant_pol_kato,12.5439,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),plant_pol_robertson,4.2962,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),ppi_mouse,55.3483,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),ppi_rat,25.0739,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),twitch_gamers,42.3749,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_skew,exploratory,use psi when degree_skew is low (< 1.5836),wiki_attr,7.7776,not psi,original,no augmentation,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),artnet_exp,0.7481,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),bag_of_words_kos,0.553,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),bag_of_words_nips,0.7302,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),board_directors,0.3853,psi,original|psi,no augmentation,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),celegans_neural,0.3785,psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),cora_full,0.5111,not psi,centrality|original,no augmentation,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),crocodile,0.6563,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),escorts,0.6232,not psi,centrality|degree,tie,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),foursquare_checkin,0.4757,not psi,degree|psi,tie,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),foursquare_tips,0.4856,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),genius,0.7215,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),messal_shale,0.4307,not psi,centrality|degree|original|psi,no augmentation,3,False,
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),nematode_mammal,0.6252,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),penn94,0.4892,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),plant_pol_kato,0.611,not psi,centrality,not psi,3,True,True
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),plant_pol_robertson,0.6903,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),ppi_mouse,0.6951,not psi,degree,not psi,3,True,True
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),ppi_rat,0.6444,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),twitch_gamers,0.6809,not psi,psi,psi,3,True,False
+psi_vs_rest,sole,degree_gini,exploratory,use psi when degree_gini is low (< 0.4299),wiki_attr,0.53,not psi,original,no augmentation,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),artnet_exp,11.1238,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),bag_of_words_kos,68.3359,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),bag_of_words_nips,107.237,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),board_directors,1.9577,degree,original|psi,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),celegans_neural,18.4194,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),cora_full,6.4084,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),crocodile,29.3651,psi,psi,psi,3,True,True
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),escorts,4.6675,degree,centrality|degree,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),foursquare_checkin,5.445,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),foursquare_tips,2.9491,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),genius,4.3742,degree,psi,psi,3,True,False
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),messal_shale,18.3003,psi,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),nematode_mammal,4.037,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),penn94,65.5643,psi,centrality,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),plant_pol_kato,3.1244,degree,centrality,not applicable,3,False,
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),plant_pol_robertson,16.1943,degree,psi,psi,3,True,False
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),ppi_mouse,7.9106,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),ppi_rat,4.1938,degree,psi,psi,3,True,False
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),twitch_gamers,80.8684,psi,psi,psi,3,True,True
+psi_vs_degree,,avg_degree,primary,use psi when avg_degree is high (> 17.7328),wiki_attr,9.6432,degree,original,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),artnet_exp,0.000221,degree,degree,degree,3,True,True
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),bag_of_words_kos,0.006612,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),bag_of_words_nips,0.007705,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),board_directors,0.00109,degree,original|psi,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),celegans_neural,0.040751,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),cora_full,0.000324,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),crocodile,0.002525,degree,psi,psi,3,True,False
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),escorts,0.000279,degree,centrality|degree,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),foursquare_checkin,0.001105,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),foursquare_tips,0.000461,degree,degree,degree,3,True,True
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),genius,1e-05,degree,psi,psi,3,True,False
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),messal_shale,0.026716,psi,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),nematode_mammal,0.000132,degree,degree,degree,3,True,True
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),penn94,0.001578,degree,centrality,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),plant_pol_kato,0.004052,psi,centrality,not applicable,3,False,
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),plant_pol_robertson,0.0086,psi,psi,psi,3,True,True
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),ppi_mouse,0.00042,degree,degree,degree,3,True,True
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),ppi_rat,0.000595,degree,psi,psi,3,True,False
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),twitch_gamers,0.000481,degree,psi,psi,3,True,False
+psi_vs_degree,,density,exploratory,use psi when density is high (> 0.003),wiki_attr,0.004011,psi,original,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),artnet_exp,1.0,psi,degree,degree,3,True,False
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),bag_of_words_kos,1.0,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),bag_of_words_nips,45.0,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),board_directors,136.0,psi,original|psi,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),celegans_neural,8.0,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),cora_full,364.0,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),crocodile,1.0,psi,psi,psi,3,True,True
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),escorts,418.0,degree,centrality|degree,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),foursquare_checkin,17.0,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),foursquare_tips,424.0,degree,degree,degree,3,True,True
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),genius,100.0,psi,psi,psi,3,True,True
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),messal_shale,1.0,psi,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),nematode_mammal,1591.0,degree,degree,degree,3,True,True
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),penn94,10.0,psi,centrality,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),plant_pol_kato,4.0,psi,centrality,not applicable,3,False,
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),plant_pol_robertson,2.0,psi,psi,psi,3,True,True
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),ppi_mouse,111.0,psi,degree,degree,3,True,False
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),ppi_rat,105.0,psi,psi,psi,3,True,True
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),twitch_gamers,1.0,psi,psi,psi,3,True,True
+psi_vs_degree,,components,primary,use psi when components is low (< 157.5),wiki_attr,45.0,psi,original,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),artnet_exp,1.0,psi,degree,degree,3,True,False
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),bag_of_words_kos,1.0,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),bag_of_words_nips,0.9968,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),board_directors,0.5459,degree,original|psi,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),celegans_neural,0.9845,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),cora_full,0.9498,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),crocodile,1.0,psi,psi,psi,3,True,True
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),escorts,0.945,degree,centrality|degree,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),foursquare_checkin,0.9937,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),foursquare_tips,0.8371,degree,degree,degree,3,True,True
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),genius,0.9998,psi,psi,psi,3,True,True
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),messal_shale,1.0,psi,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),nematode_mammal,0.8585,degree,degree,degree,3,True,True
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),penn94,0.9996,psi,centrality,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),plant_pol_kato,0.9948,psi,centrality,not applicable,3,False,
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),plant_pol_robertson,0.9989,psi,psi,psi,3,True,True
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),ppi_mouse,0.9887,psi,degree,degree,3,True,False
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),ppi_rat,0.965,degree,psi,psi,3,True,False
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),twitch_gamers,1.0,psi,psi,psi,3,True,True
+psi_vs_degree,,largest_component_frac,primary,use psi when largest_component_frac is high (> 0.9865),wiki_attr,0.98,degree,original,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),artnet_exp,4.0589,psi,degree,degree,3,True,False
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),bag_of_words_kos,5.7636,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),bag_of_words_nips,2.2354,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),board_directors,2.0527,psi,original|psi,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),celegans_neural,1.6591,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),cora_full,7.8749,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),crocodile,16.1619,degree,psi,psi,3,True,False
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),escorts,10.7829,psi,centrality|degree,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),foursquare_checkin,3.4689,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),foursquare_tips,15.9933,degree,degree,degree,3,True,True
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),genius,106.192,degree,psi,psi,3,True,False
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),messal_shale,3.6767,psi,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),nematode_mammal,11.0472,psi,degree,degree,3,True,False
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),penn94,14.3463,degree,centrality,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),plant_pol_kato,12.5439,degree,centrality,not applicable,3,False,
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),plant_pol_robertson,4.2962,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),ppi_mouse,55.3483,degree,degree,degree,3,True,True
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),ppi_rat,25.0739,degree,psi,psi,3,True,False
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),twitch_gamers,42.3749,degree,psi,psi,3,True,False
+psi_vs_degree,,degree_skew,exploratory,use psi when degree_skew is low (< 11.1576),wiki_attr,7.7776,psi,original,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),artnet_exp,50405.0,degree,degree,degree,3,True,True
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),bag_of_words_kos,10336.0,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),bag_of_words_nips,13919.0,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),board_directors,1797.0,psi,original|psi,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),celegans_neural,453.0,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),cora_full,19793.0,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),crocodile,11631.0,degree,psi,psi,3,True,False
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),escorts,16730.0,degree,centrality|degree,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),foursquare_checkin,4930.0,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),foursquare_tips,6404.0,degree,degree,degree,3,True,True
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),genius,421961.0,degree,psi,psi,3,True,False
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),messal_shale,686.0,psi,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),nematode_mammal,30516.0,degree,degree,degree,3,True,True
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),penn94,41554.0,degree,centrality,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),plant_pol_kato,772.0,psi,centrality,not applicable,3,False,
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),plant_pol_robertson,1884.0,psi,psi,psi,3,True,True
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),ppi_mouse,18838.0,degree,degree,degree,3,True,True
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),ppi_rat,7050.0,degree,psi,psi,3,True,False
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),twitch_gamers,168114.0,degree,psi,psi,3,True,False
+psi_vs_degree,,nodes,exploratory,use psi when nodes is low (< 6161.0),wiki_attr,2405.0,psi,original,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),artnet_exp,0.0772,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),bag_of_words_kos,0.0,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),bag_of_words_nips,0.0,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),board_directors,0.0,degree,original|psi,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),celegans_neural,0.3058,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),cora_full,0.2607,psi,centrality|original,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),crocodile,0.3365,psi,psi,psi,3,True,True
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),escorts,0.0,degree,centrality|degree,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),foursquare_checkin,0.0,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),foursquare_tips,0.0,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),genius,0.0281,degree,psi,psi,3,True,False
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),messal_shale,0.1015,psi,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),nematode_mammal,0.0,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),penn94,0.2117,psi,centrality,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),plant_pol_kato,0.0,degree,centrality,not applicable,3,False,
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),plant_pol_robertson,0.0,degree,psi,psi,3,True,False
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),ppi_mouse,0.0992,degree,degree,degree,3,True,True
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),ppi_rat,0.0725,degree,psi,psi,3,True,False
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),twitch_gamers,0.1599,psi,psi,psi,3,True,True
+psi_vs_degree,,avg_clustering,primary,use psi when avg_clustering is high (> 0.1013),wiki_attr,0.3758,psi,original,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),artnet_exp,0.7481,psi,degree,degree,3,True,False
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),bag_of_words_kos,0.553,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),bag_of_words_nips,0.7302,psi,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),board_directors,0.3853,degree,original|psi,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),celegans_neural,0.3785,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),cora_full,0.5111,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),crocodile,0.6563,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),escorts,0.6232,psi,centrality|degree,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),foursquare_checkin,0.4757,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),foursquare_tips,0.4856,degree,degree,degree,3,True,True
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),genius,0.7215,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),messal_shale,0.4307,degree,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),nematode_mammal,0.6252,psi,degree,degree,3,True,False
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),penn94,0.4892,degree,centrality,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),plant_pol_kato,0.611,psi,centrality,not applicable,3,False,
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),plant_pol_robertson,0.6903,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),ppi_mouse,0.6951,psi,degree,degree,3,True,False
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),ppi_rat,0.6444,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),twitch_gamers,0.6809,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_gini,exploratory,use psi when degree_gini is high (> 0.5885),wiki_attr,0.53,degree,original,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),artnet_exp,0.0268,degree,degree,degree,3,True,True
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),bag_of_words_kos,-0.0624,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),bag_of_words_nips,-0.1523,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),board_directors,-0.6508,psi,original|psi,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),celegans_neural,0.0619,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),cora_full,-0.045,degree,centrality|original,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),crocodile,-0.2766,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),escorts,-0.1097,degree,centrality|degree,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),foursquare_checkin,-0.0238,degree,degree|psi,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),foursquare_tips,-0.0386,degree,degree,degree,3,True,True
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),genius,-0.1025,degree,psi,psi,3,True,False
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),messal_shale,-0.1597,degree,centrality|degree|original|psi,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),nematode_mammal,-0.0265,degree,degree,degree,3,True,True
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),penn94,-0.0013,degree,centrality,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),plant_pol_kato,-0.3019,psi,centrality,not applicable,3,False,
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),plant_pol_robertson,-0.3152,psi,psi,psi,3,True,True
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),ppi_mouse,-0.1053,degree,degree,degree,3,True,True
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),ppi_rat,-0.2034,degree,psi,psi,3,True,False
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),twitch_gamers,-0.0869,degree,psi,psi,3,True,False
+psi_vs_degree,,degree_assortativity,exploratory,use psi when degree_assortativity is low (< -0.2288),wiki_attr,-0.094,degree,original,not applicable,3,False,

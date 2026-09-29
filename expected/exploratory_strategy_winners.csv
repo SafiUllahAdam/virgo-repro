@@ -1,0 +1,16 @@
+dataset,task,metric,best_variant,best_score,original,winner_set,winner_signals,n_tied,beats_original,signal_decided,homophily_adjusted,nbr_predictability_adjusted,components,largest_component_frac,avg_degree,avg_clustering,n_classes
+actor,link prediction (AUC),auc,degree,0.6617,0.5953,degree,degree,1,True,True,0.0028,0.006,1,1.0,7.0155,0.0802,5.0
+amazon_photo,link prediction (AUC),auc,original,0.7857,0.7857,hybrid|hybrid_centrality|hybrid_degree|original,centrality|degree|original|psi,4,False,False,0.785,0.9033,136,0.9787,31.1323,0.404,8.0
+amazon_ratings,link prediction (AUC),auc,original,0.7536,0.7536,original,original,1,False,False,0.1402,0.1087,1,1.0,7.5984,0.5816,5.0
+citeseer_linqs,link prediction (AUC),auc,original,0.6218,0.6218,original,original,1,False,False,0.6731,0.6849,390,0.6464,2.7794,0.1447,6.0
+cora,link prediction (AUC),auc,original,0.613,0.613,original,original,1,False,False,0.7711,0.8143,78,0.9177,3.8981,0.2407,7.0
+enzymes,link prediction (AUC),auc,original,0.7,0.7,original,original,1,False,False,0.3613,0.4844,640,0.0064,3.8289,0.4024,3.0
+lastfm_asia,link prediction (AUC),auc,hybrid_centrality,0.7301,0.7218,hybrid_centrality|original,centrality|original,2,False,False,0.8562,0.8498,1,1.0,7.2943,0.2194,18.0
+minesweeper,link prediction (AUC),auc,original,0.7093,0.7093,original,original,1,False,False,0.0094,0.0,1,1.0,7.8804,0.4355,2.0
+ogbl_ddi,link prediction (OGB official),valid_hits@20,hybrid_degree,0.0565,0.0413,hybrid|hybrid_centrality|hybrid_degree,centrality|degree|psi,3,True,False,,,1,1.0,500.5442,0.5143,
+proteins,link prediction (AUC),auc,original,0.672,0.672,original,original,1,False,False,0.3552,0.476,1195,0.0143,3.7291,0.3814,3.0
+pubmed,link prediction (AUC),auc,hybrid_centrality,0.6624,0.6392,hybrid_centrality|original,centrality|original,2,False,False,0.686,0.6946,1,1.0,4.496,0.0602,3.0
+questions,link prediction (AUC),auc,hybrid_degree,0.5703,0.4665,hybrid|hybrid_centrality|hybrid_degree,centrality|degree|psi,3,True,False,0.0207,-0.0041,1,1.0,6.2771,0.0307,2.0
+roman_empire,link prediction (AUC),auc,centrality,0.698,0.6019,centrality|hybrid_centrality,centrality,2,True,True,-0.0468,0.3324,1,1.0,2.9059,0.3859,18.0
+squirrel_filtered,link prediction (AUC),auc,degree,0.7736,0.7399,centrality|degree,centrality|degree,2,True,False,0.0086,0.0123,1,1.0,42.2834,0.4631,5.0
+tolokers,link prediction (AUC),auc,psi,0.7007,0.6444,psi,psi,1,True,True,0.0926,-0.3274,1,1.0,88.2803,0.5329,2.0

@@ -1,0 +1,16 @@
+predictor,tier,n_augmenting,n_degree,n_missing,degree_datasets,degree_range,rest_range,spearman_rho,threshold,degree_side,n_exceptions,accuracy,interval_lo,interval_hi,loo_accuracy,loo_correct,loo_folds,majority_baseline,loo_majority,rule,blocked_by,credible
+avg_clustering,primary,8,2,0,actor|questions,0.0307-0.0802,0.0602-0.5329,-0.6299,0.0454,low,1,0.875,0.0307,0.0602,0.75,6,8,0.75,0.75,use degree when avg_clustering is low (< 0.0454),,False
+degree_skew,exploratory,8,2,0,actor|questions,17.4282-51.7858,1.5077-19.9644,0.6299,11.5653,high,1,0.875,5.7024,17.4282,0.75,6,8,0.75,0.75,use degree when degree_skew is high (> 11.5653),,False
+nbr_predictability_adjusted,primary,8,2,0,actor|questions,-0.0041-0.0060,-0.3274-0.8498,-0.504,0.0092,low,1,0.875,0.006,0.0123,0.625,5,8,0.75,0.75,use degree when nbr_predictability_adjusted is low (< 0.0092),,False
+degree_assortativity,exploratory,8,2,0,actor|questions,-0.1519--0.0469,-0.1152-0.2021,-0.504,-0.1336,low,1,0.875,-0.1519,-0.1152,0.875,7,8,0.75,0.75,use degree when degree_assortativity is low (< -0.1336),,False
+density,exploratory,8,2,0,actor|questions,0.0001-0.0009,0.0001-0.0190,-0.4436,0.0002,low,2,0.75,0.0001,0.0002,0.625,5,8,0.75,0.75,use degree when density is low (< 0.0002),,False
+homophily_adjusted,primary,8,2,0,actor|questions,0.0028-0.0207,-0.0468-0.8562,-0.378,0.0057,low,2,0.75,0.0028,0.0086,0.5,4,8,0.75,0.75,use degree when homophily_adjusted is low (< 0.0057),,False
+avg_degree,primary,8,2,0,actor|questions,6.2771-7.0155,2.9059-88.2803,-0.252,7.1549,low,2,0.75,7.0155,7.2943,0.375,3,8,0.75,0.75,use degree when avg_degree is low (< 7.1549),,False
+majority_class_frac,exploratory,8,2,0,actor|questions,0.2586-0.9702,0.1396-0.7818,0.252,0.876,high,1,0.875,0.7818,0.9702,0.75,6,8,0.75,0.75,use degree when majority_class_frac is high (> 0.876),,False
+nbr_label_entropy,exploratory,8,2,0,actor|questions,0.1139-0.5092,0.0681-0.7534,-0.252,0.1202,low,2,0.75,0.1139,0.1264,0.5,4,8,0.75,0.75,use degree when nbr_label_entropy is low (< 0.1202),,False
+n_classes,primary,8,2,0,actor|questions,2.0000-5.0000,2.0000-18.0000,-0.1961,2.5,low,3,0.625,2.0,3.0,0.5,4,8,0.75,0.75,use degree when n_classes is low (< 2.5),,False
+edge_homophily,exploratory,8,2,0,actor|questions,0.2167-0.8396,0.0469-0.8739,0.126,0.821,high,2,0.75,0.8024,0.8396,0.25,2,8,0.75,0.75,use degree when edge_homophily is high (> 0.821),,False
+degree_gini,exploratory,8,2,0,actor|questions,0.5691-0.7455,0.1769-0.7150,0.126,0.7303,high,1,0.875,0.715,0.7455,0.625,5,8,0.75,0.75,use degree when degree_gini is high (> 0.7303),,False
+nodes,exploratory,8,2,0,actor|questions,7600.0000-48921.0000,2223.0000-22662.0000,0.126,35791.5,high,1,0.875,22662.0,48921.0,0.625,5,8,0.75,0.75,use degree when nodes is high (> 35791.5),,False
+components,primary,8,2,0,actor|questions,1.0000-1.0000,1.0000-1.0000,,,,-1,,,,,0,0,0.75,,,,False
+largest_component_frac,primary,8,2,0,actor|questions,1.0000-1.0000,1.0000-1.0000,,,,-1,,,,,0,0,0.75,,,,False

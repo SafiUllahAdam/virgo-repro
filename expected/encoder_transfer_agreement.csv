@@ -1,0 +1,31 @@
+dataset,stage1_baseline,stage1_encoder,stage2_baseline,stage2_encoder,baseline_decided,encoder_decided,stage1_agree,stage2_comparable,stage2_agree
+actor,augment,augment,degree,degree|psi,True,False,True,False,False
+airports_brazil,augment,keep original,centrality,centrality|degree|original|psi,True,False,False,False,False
+airports_europe,augment,augment,degree,degree|psi,True,False,True,False,False
+airports_usa,augment,keep original,centrality,original,True,True,False,True,False
+amazon_computers,augment,keep original,degree,centrality|original,True,False,False,False,False
+amherst41,keep original,keep original,centrality|degree|original|psi,original,False,True,True,False,False
+blogcatalog,augment,augment,centrality|psi,centrality|psi,False,False,True,False,False
+chameleon_filtered,keep original,keep original,centrality|original,centrality|original,False,False,True,False,False
+citeseer_linqs,keep original,keep original,original,centrality|degree|original,True,False,True,False,False
+cora_full,keep original,keep original,centrality|original,centrality|original,False,False,True,False,False
+cornell5,augment,keep original,centrality|degree|psi,original|psi,False,False,False,False,False
+crocodile,augment,augment,psi,centrality|degree|psi,True,False,True,False,False
+deezer_europe,keep original,keep original,centrality|original,original,False,True,True,False,False
+enzymes,keep original,keep original,original,original,True,True,True,True,True
+genius,augment,augment,psi,psi,True,True,True,True,True
+johnshopkins55,augment,keep original,centrality,centrality|original,True,False,False,False,False
+minesweeper,keep original,keep original,original,centrality|original,True,False,True,False,False
+proteins,keep original,keep original,original,original,True,True,True,True,True
+pubmed,augment,keep original,centrality,centrality|original,True,False,False,False,False
+questions,augment,augment,degree,centrality,True,True,True,True,False
+reed98,augment,augment,centrality,centrality,True,True,True,True,True
+roman_empire,augment,augment,centrality,centrality,True,True,True,True,True
+squirrel_filtered,augment,keep original,centrality|degree,centrality|original,False,False,False,False,False
+tolokers,augment,keep original,psi,original|psi,True,False,False,False,False
+twitch_de,augment,augment,psi,centrality|degree|psi,True,False,True,False,False
+twitch_engb,augment,augment,degree,degree,True,True,True,True,True
+twitch_es,augment,augment,psi,degree,True,True,True,True,False
+twitch_gamers,augment,augment,psi,psi,True,True,True,True,True
+twitch_ptbr,augment,augment,psi,centrality|degree|psi,True,False,True,False,False
+wiki_attr,keep original,keep original,original,original,True,True,True,True,True

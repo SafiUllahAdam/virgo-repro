@@ -1,0 +1,10 @@
+dataset,ANP,rule_says,actual,correct
+twitch_es,0.0625,centrality,psi,False
+twitch_engb,0.0661,centrality,degree,False
+airports_europe,0.1246,centrality,degree,False
+twitch_ptbr,0.1422,centrality,psi,False
+airports_brazil,0.1667,centrality,centrality,True
+airports_usa,0.2963,centrality,centrality,True
+blogcatalog,0.6204,centrality,psi,False
+amazon_computers,0.8505,centrality,degree,False
+coauthor_physics,0.9188,centrality,centrality,True

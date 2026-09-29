@@ -1,0 +1,18 @@
+dataset,k,sim,homophily_adjusted,largest_component_frac,original_retention,rule1_pred,rule2_pred,gate_pred,gate_interval,decided_by,predicted_verdict,avg_clustering,exception_pred,exception_interval
+reed98,10,psi,0.0219,1.0,0.023655,augment,augment,keep original,"(0.0062, 0.0176)",gate,keep original,,,
+amherst41,10,psi,0.0598,1.0,0.009202,augment,augment,augment,"(0.0062, 0.0176)",gate,augment,,,
+johnshopkins55,10,psi,0.0972,0.9956,0.005504,augment,augment,augment,"(0.0062, 0.0176)",gate,augment,,,
+cornell5,10,psi,0.0907,0.9979,0.001987,augment,augment,augment,"(0.0062, 0.0176)",gate,augment,,,
+wiki_attr,10,psi,0.564,0.98,,keep original,augment,,,rule 1 veto,keep original,0.3758,augment,"(0.5329, 0.5769)"
+crocodile,10,psi,0.0154,1.0,,augment,augment,,,clustering exception,augment,0.3365,augment,"(0.5329, 0.5769)"
+cora_full,10,psi,0.5558,0.9498,,keep original,keep original,,,rule 1 veto,keep original,0.2607,augment,"(0.5329, 0.5769)"
+penn94,10,psi,0.0209,0.9996,,augment,augment,,,clustering exception,augment,0.2117,augment,"(0.5329, 0.5769)"
+genius,10,psi,-0.0527,0.9998,,augment,augment,,,clustering exception,augment,0.0281,augment,"(0.5329, 0.5769)"
+twitch_gamers,10,psi,0.0899,1.0,,augment,augment,,,clustering exception,augment,0.1599,augment,"(0.5329, 0.5769)"
+celegans_neural,10,psi,0.1673,0.9845,,augment,augment,,,clustering exception,augment,0.3058,augment,"(0.5329, 0.5769)"
+messal_shale,10,psi,-0.0025,1.0,,augment,augment,,,clustering exception,augment,0.1015,augment,"(0.5329, 0.5769)"
+plant_pol_robertson,10,psi,-1.0,0.9989,,augment,augment,,,clustering exception,augment,0.0,augment,"(0.5329, 0.5769)"
+escorts,10,psi,-1.0,0.945,,augment,keep original,,,clustering exception,augment,0.0,augment,"(0.5329, 0.5769)"
+nematode_mammal,10,psi,-1.0,0.8585,,augment,keep original,,,clustering exception,augment,0.0,augment,"(0.5329, 0.5769)"
+bag_of_words_kos,10,psi,-1.0,1.0,,augment,augment,,,clustering exception,augment,0.0,augment,"(0.5329, 0.5769)"
+artnet_exp,10,psi,0.1553,1.0,,augment,augment,,,clustering exception,augment,0.0772,augment,"(0.5329, 0.5769)"

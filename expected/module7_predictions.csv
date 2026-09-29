@@ -1,0 +1,4 @@
+dataset,nbr_predictability_adjusted,cut,interval,applies_when,predicted_signal
+amherst41,0.2128,0.0092,"(0.006, 0.0123)",augmentation is already indicated,centrality
+johnshopkins55,0.2278,0.0092,"(0.006, 0.0123)",augmentation is already indicated,centrality
+cornell5,0.276,0.0092,"(0.006, 0.0123)",augmentation is already indicated,centrality

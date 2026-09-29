@@ -1,0 +1,7 @@
+dataset,predictor,value,cut,rule,stage1,predicted,winner_signals,beats_original,actual_band,actual_argmax,margin,margin_sems,scored_band,correct_band,scored,correct
+flickr_attr,nbr_label_entropy,0.7532,0.6724,nbr_label_entropy < 0.6724 => degree,augment,psi,centrality|degree|psi,True,tie (centrality|degree|psi),degree,0.0009,0.22,False,,True,False
+github,nbr_label_entropy,0.2907,0.6724,nbr_label_entropy < 0.6724 => degree,keep original,degree,degree|psi,True,tie (degree|psi),degree,0.0006,0.15,False,,True,True
+ppi_mouse,nbr_label_entropy,0.0483,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree,degree,True,degree,degree,0.0142,3.16,True,True,True,True
+squirrel,nbr_label_entropy,0.7351,0.6724,nbr_label_entropy < 0.6724 => degree,augment,psi,degree|psi,True,tie (degree|psi),degree,0.002,0.16,False,,True,False
+twitch_fr,nbr_label_entropy,0.8036,0.6724,nbr_label_entropy < 0.6724 => degree,augment,psi,degree|psi,True,tie (degree|psi),psi,0.0008,0.22,False,,True,True
+twitch_ru,nbr_label_entropy,0.6378,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree,degree|psi,True,tie (degree|psi),degree,0.0035,0.71,False,,True,True

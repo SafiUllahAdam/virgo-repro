@@ -1,0 +1,16 @@
+sim,property_a,property_b,n,spearman_rho,same_information
+psi,role_diversity,role_edge_enrichment,13,0.0714,False
+psi,role_diversity,original_retention,13,0.0879,False
+psi,role_diversity,vg_edge_ratio,13,0.4011,False
+psi,role_diversity,role_sampled_frac,13,-0.533,False
+psi,role_diversity,role_edge_overlap,13,-0.4341,False
+psi,role_edge_enrichment,original_retention,13,0.4011,False
+psi,role_edge_enrichment,vg_edge_ratio,13,0.4725,False
+psi,role_edge_enrichment,role_sampled_frac,13,-0.3626,False
+psi,role_edge_enrichment,role_edge_overlap,13,-0.2857,False
+psi,original_retention,vg_edge_ratio,13,-0.0659,False
+psi,original_retention,role_sampled_frac,13,-0.3242,False
+psi,original_retention,role_edge_overlap,13,0.489,False
+psi,vg_edge_ratio,role_sampled_frac,13,-0.1374,False
+psi,vg_edge_ratio,role_edge_overlap,13,-0.8242,False
+psi,role_sampled_frac,role_edge_overlap,13,0.1154,False
