@@ -11,7 +11,7 @@
 #   4  score the inner held-out edges by cosine, exactly as eval/linkpred does
 # The contrast probe(degree) - probe(psi) is then a per-graph number that needs no labels, no encoder and no threshold.
 # What it costs, stated because it is the same cost that retired the Module-4 gate: the role graphs must be BUILT (never
-# trained), so unlike homophily this is not readable off a dataset card. Building is not training (CLAUDE.md 7).
+# trained), so unlike homophily this is not readable off a dataset card. Building is not training (the pre-registration rule).
 # Status: FITTED ON NOTHING. The sign rule has no free parameter; the band is measured from repeated inner splits, not
 # from any outcome. Numbers and their price are in docs/paper_log.md 28.
 

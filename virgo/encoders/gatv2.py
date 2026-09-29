@@ -1,4 +1,4 @@
-'''GATv2 over the role graph - the attention alternative (CLAUDE.md phase 4, step 4).'''
+'''GATv2 over the role graph - the attention alternative.'''
 # GATv2 (Brody et al. 2022) fixes GAT's static attention: the scoring MLP is applied AFTER the concatenation, so the
 # ranking of neighbours can depend on the query node. Chosen over GAT deliberately - it is the harder baseline, so a
 # surviving augmentation win cannot be dismissed as beating a weak attention model.
