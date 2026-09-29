@@ -8,7 +8,7 @@
 #   2 degree resolution how many distinct degree values the graph offers the construction at all
 #   3 stability         how much the degree role graph changes when only the RNG seed changes
 #   4 divergence        how far the degree role graph sits from the psi one it is competing against
-# Every one of these needs the role graph BUILT, which is allowed - building is not training (CLAUDE.md 7) - but it does
+# Every one of these needs the role graph BUILT, which is allowed - building is not training (the pre-registration rule) - but it does
 # mean they cannot be read off a dataset the way the 15 can. That cost is real and is reported with any rule fitted here.
 
 import argparse

@@ -1,4 +1,4 @@
-'''GIN over the virtual graph - the expressive alternative (CLAUDE.md phase 4, step 3).'''
+'''GIN over the virtual graph - the expressive alternative.'''
 # GIN is sum-aggregation by definition (that is where its isomorphism power comes from), so ablation B's agg knob does not apply.
 # Per Xu et al. 2019: each layer is a 2-layer MLP over the summed neighbourhood, eps learned (train_eps=True).
 # SCAFFOLD: wired and registered, but no results have been produced with it yet.
