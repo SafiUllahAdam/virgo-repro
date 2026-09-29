@@ -1,0 +1,44 @@
+dataset,inner_seeds,degree_psi,degree_psi_sd,degree_rival,augment,signal_call,augment_call
+actor,1,0.009431,,0.009431,-0.03455,degree,keep original
+airports_brazil,1,-0.018464,,-0.018464,0.049191,psi,augment
+airports_europe,1,-0.00666,,-0.013308,0.114338,psi,augment
+airports_usa,1,-0.000238,,-0.046558,-0.030891,undetermined,keep original
+amazon_computers,1,-0.032278,,-0.036648,-0.013686,psi,keep original
+artnet_exp,1,0.010736,,-0.012163,-0.077947,degree,keep original
+bag_of_words_kos,1,-0.001476,,-0.004736,0.165832,undetermined,augment
+blogcatalog,1,-0.020843,,-0.027417,0.004889,psi,augment
+celegans_neural,1,-0.021889,,-0.030976,-0.073125,psi,keep original
+coauthor_cs,1,-0.007903,,-0.043928,-0.102155,psi,keep original
+coauthor_physics,1,-0.032768,,-0.074459,-0.093505,psi,keep original
+cora_full,1,0.035703,,0.00489,-0.083862,degree,keep original
+cora_ml,1,-0.009788,,-0.034803,-0.041117,psi,keep original
+crocodile,1,-0.037923,,-0.038926,0.291579,psi,augment
+dblp,1,0.07399,,0.047647,-0.088919,degree,keep original
+email_eu_core,1,0.004737,,-0.018418,0.020294,undetermined,augment
+escorts,1,0.038453,,0.000716,0.11665,degree,augment
+flickr_attr,1,0.00404,,-0.011249,0.318021,undetermined,augment
+foursquare_checkin,1,0.032251,,0.012255,-0.025177,degree,keep original
+foursquare_tips,1,0.101877,,0.101877,0.106574,degree,augment
+genius,1,-0.063952,,-0.063952,0.118942,psi,augment
+github,1,0.011999,,0.011999,0.146528,degree,augment
+lastfm_asia,1,0.014012,,-0.042507,-0.095747,degree,keep original
+messal_shale,1,-0.020169,,-0.033562,0.048923,psi,augment
+nematode_mammal,1,0.047638,,0.047638,0.007055,degree,augment
+penn94,1,-0.003654,,-0.003654,-0.038842,undetermined,keep original
+plant_pol_robertson,1,-0.006105,,-0.006105,0.147102,undetermined,augment
+polblogs,1,0.012019,,-0.017498,0.064758,degree,augment
+ppi_mouse,1,0.031327,,0.031327,0.128135,degree,augment
+ppi_rat,1,-0.13459,,-0.13459,0.08942,psi,augment
+pubmed,1,-0.048712,,-0.06958,0.070015,psi,augment
+questions,1,0.010476,,-0.005984,0.027897,degree,augment
+roman_empire,1,-0.001169,,-0.103112,0.066618,undetermined,augment
+squirrel,1,-0.021528,,-0.021528,0.005564,psi,augment
+squirrel_filtered,1,0.004062,,-0.023879,-0.08947,undetermined,keep original
+twitch_de,1,-0.002005,,-0.002005,0.188111,undetermined,augment
+twitch_engb,1,-0.005172,,-0.005172,0.019299,undetermined,augment
+twitch_es,1,0.000908,,0.000908,0.149254,undetermined,augment
+twitch_fr,1,0.00042,,0.00042,0.203349,undetermined,augment
+twitch_ptbr,1,-0.006093,,-0.014614,0.148832,undetermined,augment
+twitch_ru,1,0.00964,,0.00964,0.166919,degree,augment
+wiki_attr,1,-0.027843,,-0.027843,-0.01733,psi,keep original
+wikics,1,0.002869,,0.002511,0.01545,undetermined,augment

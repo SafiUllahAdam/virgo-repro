@@ -1,0 +1,19 @@
+property,tier,conditions,n_decided,rule1_correct,pair_correct,delta,loo_panel_accuracy,loo_panel_correct,loo_panel_folds,fixes,breaks,still_wrong,n_augment_calls,cells_moved
+rule 1 alone,frozen,homophily_adjusted < 0.227,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+avg_clustering,candidate (panel-fitted cut),avg_clustering < 0.5573,4,3,4,1,,0,0,chameleon_filtered,,,3,1
+degree_gini,candidate (panel-fitted cut),degree_gini > 0.0958,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+degree_skew,candidate (panel-fitted cut),degree_skew > -1.632,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+degree_assortativity,candidate (panel-fitted cut),degree_assortativity < 0.2968,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+avg_clustering + degree_gini,candidate (panel-fitted cut),avg_clustering < 0.5573 AND degree_gini > 0.0958,4,3,4,1,,0,0,chameleon_filtered,,,3,1
+avg_clustering + degree_skew,candidate (panel-fitted cut),avg_clustering < 0.5573 AND degree_skew > -1.632,4,3,4,1,,0,0,chameleon_filtered,,,3,1
+avg_clustering + degree_assortativity,candidate (panel-fitted cut),avg_clustering < 0.5573 AND degree_assortativity < 0.2968,4,3,4,1,,0,0,chameleon_filtered,,,3,1
+degree_gini + degree_skew,candidate (panel-fitted cut),degree_gini > 0.0958 AND degree_skew > -1.632,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+degree_gini + degree_assortativity,candidate (panel-fitted cut),degree_gini > 0.0958 AND degree_assortativity < 0.2968,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+degree_skew + degree_assortativity,candidate (panel-fitted cut),degree_skew > -1.632 AND degree_assortativity < 0.2968,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+nbr_predictability_adjusted + degree_gini,candidate (panel-fitted cut),nbr_predictability_adjusted < 0.0605 AND degree_gini > 0.0958,4,3,2,-1,,0,0,chameleon_filtered,"cornell5, johnshopkins55","cornell5, johnshopkins55",1,3
+nbr_predictability_adjusted + degree_skew,candidate (panel-fitted cut),nbr_predictability_adjusted < 0.0605 AND degree_skew > -1.632,4,3,2,-1,,0,0,chameleon_filtered,"cornell5, johnshopkins55","cornell5, johnshopkins55",1,3
+nbr_predictability_adjusted + degree_assortativity,candidate (panel-fitted cut),nbr_predictability_adjusted < 0.0605 AND degree_assortativity < 0.2968,4,3,2,-1,,0,0,chameleon_filtered,"cornell5, johnshopkins55","cornell5, johnshopkins55",1,3
+degree_gini + nodes,candidate (panel-fitted cut),degree_gini > 0.0958 AND nodes < 23577.0,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+degree_skew + nodes,candidate (panel-fitted cut),degree_skew > -1.632 AND nodes < 23577.0,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+degree_assortativity + nodes,candidate (panel-fitted cut),degree_assortativity < 0.2968 AND nodes < 23577.0,4,3,3,0,,0,0,,,chameleon_filtered,4,0
+original_retention,frozen gate (needs the role graph BUILT),original_retention < 0.0119,4,3,3,0,,0,0,chameleon_filtered,reed98,reed98,2,2

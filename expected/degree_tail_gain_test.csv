@@ -1,0 +1,2 @@
+n_winners,n_others,mean_rho_winners,mean_rho_others,group_gap,p_permutation,a_winners_negative,b_others_not_negative,c_consistent,c_met,VERIFIED
+9,30,0.183132,0.159535,0.023597,0.67335,False,True,2/9,False,False

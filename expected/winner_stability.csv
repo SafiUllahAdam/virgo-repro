@@ -1,0 +1,9 @@
+dataset,n_seeds,n_subsets,full_pool_winner,published_3seed_winner,modal_3seed_winner,modal_frac,flip_rate,distinct_winners,published_matches_full,winner_distribution
+foursquare_checkin,10,120,degree|psi,degree|psi,degree|psi,0.4417,0.5583,6,True,degree|psi:53 degree:30 centrality|degree|psi:16 psi:13 centrality|psi:6
+bag_of_words_kos,10,120,degree|psi,degree,degree|psi,0.6833,0.3167,3,False,degree|psi:82 psi:21 degree:17
+artnet_exp,10,120,degree,degree,degree,0.9167,0.0833,2,True,degree:110 degree|psi:10
+plant_pol_robertson,10,120,psi,psi,psi,0.925,0.075,2,True,psi:111 degree|psi:9
+nematode_mammal,10,120,degree,degree,degree,0.95,0.05,2,True,degree:114 centrality|degree:6
+foursquare_tips,10,120,degree,degree,degree,1.0,0.0,1,True,degree:120
+ppi_mouse,10,120,degree,degree,degree,1.0,0.0,1,True,degree:120
+ppi_rat,10,120,psi,psi,psi,1.0,0.0,1,True,psi:120

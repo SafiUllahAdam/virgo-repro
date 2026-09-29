@@ -1,0 +1,5 @@
+dataset,version,task,metric,mean,std,delta,n
+cora,orig,nodeclass,micro_f1,0.7183271832718328,,0.0,1
+cora,orig,nodeclass,macro_f1,0.7038476967843293,,0.0,1
+cora,orig,nodeclass,weighted_f1,0.7159523319145803,,0.0,1
+cora,orig,linkpred,auc,0.8143194488210418,,0.0,1

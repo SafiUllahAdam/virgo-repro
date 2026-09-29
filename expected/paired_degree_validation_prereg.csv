@@ -1,0 +1,181 @@
+contrast,predictor,tier,rule,threshold,degree_side,dataset,value,predicted
+degree_vs_rest,degree_skew,exploratory,use degree when degree_skew is high (> 13.4028),13.4028,high,cora_full,7.8749,not degree
+degree_vs_rest,degree_skew,exploratory,use degree when degree_skew is high (> 13.4028),13.4028,high,crocodile,16.1619,degree
+degree_vs_rest,degree_skew,exploratory,use degree when degree_skew is high (> 13.4028),13.4028,high,genius,106.192,degree
+degree_vs_rest,degree_skew,exploratory,use degree when degree_skew is high (> 13.4028),13.4028,high,penn94,14.3463,degree
+degree_vs_rest,degree_skew,exploratory,use degree when degree_skew is high (> 13.4028),13.4028,high,twitch_gamers,42.3749,degree
+degree_vs_rest,degree_skew,exploratory,use degree when degree_skew is high (> 13.4028),13.4028,high,wiki_attr,7.7776,not degree
+degree_vs_rest,homophily_adjusted,primary,use degree when homophily_adjusted is low (< -0.0605),-0.0605,low,cora_full,0.5558,not degree
+degree_vs_rest,homophily_adjusted,primary,use degree when homophily_adjusted is low (< -0.0605),-0.0605,low,crocodile,0.0154,not degree
+degree_vs_rest,homophily_adjusted,primary,use degree when homophily_adjusted is low (< -0.0605),-0.0605,low,genius,-0.0527,not degree
+degree_vs_rest,homophily_adjusted,primary,use degree when homophily_adjusted is low (< -0.0605),-0.0605,low,penn94,0.0209,not degree
+degree_vs_rest,homophily_adjusted,primary,use degree when homophily_adjusted is low (< -0.0605),-0.0605,low,twitch_gamers,0.0899,not degree
+degree_vs_rest,homophily_adjusted,primary,use degree when homophily_adjusted is low (< -0.0605),-0.0605,low,wiki_attr,0.564,not degree
+degree_vs_rest,avg_degree,primary,use degree when avg_degree is low (< 7.1549),7.1549,low,cora_full,6.4084,degree
+degree_vs_rest,avg_degree,primary,use degree when avg_degree is low (< 7.1549),7.1549,low,crocodile,29.3651,not degree
+degree_vs_rest,avg_degree,primary,use degree when avg_degree is low (< 7.1549),7.1549,low,genius,4.3742,degree
+degree_vs_rest,avg_degree,primary,use degree when avg_degree is low (< 7.1549),7.1549,low,penn94,65.5643,not degree
+degree_vs_rest,avg_degree,primary,use degree when avg_degree is low (< 7.1549),7.1549,low,twitch_gamers,80.8684,not degree
+degree_vs_rest,avg_degree,primary,use degree when avg_degree is low (< 7.1549),7.1549,low,wiki_attr,9.6432,not degree
+degree_vs_rest,avg_clustering,primary,use degree when avg_clustering is low (< 0.0454),0.0454,low,cora_full,0.2607,not degree
+degree_vs_rest,avg_clustering,primary,use degree when avg_clustering is low (< 0.0454),0.0454,low,crocodile,0.3365,not degree
+degree_vs_rest,avg_clustering,primary,use degree when avg_clustering is low (< 0.0454),0.0454,low,genius,0.0281,degree
+degree_vs_rest,avg_clustering,primary,use degree when avg_clustering is low (< 0.0454),0.0454,low,penn94,0.2117,not degree
+degree_vs_rest,avg_clustering,primary,use degree when avg_clustering is low (< 0.0454),0.0454,low,twitch_gamers,0.1599,not degree
+degree_vs_rest,avg_clustering,primary,use degree when avg_clustering is low (< 0.0454),0.0454,low,wiki_attr,0.3758,not degree
+degree_vs_rest,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is low (< -0.0007),-0.0007,low,cora_full,0.6569,not degree
+degree_vs_rest,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is low (< -0.0007),-0.0007,low,crocodile,0.1379,not degree
+degree_vs_rest,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is low (< -0.0007),-0.0007,low,genius,-0.0028,degree
+degree_vs_rest,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is low (< -0.0007),-0.0007,low,penn94,0.1152,not degree
+degree_vs_rest,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is low (< -0.0007),-0.0007,low,twitch_gamers,0.2155,not degree
+degree_vs_rest,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is low (< -0.0007),-0.0007,low,wiki_attr,0.6599,not degree
+degree_vs_rest,density,exploratory,use degree when density is low (< 0.0002),0.0002,low,cora_full,0.000324,not degree
+degree_vs_rest,density,exploratory,use degree when density is low (< 0.0002),0.0002,low,crocodile,0.002525,not degree
+degree_vs_rest,density,exploratory,use degree when density is low (< 0.0002),0.0002,low,genius,1e-05,degree
+degree_vs_rest,density,exploratory,use degree when density is low (< 0.0002),0.0002,low,penn94,0.001578,not degree
+degree_vs_rest,density,exploratory,use degree when density is low (< 0.0002),0.0002,low,twitch_gamers,0.000481,not degree
+degree_vs_rest,density,exploratory,use degree when density is low (< 0.0002),0.0002,low,wiki_attr,0.004011,not degree
+degree_vs_rest,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.0853),0.0853,low,cora_full,0.1285,not degree
+degree_vs_rest,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.0853),0.0853,low,crocodile,0.5581,not degree
+degree_vs_rest,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.0853),0.0853,low,genius,0.1734,not degree
+degree_vs_rest,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.0853),0.0853,low,penn94,0.8891,not degree
+degree_vs_rest,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.0853),0.0853,low,twitch_gamers,0.8647,not degree
+degree_vs_rest,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.0853),0.0853,low,wiki_attr,0.2219,not degree
+degree_vs_rest,majority_class_frac,exploratory,use degree when majority_class_frac is high (> 0.876),0.876,high,cora_full,0.0469,not degree
+degree_vs_rest,majority_class_frac,exploratory,use degree when majority_class_frac is high (> 0.876),0.876,high,crocodile,0.2119,not degree
+degree_vs_rest,majority_class_frac,exploratory,use degree when majority_class_frac is high (> 0.876),0.876,high,genius,0.8001,not degree
+degree_vs_rest,majority_class_frac,exploratory,use degree when majority_class_frac is high (> 0.876),0.876,high,penn94,0.5265,not degree
+degree_vs_rest,majority_class_frac,exploratory,use degree when majority_class_frac is high (> 0.876),0.876,high,twitch_gamers,0.5299,not degree
+degree_vs_rest,majority_class_frac,exploratory,use degree when majority_class_frac is high (> 0.876),0.876,high,wiki_attr,0.1688,not degree
+degree_vs_rest,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.2511),-0.2511,low,cora_full,-0.045,not degree
+degree_vs_rest,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.2511),-0.2511,low,crocodile,-0.2766,degree
+degree_vs_rest,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.2511),-0.2511,low,genius,-0.1025,not degree
+degree_vs_rest,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.2511),-0.2511,low,penn94,-0.0013,not degree
+degree_vs_rest,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.2511),-0.2511,low,twitch_gamers,-0.0869,not degree
+degree_vs_rest,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.2511),-0.2511,low,wiki_attr,-0.094,not degree
+degree_vs_rest,nodes,exploratory,use degree when nodes is high (> 43310.5),43310.5,high,cora_full,19793.0,not degree
+degree_vs_rest,nodes,exploratory,use degree when nodes is high (> 43310.5),43310.5,high,crocodile,11631.0,not degree
+degree_vs_rest,nodes,exploratory,use degree when nodes is high (> 43310.5),43310.5,high,genius,421961.0,degree
+degree_vs_rest,nodes,exploratory,use degree when nodes is high (> 43310.5),43310.5,high,penn94,41554.0,not degree
+degree_vs_rest,nodes,exploratory,use degree when nodes is high (> 43310.5),43310.5,high,twitch_gamers,168114.0,degree
+degree_vs_rest,nodes,exploratory,use degree when nodes is high (> 43310.5),43310.5,high,wiki_attr,2405.0,not degree
+degree_vs_rest,degree_gini,exploratory,use degree when degree_gini is high (> 0.7391),0.7391,high,cora_full,0.5111,not degree
+degree_vs_rest,degree_gini,exploratory,use degree when degree_gini is high (> 0.7391),0.7391,high,crocodile,0.6563,not degree
+degree_vs_rest,degree_gini,exploratory,use degree when degree_gini is high (> 0.7391),0.7391,high,genius,0.7215,not degree
+degree_vs_rest,degree_gini,exploratory,use degree when degree_gini is high (> 0.7391),0.7391,high,penn94,0.4892,not degree
+degree_vs_rest,degree_gini,exploratory,use degree when degree_gini is high (> 0.7391),0.7391,high,twitch_gamers,0.6809,not degree
+degree_vs_rest,degree_gini,exploratory,use degree when degree_gini is high (> 0.7391),0.7391,high,wiki_attr,0.53,not degree
+degree_vs_rest,n_classes,primary,use degree when n_classes is high (> 30.0),30.0,high,cora_full,70.0,degree
+degree_vs_rest,n_classes,primary,use degree when n_classes is high (> 30.0),30.0,high,crocodile,5.0,not degree
+degree_vs_rest,n_classes,primary,use degree when n_classes is high (> 30.0),30.0,high,genius,2.0,not degree
+degree_vs_rest,n_classes,primary,use degree when n_classes is high (> 30.0),30.0,high,penn94,2.0,not degree
+degree_vs_rest,n_classes,primary,use degree when n_classes is high (> 30.0),30.0,high,twitch_gamers,2.0,not degree
+degree_vs_rest,n_classes,primary,use degree when n_classes is high (> 30.0),30.0,high,wiki_attr,17.0,not degree
+degree_vs_rest,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.127),0.127,low,cora_full,0.567,not degree
+degree_vs_rest,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.127),0.127,low,crocodile,0.2288,not degree
+degree_vs_rest,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.127),0.127,low,genius,0.5932,not degree
+degree_vs_rest,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.127),0.127,low,penn94,0.5106,not degree
+degree_vs_rest,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.127),0.127,low,twitch_gamers,0.5453,not degree
+degree_vs_rest,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.127),0.127,low,wiki_attr,0.6097,not degree
+degree_vs_rest,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.8934),0.8934,low,cora_full,0.9498,not degree
+degree_vs_rest,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.8934),0.8934,low,crocodile,1.0,not degree
+degree_vs_rest,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.8934),0.8934,low,genius,0.9998,not degree
+degree_vs_rest,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.8934),0.8934,low,penn94,0.9996,not degree
+degree_vs_rest,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.8934),0.8934,low,twitch_gamers,1.0,not degree
+degree_vs_rest,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.8934),0.8934,low,wiki_attr,0.98,not degree
+degree_vs_rest,components,primary,use degree when components is high (> 291.0),291.0,high,cora_full,364.0,degree
+degree_vs_rest,components,primary,use degree when components is high (> 291.0),291.0,high,crocodile,1.0,not degree
+degree_vs_rest,components,primary,use degree when components is high (> 291.0),291.0,high,genius,100.0,not degree
+degree_vs_rest,components,primary,use degree when components is high (> 291.0),291.0,high,penn94,10.0,not degree
+degree_vs_rest,components,primary,use degree when components is high (> 291.0),291.0,high,twitch_gamers,1.0,not degree
+degree_vs_rest,components,primary,use degree when components is high (> 291.0),291.0,high,wiki_attr,45.0,not degree
+degree_vs_psi,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.6724),0.6724,low,cora_full,0.1285,degree
+degree_vs_psi,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.6724),0.6724,low,crocodile,0.5581,degree
+degree_vs_psi,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.6724),0.6724,low,genius,0.1734,degree
+degree_vs_psi,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.6724),0.6724,low,penn94,0.8891,psi
+degree_vs_psi,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.6724),0.6724,low,twitch_gamers,0.8647,psi
+degree_vs_psi,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.6724),0.6724,low,wiki_attr,0.2219,degree
+degree_vs_psi,degree_skew,exploratory,use degree when degree_skew is high (> 11.1576),11.1576,high,cora_full,7.8749,psi
+degree_vs_psi,degree_skew,exploratory,use degree when degree_skew is high (> 11.1576),11.1576,high,crocodile,16.1619,degree
+degree_vs_psi,degree_skew,exploratory,use degree when degree_skew is high (> 11.1576),11.1576,high,genius,106.192,degree
+degree_vs_psi,degree_skew,exploratory,use degree when degree_skew is high (> 11.1576),11.1576,high,penn94,14.3463,degree
+degree_vs_psi,degree_skew,exploratory,use degree when degree_skew is high (> 11.1576),11.1576,high,twitch_gamers,42.3749,degree
+degree_vs_psi,degree_skew,exploratory,use degree when degree_skew is high (> 11.1576),11.1576,high,wiki_attr,7.7776,psi
+degree_vs_psi,homophily_adjusted,primary,use degree when homophily_adjusted is low (< 0.0889),0.0889,low,cora_full,0.5558,psi
+degree_vs_psi,homophily_adjusted,primary,use degree when homophily_adjusted is low (< 0.0889),0.0889,low,crocodile,0.0154,degree
+degree_vs_psi,homophily_adjusted,primary,use degree when homophily_adjusted is low (< 0.0889),0.0889,low,genius,-0.0527,degree
+degree_vs_psi,homophily_adjusted,primary,use degree when homophily_adjusted is low (< 0.0889),0.0889,low,penn94,0.0209,degree
+degree_vs_psi,homophily_adjusted,primary,use degree when homophily_adjusted is low (< 0.0889),0.0889,low,twitch_gamers,0.0899,psi
+degree_vs_psi,homophily_adjusted,primary,use degree when homophily_adjusted is low (< 0.0889),0.0889,low,wiki_attr,0.564,psi
+degree_vs_psi,density,exploratory,use degree when density is low (< 0.003),0.003,low,cora_full,0.000324,degree
+degree_vs_psi,density,exploratory,use degree when density is low (< 0.003),0.003,low,crocodile,0.002525,degree
+degree_vs_psi,density,exploratory,use degree when density is low (< 0.003),0.003,low,genius,1e-05,degree
+degree_vs_psi,density,exploratory,use degree when density is low (< 0.003),0.003,low,penn94,0.001578,degree
+degree_vs_psi,density,exploratory,use degree when density is low (< 0.003),0.003,low,twitch_gamers,0.000481,degree
+degree_vs_psi,density,exploratory,use degree when density is low (< 0.003),0.003,low,wiki_attr,0.004011,psi
+degree_vs_psi,n_classes,primary,use degree when n_classes is high (> 3.0),3.0,high,cora_full,70.0,degree
+degree_vs_psi,n_classes,primary,use degree when n_classes is high (> 3.0),3.0,high,crocodile,5.0,degree
+degree_vs_psi,n_classes,primary,use degree when n_classes is high (> 3.0),3.0,high,genius,2.0,psi
+degree_vs_psi,n_classes,primary,use degree when n_classes is high (> 3.0),3.0,high,penn94,2.0,psi
+degree_vs_psi,n_classes,primary,use degree when n_classes is high (> 3.0),3.0,high,twitch_gamers,2.0,psi
+degree_vs_psi,n_classes,primary,use degree when n_classes is high (> 3.0),3.0,high,wiki_attr,17.0,degree
+degree_vs_psi,avg_degree,primary,use degree when avg_degree is low (< 17.7328),17.7328,low,cora_full,6.4084,degree
+degree_vs_psi,avg_degree,primary,use degree when avg_degree is low (< 17.7328),17.7328,low,crocodile,29.3651,psi
+degree_vs_psi,avg_degree,primary,use degree when avg_degree is low (< 17.7328),17.7328,low,genius,4.3742,degree
+degree_vs_psi,avg_degree,primary,use degree when avg_degree is low (< 17.7328),17.7328,low,penn94,65.5643,psi
+degree_vs_psi,avg_degree,primary,use degree when avg_degree is low (< 17.7328),17.7328,low,twitch_gamers,80.8684,psi
+degree_vs_psi,avg_degree,primary,use degree when avg_degree is low (< 17.7328),17.7328,low,wiki_attr,9.6432,degree
+degree_vs_psi,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is high (> -0.1658),-0.1658,high,cora_full,0.6569,degree
+degree_vs_psi,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is high (> -0.1658),-0.1658,high,crocodile,0.1379,degree
+degree_vs_psi,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is high (> -0.1658),-0.1658,high,genius,-0.0028,degree
+degree_vs_psi,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is high (> -0.1658),-0.1658,high,penn94,0.1152,degree
+degree_vs_psi,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is high (> -0.1658),-0.1658,high,twitch_gamers,0.2155,degree
+degree_vs_psi,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is high (> -0.1658),-0.1658,high,wiki_attr,0.6599,degree
+degree_vs_psi,components,primary,use degree when components is high (> 157.5),157.5,high,cora_full,364.0,degree
+degree_vs_psi,components,primary,use degree when components is high (> 157.5),157.5,high,crocodile,1.0,psi
+degree_vs_psi,components,primary,use degree when components is high (> 157.5),157.5,high,genius,100.0,psi
+degree_vs_psi,components,primary,use degree when components is high (> 157.5),157.5,high,penn94,10.0,psi
+degree_vs_psi,components,primary,use degree when components is high (> 157.5),157.5,high,twitch_gamers,1.0,psi
+degree_vs_psi,components,primary,use degree when components is high (> 157.5),157.5,high,wiki_attr,45.0,psi
+degree_vs_psi,avg_clustering,primary,use degree when avg_clustering is low (< 0.1013),0.1013,low,cora_full,0.2607,psi
+degree_vs_psi,avg_clustering,primary,use degree when avg_clustering is low (< 0.1013),0.1013,low,crocodile,0.3365,psi
+degree_vs_psi,avg_clustering,primary,use degree when avg_clustering is low (< 0.1013),0.1013,low,genius,0.0281,degree
+degree_vs_psi,avg_clustering,primary,use degree when avg_clustering is low (< 0.1013),0.1013,low,penn94,0.2117,psi
+degree_vs_psi,avg_clustering,primary,use degree when avg_clustering is low (< 0.1013),0.1013,low,twitch_gamers,0.1599,psi
+degree_vs_psi,avg_clustering,primary,use degree when avg_clustering is low (< 0.1013),0.1013,low,wiki_attr,0.3758,psi
+degree_vs_psi,degree_gini,exploratory,use degree when degree_gini is low (< 0.619),0.619,low,cora_full,0.5111,degree
+degree_vs_psi,degree_gini,exploratory,use degree when degree_gini is low (< 0.619),0.619,low,crocodile,0.6563,psi
+degree_vs_psi,degree_gini,exploratory,use degree when degree_gini is low (< 0.619),0.619,low,genius,0.7215,psi
+degree_vs_psi,degree_gini,exploratory,use degree when degree_gini is low (< 0.619),0.619,low,penn94,0.4892,degree
+degree_vs_psi,degree_gini,exploratory,use degree when degree_gini is low (< 0.619),0.619,low,twitch_gamers,0.6809,psi
+degree_vs_psi,degree_gini,exploratory,use degree when degree_gini is low (< 0.619),0.619,low,wiki_attr,0.53,degree
+degree_vs_psi,majority_class_frac,exploratory,use degree when majority_class_frac is low (< 0.5751),0.5751,low,cora_full,0.0469,degree
+degree_vs_psi,majority_class_frac,exploratory,use degree when majority_class_frac is low (< 0.5751),0.5751,low,crocodile,0.2119,degree
+degree_vs_psi,majority_class_frac,exploratory,use degree when majority_class_frac is low (< 0.5751),0.5751,low,genius,0.8001,psi
+degree_vs_psi,majority_class_frac,exploratory,use degree when majority_class_frac is low (< 0.5751),0.5751,low,penn94,0.5265,degree
+degree_vs_psi,majority_class_frac,exploratory,use degree when majority_class_frac is low (< 0.5751),0.5751,low,twitch_gamers,0.5299,degree
+degree_vs_psi,majority_class_frac,exploratory,use degree when majority_class_frac is low (< 0.5751),0.5751,low,wiki_attr,0.1688,degree
+degree_vs_psi,nodes,exploratory,use degree when nodes is high (> 6161.0),6161.0,high,cora_full,19793.0,degree
+degree_vs_psi,nodes,exploratory,use degree when nodes is high (> 6161.0),6161.0,high,crocodile,11631.0,degree
+degree_vs_psi,nodes,exploratory,use degree when nodes is high (> 6161.0),6161.0,high,genius,421961.0,degree
+degree_vs_psi,nodes,exploratory,use degree when nodes is high (> 6161.0),6161.0,high,penn94,41554.0,degree
+degree_vs_psi,nodes,exploratory,use degree when nodes is high (> 6161.0),6161.0,high,twitch_gamers,168114.0,degree
+degree_vs_psi,nodes,exploratory,use degree when nodes is high (> 6161.0),6161.0,high,wiki_attr,2405.0,psi
+degree_vs_psi,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9865),0.9865,low,cora_full,0.9498,degree
+degree_vs_psi,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9865),0.9865,low,crocodile,1.0,psi
+degree_vs_psi,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9865),0.9865,low,genius,0.9998,psi
+degree_vs_psi,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9865),0.9865,low,penn94,0.9996,psi
+degree_vs_psi,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9865),0.9865,low,twitch_gamers,1.0,psi
+degree_vs_psi,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9865),0.9865,low,wiki_attr,0.98,degree
+degree_vs_psi,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.1185),-0.1185,low,cora_full,-0.045,psi
+degree_vs_psi,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.1185),-0.1185,low,crocodile,-0.2766,degree
+degree_vs_psi,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.1185),-0.1185,low,genius,-0.1025,psi
+degree_vs_psi,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.1185),-0.1185,low,penn94,-0.0013,psi
+degree_vs_psi,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.1185),-0.1185,low,twitch_gamers,-0.0869,psi
+degree_vs_psi,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.1185),-0.1185,low,wiki_attr,-0.094,psi
+degree_vs_psi,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.568),0.568,low,cora_full,0.567,degree
+degree_vs_psi,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.568),0.568,low,crocodile,0.2288,degree
+degree_vs_psi,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.568),0.568,low,genius,0.5932,psi
+degree_vs_psi,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.568),0.568,low,penn94,0.5106,degree
+degree_vs_psi,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.568),0.568,low,twitch_gamers,0.5453,degree
+degree_vs_psi,edge_homophily,exploratory,use degree when edge_homophily is low (< 0.568),0.568,low,wiki_attr,0.6097,psi

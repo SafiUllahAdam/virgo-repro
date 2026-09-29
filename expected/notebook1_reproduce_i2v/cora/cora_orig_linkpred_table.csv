@@ -1,0 +1,2 @@
+metric,task,dataset,version,seed_42,mean,std,delta,final_score
+auc,linkpred,cora,orig,0.8143194488210418,0.8143194488210418,,0.0,0.8143 ± nan

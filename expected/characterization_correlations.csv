@@ -1,0 +1,103 @@
+scope,task_family,predictor,tier,target,n,spearman_rho,p_value,p_bonferroni,survives_correction
+graph property -> augmentation gap,link prediction,homophily_adjusted,primary,gap_rel,5,-0.9,0.0374,0.2618,False
+graph property -> augmentation gap,link prediction,homophily_adjusted,primary,gap_fixed_rel,5,-1.0,0.0167,0.1169,False
+graph property -> augmentation gap,link prediction,nbr_predictability_adjusted,primary,gap_rel,5,-0.7,0.1881,1.0,False
+graph property -> augmentation gap,link prediction,nbr_predictability_adjusted,primary,gap_fixed_rel,5,-0.6,0.2848,1.0,False
+graph property -> augmentation gap,link prediction,components,primary,gap_rel,6,-0.7775,0.0687,0.4809,False
+graph property -> augmentation gap,link prediction,components,primary,gap_fixed_rel,6,-0.7775,0.0687,0.4809,False
+graph property -> augmentation gap,link prediction,largest_component_frac,primary,gap_rel,6,0.7775,0.0687,0.4809,False
+graph property -> augmentation gap,link prediction,largest_component_frac,primary,gap_fixed_rel,6,0.7775,0.0687,0.4809,False
+graph property -> augmentation gap,link prediction,avg_degree,primary,gap_rel,6,0.4857,0.3287,1.0,False
+graph property -> augmentation gap,link prediction,avg_degree,primary,gap_fixed_rel,6,0.3143,0.5441,1.0,False
+graph property -> augmentation gap,link prediction,avg_clustering,primary,gap_rel,6,0.0857,0.8717,1.0,False
+graph property -> augmentation gap,link prediction,avg_clustering,primary,gap_fixed_rel,6,0.2,0.704,1.0,False
+graph property -> augmentation gap,link prediction,n_classes,primary,gap_rel,6,-0.6088,0.1997,1.0,False
+graph property -> augmentation gap,link prediction,n_classes,primary,gap_fixed_rel,6,-0.4058,0.4247,1.0,False
+graph property -> augmentation gap,link prediction,edge_homophily,exploratory,gap_rel,5,0.0,1.0,,False
+graph property -> augmentation gap,link prediction,edge_homophily,exploratory,gap_fixed_rel,5,-0.4,0.5046,,False
+graph property -> augmentation gap,link prediction,nbr_label_entropy,exploratory,gap_rel,5,0.1,0.8729,,False
+graph property -> augmentation gap,link prediction,nbr_label_entropy,exploratory,gap_fixed_rel,5,0.2,0.7471,,False
+graph property -> augmentation gap,link prediction,density,exploratory,gap_rel,6,0.058,0.9131,,False
+graph property -> augmentation gap,link prediction,density,exploratory,gap_fixed_rel,6,0.058,0.9131,,False
+graph property -> augmentation gap,link prediction,degree_gini,exploratory,gap_rel,6,0.4857,0.3287,,False
+graph property -> augmentation gap,link prediction,degree_gini,exploratory,gap_fixed_rel,6,0.2571,0.6228,,False
+graph property -> augmentation gap,link prediction,degree_skew,exploratory,gap_rel,6,-0.0286,0.9572,,False
+graph property -> augmentation gap,link prediction,degree_skew,exploratory,gap_fixed_rel,6,-0.2,0.704,,False
+graph property -> augmentation gap,link prediction,degree_assortativity,exploratory,gap_rel,6,-0.0857,0.8717,,False
+graph property -> augmentation gap,link prediction,degree_assortativity,exploratory,gap_fixed_rel,6,0.0857,0.8717,,False
+graph property -> augmentation gap,link prediction,majority_class_frac,exploratory,gap_rel,5,0.4,0.5046,,False
+graph property -> augmentation gap,link prediction,majority_class_frac,exploratory,gap_fixed_rel,5,0.0,1.0,,False
+graph property -> augmentation gap,link prediction,nodes,exploratory,gap_rel,6,0.3714,0.4685,,False
+graph property -> augmentation gap,link prediction,nodes,exploratory,gap_fixed_rel,6,0.3143,0.5441,,False
+graph property -> augmentation gap,node classification,homophily_adjusted,primary,gap_rel,5,-0.3,0.6238,1.0,False
+graph property -> augmentation gap,node classification,homophily_adjusted,primary,gap_fixed_rel,5,-0.3,0.6238,1.0,False
+graph property -> augmentation gap,node classification,nbr_predictability_adjusted,primary,gap_rel,5,-0.5,0.391,1.0,False
+graph property -> augmentation gap,node classification,nbr_predictability_adjusted,primary,gap_fixed_rel,5,-0.5,0.391,1.0,False
+graph property -> augmentation gap,node classification,components,primary,gap_rel,5,0.2236,0.7177,1.0,False
+graph property -> augmentation gap,node classification,components,primary,gap_fixed_rel,5,0.2236,0.7177,1.0,False
+graph property -> augmentation gap,node classification,largest_component_frac,primary,gap_rel,5,-0.2236,0.7177,1.0,False
+graph property -> augmentation gap,node classification,largest_component_frac,primary,gap_fixed_rel,5,-0.2236,0.7177,1.0,False
+graph property -> augmentation gap,node classification,avg_degree,primary,gap_rel,5,0.2,0.7471,1.0,False
+graph property -> augmentation gap,node classification,avg_degree,primary,gap_fixed_rel,5,0.2,0.7471,1.0,False
+graph property -> augmentation gap,node classification,avg_clustering,primary,gap_rel,5,0.6,0.2848,1.0,False
+graph property -> augmentation gap,node classification,avg_clustering,primary,gap_fixed_rel,5,0.6,0.2848,1.0,False
+graph property -> augmentation gap,node classification,n_classes,primary,gap_rel,5,-0.5,0.391,1.0,False
+graph property -> augmentation gap,node classification,n_classes,primary,gap_fixed_rel,5,-0.5,0.391,1.0,False
+graph property -> augmentation gap,node classification,edge_homophily,exploratory,gap_rel,5,-0.1,0.8729,,False
+graph property -> augmentation gap,node classification,edge_homophily,exploratory,gap_fixed_rel,5,-0.1,0.8729,,False
+graph property -> augmentation gap,node classification,nbr_label_entropy,exploratory,gap_rel,5,0.8,0.1041,,False
+graph property -> augmentation gap,node classification,nbr_label_entropy,exploratory,gap_fixed_rel,5,0.8,0.1041,,False
+graph property -> augmentation gap,node classification,density,exploratory,gap_rel,5,0.1,0.8729,,False
+graph property -> augmentation gap,node classification,density,exploratory,gap_fixed_rel,5,0.1,0.8729,,False
+graph property -> augmentation gap,node classification,degree_gini,exploratory,gap_rel,5,-0.1,0.8729,,False
+graph property -> augmentation gap,node classification,degree_gini,exploratory,gap_fixed_rel,5,-0.1,0.8729,,False
+graph property -> augmentation gap,node classification,degree_skew,exploratory,gap_rel,5,-0.5,0.391,,False
+graph property -> augmentation gap,node classification,degree_skew,exploratory,gap_fixed_rel,5,-0.5,0.391,,False
+graph property -> augmentation gap,node classification,degree_assortativity,exploratory,gap_rel,5,0.3,0.6238,,False
+graph property -> augmentation gap,node classification,degree_assortativity,exploratory,gap_fixed_rel,5,0.3,0.6238,,False
+graph property -> augmentation gap,node classification,majority_class_frac,exploratory,gap_rel,5,0.6,0.2848,,False
+graph property -> augmentation gap,node classification,majority_class_frac,exploratory,gap_fixed_rel,5,0.6,0.2848,,False
+graph property -> augmentation gap,node classification,nodes,exploratory,gap_rel,5,0.2,0.7471,,False
+graph property -> augmentation gap,node classification,nodes,exploratory,gap_fixed_rel,5,0.2,0.7471,,False
+graph property -> augmentation gap,pooled,homophily_adjusted,primary,gap_rel,10,-0.5522,0.0979,0.6853,False
+graph property -> augmentation gap,pooled,homophily_adjusted,primary,gap_fixed_rel,10,-0.5706,0.085,0.595,False
+graph property -> augmentation gap,pooled,nbr_predictability_adjusted,primary,gap_rel,10,-0.6626,0.0368,0.2576,False
+graph property -> augmentation gap,pooled,nbr_predictability_adjusted,primary,gap_fixed_rel,10,-0.6442,0.0444,0.3108,False
+graph property -> augmentation gap,pooled,components,primary,gap_rel,11,-0.3814,0.2471,1.0,False
+graph property -> augmentation gap,pooled,components,primary,gap_fixed_rel,11,-0.3814,0.2471,1.0,False
+graph property -> augmentation gap,pooled,largest_component_frac,primary,gap_rel,11,0.3814,0.2471,1.0,False
+graph property -> augmentation gap,pooled,largest_component_frac,primary,gap_fixed_rel,11,0.3814,0.2471,1.0,False
+graph property -> augmentation gap,pooled,avg_degree,primary,gap_rel,11,0.3716,0.2605,1.0,False
+graph property -> augmentation gap,pooled,avg_degree,primary,gap_fixed_rel,11,0.3211,0.3356,1.0,False
+graph property -> augmentation gap,pooled,avg_clustering,primary,gap_rel,11,0.2982,0.3731,1.0,False
+graph property -> augmentation gap,pooled,avg_clustering,primary,gap_fixed_rel,11,0.3395,0.3071,1.0,False
+graph property -> augmentation gap,pooled,n_classes,primary,gap_rel,11,-0.6329,0.0366,0.2562,False
+graph property -> augmentation gap,pooled,n_classes,primary,gap_fixed_rel,11,-0.5728,0.0655,0.4585,False
+graph property -> augmentation gap,pooled,edge_homophily,exploratory,gap_rel,10,-0.0614,0.8663,,False
+graph property -> augmentation gap,pooled,edge_homophily,exploratory,gap_fixed_rel,10,-0.1657,0.6474,,False
+graph property -> augmentation gap,pooled,nbr_label_entropy,exploratory,gap_rel,10,0.4049,0.2457,,False
+graph property -> augmentation gap,pooled,nbr_label_entropy,exploratory,gap_fixed_rel,10,0.4356,0.2083,,False
+graph property -> augmentation gap,pooled,density,exploratory,gap_rel,11,0.194,0.5676,,False
+graph property -> augmentation gap,pooled,density,exploratory,gap_fixed_rel,11,0.194,0.5676,,False
+graph property -> augmentation gap,pooled,degree_gini,exploratory,gap_rel,11,0.3165,0.343,,False
+graph property -> augmentation gap,pooled,degree_gini,exploratory,gap_fixed_rel,11,0.2477,0.4627,,False
+graph property -> augmentation gap,pooled,degree_skew,exploratory,gap_rel,11,-0.2431,0.4713,,False
+graph property -> augmentation gap,pooled,degree_skew,exploratory,gap_fixed_rel,11,-0.2936,0.3809,,False
+graph property -> augmentation gap,pooled,degree_assortativity,exploratory,gap_rel,11,-0.0138,0.968,,False
+graph property -> augmentation gap,pooled,degree_assortativity,exploratory,gap_fixed_rel,11,0.0459,0.8935,,False
+graph property -> augmentation gap,pooled,majority_class_frac,exploratory,gap_rel,10,0.5031,0.1383,,False
+graph property -> augmentation gap,pooled,majority_class_frac,exploratory,gap_fixed_rel,10,0.3988,0.2536,,False
+graph property -> augmentation gap,pooled,nodes,exploratory,gap_rel,11,0.1973,0.561,,False
+graph property -> augmentation gap,pooled,nodes,exploratory,gap_fixed_rel,11,0.1835,0.5892,,False
+feature spread -> ablation lift,link prediction,raw_std,exploratory,lift_vs_random,24,0.0861,0.6892,,False
+feature spread -> ablation lift,link prediction,raw_pct_zero,exploratory,lift_vs_random,24,-0.0995,0.6436,,False
+feature spread -> ablation lift,link prediction,raw_pct_unique,exploratory,lift_vs_random,24,0.0974,0.6507,,False
+feature spread -> ablation lift,link prediction,raw_skew,exploratory,lift_vs_random,24,-0.247,0.2447,,False
+feature spread -> ablation lift,node classification,raw_std,exploratory,lift_vs_random,24,0.0331,0.8781,,False
+feature spread -> ablation lift,node classification,raw_pct_zero,exploratory,lift_vs_random,24,-0.0074,0.9725,,False
+feature spread -> ablation lift,node classification,raw_pct_unique,exploratory,lift_vs_random,24,-0.1523,0.4773,,False
+feature spread -> ablation lift,node classification,raw_skew,exploratory,lift_vs_random,24,0.0218,0.9196,,False
+feature spread -> ablation lift,pooled,raw_std,exploratory,lift_vs_random,48,0.0802,0.5881,,False
+feature spread -> ablation lift,pooled,raw_pct_zero,exploratory,lift_vs_random,48,-0.0676,0.6482,,False
+feature spread -> ablation lift,pooled,raw_pct_unique,exploratory,lift_vs_random,48,-0.0223,0.8806,,False
+feature spread -> ablation lift,pooled,raw_skew,exploratory,lift_vs_random,48,-0.0947,0.5219,,False

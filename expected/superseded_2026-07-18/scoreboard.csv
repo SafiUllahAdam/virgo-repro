@@ -1,0 +1,123 @@
+dataset,encoder,graph_variant,top_K_neighbors,task,seeds,mean,std
+cora,deepwalk,centrality,5,link prediction (AUC),42|43|44,0.5294,0.0073
+cora,deepwalk,centrality,10,link prediction (AUC),42|43|44,0.5507,0.0081
+cora,deepwalk,centrality,20,link prediction (AUC),42|43|44,0.5822,0.0042
+cora,deepwalk,degree,5,link prediction (AUC),42|43|44,0.5546,0.0046
+cora,deepwalk,degree,10,link prediction (AUC),42|43|44,0.5547,0.0018
+cora,deepwalk,degree,20,link prediction (AUC),42|43|44,0.5521,0.0043
+cora,deepwalk,hybrid,5,link prediction (AUC),42|43|44,0.7363,0.01
+cora,deepwalk,hybrid,10,link prediction (AUC),42|43|44,0.6699,0.0142
+cora,deepwalk,hybrid,20,link prediction (AUC),42|43|44,0.6176,0.0077
+cora,deepwalk,original,5,link prediction (AUC),42|43|44,0.9007,0.0039
+cora,deepwalk,original,10,link prediction (AUC),42|43|44,0.9007,0.0039
+cora,deepwalk,original,20,link prediction (AUC),42|43|44,0.9007,0.0039
+cora,deepwalk,psi,5,link prediction (AUC),42|43|44,0.5103,0.0092
+cora,deepwalk,psi,10,link prediction (AUC),42|43|44,0.5114,0.0062
+cora,deepwalk,psi,20,link prediction (AUC),42|43|44,0.5227,0.0034
+cora,graphsage_edge,centrality,5,link prediction (AUC),42|43|44,0.5624,0.0096
+cora,graphsage_edge,centrality,10,link prediction (AUC),42|43|44,0.5708,0.0118
+cora,graphsage_edge,centrality,20,link prediction (AUC),42|43|44,0.5843,0.0146
+cora,graphsage_edge,degree,5,link prediction (AUC),42|43|44,0.5296,0.0156
+cora,graphsage_edge,degree,10,link prediction (AUC),42|43|44,0.5283,0.0135
+cora,graphsage_edge,degree,20,link prediction (AUC),42|43|44,0.5306,0.014
+cora,graphsage_edge,hybrid,5,link prediction (AUC),42|43|44,0.5659,0.0165
+cora,graphsage_edge,hybrid,10,link prediction (AUC),42|43|44,0.5572,0.0213
+cora,graphsage_edge,hybrid,20,link prediction (AUC),42|43|44,0.5456,0.0186
+cora,graphsage_edge,original,5,link prediction (AUC),42|43|44,0.6212,0.008
+cora,graphsage_edge,original,10,link prediction (AUC),42|43|44,0.6212,0.008
+cora,graphsage_edge,original,20,link prediction (AUC),42|43|44,0.6212,0.008
+cora,graphsage_edge,psi,5,link prediction (AUC),42|43|44,0.5219,0.0055
+cora,graphsage_edge,psi,10,link prediction (AUC),42|43|44,0.5246,0.0173
+cora,graphsage_edge,psi,20,link prediction (AUC),42|43|44,0.5228,0.0139
+cora,graphsage_walk,psi,10,link prediction (AUC),42|43|44,0.5241,0.0147
+cora,deepwalk,centrality,5,node classification (weighted F1),42|43|44,0.3551,0.0035
+cora,deepwalk,centrality,10,node classification (weighted F1),42|43|44,0.383,0.0151
+cora,deepwalk,centrality,20,node classification (weighted F1),42|43|44,0.3928,0.0074
+cora,deepwalk,degree,5,node classification (weighted F1),42|43|44,0.1612,0.013
+cora,deepwalk,degree,10,node classification (weighted F1),42|43|44,0.1592,0.0118
+cora,deepwalk,degree,20,node classification (weighted F1),42|43|44,0.1478,0.003
+cora,deepwalk,hybrid,5,node classification (weighted F1),42|43|44,0.5265,0.0029
+cora,deepwalk,hybrid,10,node classification (weighted F1),42|43|44,0.4526,0.0035
+cora,deepwalk,hybrid,20,node classification (weighted F1),42|43|44,0.3973,0.02
+cora,deepwalk,original,5,node classification (weighted F1),42|43|44,0.81,0.0158
+cora,deepwalk,original,10,node classification (weighted F1),42|43|44,0.81,0.0158
+cora,deepwalk,original,20,node classification (weighted F1),42|43|44,0.81,0.0158
+cora,deepwalk,psi,5,node classification (weighted F1),42|43|44,0.218,0.0104
+cora,deepwalk,psi,10,node classification (weighted F1),42|43|44,0.2378,0.0044
+cora,deepwalk,psi,20,node classification (weighted F1),42|43|44,0.2293,0.0064
+cora,graphsage_edge,centrality,5,node classification (weighted F1),42|43|44,0.3,0.0153
+cora,graphsage_edge,centrality,10,node classification (weighted F1),42|43|44,0.3067,0.0036
+cora,graphsage_edge,centrality,20,node classification (weighted F1),42|43|44,0.3268,0.0124
+cora,graphsage_edge,degree,5,node classification (weighted F1),42|43|44,0.2737,0.0058
+cora,graphsage_edge,degree,10,node classification (weighted F1),42|43|44,0.2722,0.0031
+cora,graphsage_edge,degree,20,node classification (weighted F1),42|43|44,0.2732,0.0037
+cora,graphsage_edge,hybrid,5,node classification (weighted F1),42|43|44,0.3328,0.0029
+cora,graphsage_edge,hybrid,10,node classification (weighted F1),42|43|44,0.3109,0.01
+cora,graphsage_edge,hybrid,20,node classification (weighted F1),42|43|44,0.2994,0.0063
+cora,graphsage_edge,original,5,node classification (weighted F1),42|43|44,0.4504,0.0104
+cora,graphsage_edge,original,10,node classification (weighted F1),42|43|44,0.4504,0.0104
+cora,graphsage_edge,original,20,node classification (weighted F1),42|43|44,0.4504,0.0104
+cora,graphsage_edge,psi,5,node classification (weighted F1),42|43|44,0.2735,0.0061
+cora,graphsage_edge,psi,10,node classification (weighted F1),42|43|44,0.2757,0.001
+cora,graphsage_edge,psi,20,node classification (weighted F1),42|43|44,0.2809,0.0056
+cora,graphsage_walk,psi,10,node classification (weighted F1),42|43|44,0.2731,0.0024
+enzymes,deepwalk,centrality,10,link prediction (AUC),42|43|44,0.7382,0.084
+enzymes,deepwalk,degree,10,link prediction (AUC),42|43|44,0.624,0.0725
+enzymes,deepwalk,hybrid,10,link prediction (AUC),42|43|44,0.5087,0.0246
+enzymes,deepwalk,original,10,link prediction (AUC),42|43|44,0.6574,0.017
+enzymes,deepwalk,psi,5,link prediction (AUC),42|43|44,0.511,0.0843
+enzymes,deepwalk,psi,10,link prediction (AUC),42|43|44,0.511,0.0297
+enzymes,deepwalk,psi,20,link prediction (AUC),42|43|44,0.4487,0.0016
+enzymes,features_only,psi,10,link prediction (AUC),42|43|44,0.6424,0.0327
+enzymes,graphsage_edge,centrality,5,link prediction (AUC),42|43|44,0.6667,0.0952
+enzymes,graphsage_edge,centrality,10,link prediction (AUC),42|43|44,0.7197,0.0625
+enzymes,graphsage_edge,degree,5,link prediction (AUC),42|43|44,0.5975,0.0496
+enzymes,graphsage_edge,degree,10,link prediction (AUC),42|43|44,0.5998,0.0782
+enzymes,graphsage_edge,hybrid,10,link prediction (AUC),42|43|44,0.6967,0.0302
+enzymes,graphsage_edge,original,10,link prediction (AUC),42|43|44,0.6459,0.0364
+enzymes,graphsage_edge,psi,5,link prediction (AUC),42|43|44,0.6367,0.0529
+enzymes,graphsage_edge,psi,10,link prediction (AUC),42|43|44,0.6909,0.0156
+enzymes,graphsage_edge,psi,20,link prediction (AUC),42|43|44,0.6009,0.0086
+enzymes,graphsage_edge_feat_const,psi,10,link prediction (AUC),42|43|44,0.5046,0.0905
+enzymes,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),42|43|44,0.6805,0.0302
+enzymes,graphsage_edge_feat_degree,psi,10,link prediction (AUC),42|43|44,0.5975,0.0432
+enzymes,graphsage_edge_feat_psi,psi,10,link prediction (AUC),42|43|44,0.4983,0.0251
+enzymes,graphsage_edge_feat_random,psi,10,link prediction (AUC),42|43|44,0.4798,0.0349
+enzymes,graphsage_edge_l1,psi,10,link prediction (AUC),42|43|44,0.6678,0.0075
+enzymes,graphsage_edge_l3,psi,10,link prediction (AUC),42|43|44,0.4983,0.0407
+enzymes,graphsage_edge_max,psi,10,link prediction (AUC),42|43|44,0.6378,0.0353
+enzymes,graphsage_edge_sum,psi,10,link prediction (AUC),42|43|44,0.5063,0.0596
+enzymes,graphsage_edge_weighted,psi,10,link prediction (AUC),42|43|44,0.6528,0.024
+enzymes,graphsage_walk,centrality,10,link prediction (AUC),42|43|44,0.7255,0.0866
+enzymes,graphsage_walk,degree,10,link prediction (AUC),42|43|44,0.5836,0.0635
+enzymes,graphsage_walk,psi,10,link prediction (AUC),42|43|44,0.6632,0.0114
+enzymes,deepwalk,centrality,10,node classification (weighted F1),42|43|44,0.4903,0.0087
+enzymes,deepwalk,degree,10,node classification (weighted F1),42|43|44,0.5136,0.0068
+enzymes,deepwalk,hybrid,10,node classification (weighted F1),42|43|44,0.4906,0.006
+enzymes,deepwalk,original,10,node classification (weighted F1),42|43|44,0.5086,0.0039
+enzymes,deepwalk,psi,5,node classification (weighted F1),42|43|44,0.4869,0.007
+enzymes,deepwalk,psi,10,node classification (weighted F1),42|43|44,0.4971,0.0057
+enzymes,deepwalk,psi,20,node classification (weighted F1),42|43|44,0.4897,0.0016
+enzymes,features_only,psi,10,node classification (weighted F1),42|43|44,0.4993,0.0009
+enzymes,graphsage_edge,centrality,5,node classification (weighted F1),42|43|44,0.5418,0.0041
+enzymes,graphsage_edge,centrality,10,node classification (weighted F1),42|43|44,0.5411,0.0025
+enzymes,graphsage_edge,degree,5,node classification (weighted F1),42|43|44,0.5541,0.0027
+enzymes,graphsage_edge,degree,10,node classification (weighted F1),42|43|44,0.5536,0.0012
+enzymes,graphsage_edge,hybrid,10,node classification (weighted F1),42|43|44,0.5485,0.0044
+enzymes,graphsage_edge,original,10,node classification (weighted F1),42|43|44,0.5671,0.0022
+enzymes,graphsage_edge,psi,5,node classification (weighted F1),42|43|44,0.5403,0.0049
+enzymes,graphsage_edge,psi,10,node classification (weighted F1),42|43|44,0.5413,0.0011
+enzymes,graphsage_edge,psi,20,node classification (weighted F1),42|43|44,0.5475,0.0026
+enzymes,graphsage_edge_feat_const,psi,10,node classification (weighted F1),42|43|44,0.3277,0.0
+enzymes,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),42|43|44,0.5151,0.0052
+enzymes,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),42|43|44,0.5203,0.0014
+enzymes,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),42|43|44,0.4933,0.0017
+enzymes,graphsage_edge_feat_random,psi,10,node classification (weighted F1),42|43|44,0.4814,0.006
+enzymes,graphsage_edge_l1,psi,10,node classification (weighted F1),42|43|44,0.4971,0.0018
+enzymes,graphsage_edge_l3,psi,10,node classification (weighted F1),42|43|44,0.4506,0.0187
+enzymes,graphsage_edge_max,psi,10,node classification (weighted F1),42|43|44,0.5284,0.0041
+enzymes,graphsage_edge_sum,psi,10,node classification (weighted F1),42|43|44,0.5114,0.0017
+enzymes,graphsage_edge_weighted,psi,10,node classification (weighted F1),42|43|44,0.5399,0.002
+enzymes,graphsage_walk,centrality,10,node classification (weighted F1),42|43|44,0.5418,0.0032
+enzymes,graphsage_walk,degree,10,node classification (weighted F1),42|43|44,0.5543,0.0021
+enzymes,graphsage_walk,psi,10,node classification (weighted F1),42|43|44,0.5405,0.0014

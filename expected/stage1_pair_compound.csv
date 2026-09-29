@@ -1,0 +1,14 @@
+property,tier,loo_panel_accuracy,loo_panel_correct,loo_panel_folds,conditions,n_decided,rule1_correct,pair_correct,delta,fixes,breaks,still_wrong,n_augment_calls,cells_moved
+avg_clustering,primary,0.5,5,10,avg_clustering < 0.5573,10,7,8,1,amazon_ratings,,"minesweeper, ogbl_ddi",6,1
+degree_gini,exploratory,0.7,7,10,degree_gini > 0.0958,10,7,8,1,minesweeper,,"amazon_ratings, ogbl_ddi",6,1
+degree_skew,exploratory,0.8,8,10,degree_skew > -1.632,10,7,8,1,minesweeper,,"amazon_ratings, ogbl_ddi",6,1
+degree_assortativity,exploratory,0.5,5,10,degree_assortativity < 0.2968,10,7,8,1,minesweeper,,"amazon_ratings, ogbl_ddi",6,1
+original_retention,frozen gate (needs the role graph BUILT),,0,0,original_retention < 0.0119,10,7,8,1,"amazon_ratings, minesweeper",squirrel_filtered,"ogbl_ddi, squirrel_filtered",4,3
+nbr_predictability_adjusted,primary,0.2,2,10,nbr_predictability_adjusted < 0.0605,10,7,7,0,amazon_ratings,roman_empire,"minesweeper, ogbl_ddi, roman_empire",5,2
+avg_degree,primary,0.4,4,10,avg_degree < 7.307,10,7,7,0,"amazon_ratings, minesweeper","squirrel_filtered, tolokers","ogbl_ddi, squirrel_filtered, tolokers",3,4
+edge_homophily,exploratory,0.5,5,10,edge_homophily < 0.2985,10,7,7,0,"amazon_ratings, minesweeper","questions, tolokers","ogbl_ddi, questions, tolokers",3,4
+nbr_label_entropy,exploratory,0.4,4,10,nbr_label_entropy < 0.5177,10,7,7,0,"amazon_ratings, minesweeper","squirrel_filtered, tolokers","ogbl_ddi, squirrel_filtered, tolokers",3,4
+density,exploratory,0.3,3,10,density > 0.0009,10,7,7,0,"amazon_ratings, minesweeper","questions, roman_empire","ogbl_ddi, questions, roman_empire",3,4
+majority_class_frac,exploratory,0.4,4,10,majority_class_frac < 0.354,10,7,7,0,"amazon_ratings, minesweeper","questions, tolokers","ogbl_ddi, questions, tolokers",3,4
+nodes,exploratory,0.2,2,10,nodes < 23577.0,10,7,7,0,amazon_ratings,questions,"minesweeper, ogbl_ddi, questions",5,2
+n_classes,primary,0.5,5,10,n_classes > 3.5,10,7,6,-1,minesweeper,"questions, tolokers","amazon_ratings, ogbl_ddi, questions, tolokers",4,3

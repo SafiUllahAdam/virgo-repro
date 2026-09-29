@@ -1,0 +1,8 @@
+dataset,domain,tasks,graph_scope,directed_source,nodes,edges,density,avg_degree,max_degree,degree_std,degree_skew,degree_gini,distinct_degrees,components,largest_component_frac,isolates,avg_clustering,degree_assortativity,n_classes,majority_class_frac,edge_homophily,node_homophily,homophily_null,homophily_adjusted,nbr_predictability,nbr_predictability_adjusted,nbr_label_entropy
+cora,citation,NC+LP,full,False,2708,5278,0.00144,3.8981,168,5.2278,15.2714,0.4051,37,78,0.9177,0,0.2407,-0.0659,7,0.3021,0.81,0.8252,0.1698,0.7711,0.8704,0.8143,0.1108
+enzymes,biological,NC+LP,full,False,19474,37282,0.000197,3.8289,9,1.1161,0.3976,0.1569,9,640,0.0064,0,0.4024,0.1755,3,0.4949,0.6653,0.6682,0.4759,0.3613,0.7396,0.4844,0.3721
+ogbn_arxiv,citation,NC,full,True,169343,1157799,8.1e-05,13.674,13161,68.6381,106.1425,0.6295,547,1,1.0,0,0.2261,-0.0431,40,0.1613,0.6542,0.6353,0.1614,0.5877,0.7127,0.6574,0.1372
+ogbl_ddi,drug interaction,LP,ogb_train_edges,False,4267,1067911,0.117333,500.5442,2234,420.4781,0.7176,0.4689,1269,1,1.0,0,0.5143,0.0378,0,,,,,,,,
+roman_empire,linguistic,NC+LP,full,True,22662,32927,0.000128,2.9059,14,1.0256,1.5077,0.1769,11,1,1.0,0,0.3859,-0.0282,18,0.1396,0.0469,0.046,0.0895,-0.0468,0.4256,0.3324,0.3188
+tolokers,crowdsourcing,NC+LP,full,False,11758,519000,0.007509,88.2803,2138,161.8188,4.3006,0.6905,754,1,1.0,0,0.5329,-0.0803,2,0.7818,0.5945,0.6344,0.5532,0.0926,0.7103,-0.3274,0.7242
+questions,q&a interaction,NC+LP,full,True,48921,153540,0.000128,6.2771,1539,27.1127,17.4282,0.7455,320,1,1.0,0,0.0307,-0.1519,2,0.9702,0.8396,0.898,0.8362,0.0207,0.97,-0.0041,0.1139

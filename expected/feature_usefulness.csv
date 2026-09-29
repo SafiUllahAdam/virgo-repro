@@ -1,0 +1,101 @@
+dataset,task,task_family,arm,feature,metric,mean,std,lift_vs_random,lift_sigma,vs_random_features,raw_std,raw_skew,raw_pct_zero,raw_pct_unique
+cora,link prediction (AUC),link prediction,all,,auc,0.515,0.0038,0.0016,0.25,tied with random,,,,
+cora,link prediction (AUC),link prediction,centrality,eigenvector_centrality,auc,0.4349,0.0213,-0.0785,-4.87,worse than random,0.245917,3.2902,2.62,87.0753
+cora,link prediction (AUC),link prediction,clustering,clustering,auc,0.5298,0.0104,0.0164,1.76,tied with random,0.32202,1.3077,45.72,4.8375
+cora,link prediction (AUC),link prediction,const,,auc,0.497,0.0235,-0.0164,-0.93,tied with random,,,,
+cora,link prediction (AUC),link prediction,deg_cent,,auc,0.4864,0.0042,-0.027,-4.18,worse than random,,,,
+cora,link prediction (AUC),link prediction,degree,degree,auc,0.496,0.0135,-0.0174,-1.56,tied with random,5.227818,15.2714,0.0,1.3663
+cora,link prediction (AUC),link prediction,none_mp,,auc,0.4831,0.0077,-0.0303,-3.83,worse than random,,,,
+cora,link prediction (AUC),link prediction,psi,psi,auc,0.4594,0.0093,-0.054,-6.19,worse than random,31.740084,-16.6766,0.0,82.5332
+cora,link prediction (AUC),link prediction,random,,auc,0.5134,0.0081,0.0,0.0,tied with random,,,,
+enzymes,link prediction (AUC),link prediction,all,,auc,0.6236,0.0019,0.1133,26.67,beats random,,,,
+enzymes,link prediction (AUC),link prediction,centrality,eigenvector_centrality,auc,0.6498,0.0026,0.1395,31.49,beats random,0.32197,0.6219,0.09,85.3035
+enzymes,link prediction (AUC),link prediction,clustering,clustering,auc,0.532,0.0013,0.0217,5.25,beats random,0.297867,0.3818,19.68,0.2208
+enzymes,link prediction (AUC),link prediction,const,,auc,0.4877,0.0367,-0.0226,-0.86,tied with random,,,,
+enzymes,link prediction (AUC),link prediction,deg_cent,,auc,0.6445,0.0078,0.1342,19.65,beats random,,,,
+enzymes,link prediction (AUC),link prediction,degree,degree,auc,0.5468,0.0045,0.0365,7.11,beats random,1.116135,0.3976,0.0,0.0462
+enzymes,link prediction (AUC),link prediction,none_mp,,auc,0.6201,0.0007,0.1098,27.04,beats random,,,,
+enzymes,link prediction (AUC),link prediction,psi,psi,auc,0.6385,0.002,0.1282,30.01,beats random,60.310161,-0.5329,0.0,45.8817
+enzymes,link prediction (AUC),link prediction,random,,auc,0.5103,0.0057,0.0,0.0,tied with random,,,,
+ogbl_ddi,link prediction (OGB official),link prediction,all,,test_hits@20,0.0423,0.0143,0.0418,4.13,beats random,,,,
+ogbl_ddi,link prediction (OGB official),link prediction,centrality,eigenvector_centrality,test_hits@20,0.0368,0.0096,0.0363,5.35,beats random,0.220597,0.612,0.0,91.985
+ogbl_ddi,link prediction (OGB official),link prediction,clustering,clustering,test_hits@20,0.0118,0.0021,0.0113,7.6,beats random,0.219137,-0.3382,4.38,88.4931
+ogbl_ddi,link prediction (OGB official),link prediction,const,,test_hits@20,0.0,0.0,-0.0005,-7.07,worse than random,,,,
+ogbl_ddi,link prediction (OGB official),link prediction,deg_cent,,test_hits@20,0.0421,0.0252,0.0416,2.33,beats random,,,,
+ogbl_ddi,link prediction (OGB official),link prediction,degree,degree,test_hits@20,0.0291,0.0052,0.0286,7.78,beats random,420.47808,0.7176,0.0,29.7399
+ogbl_ddi,link prediction (OGB official),link prediction,psi,psi,test_hits@20,0.0347,0.0034,0.0342,14.22,beats random,14248.041712,-0.7666,0.0,30.2554
+ogbl_ddi,link prediction (OGB official),link prediction,random,,test_hits@20,0.0005,0.0001,0.0,0.0,tied with random,,,,
+questions,link prediction (AUC),link prediction,all,,auc,0.4923,0.0251,-0.0047,-0.26,tied with random,,,,
+questions,link prediction (AUC),link prediction,centrality,eigenvector_centrality,auc,0.463,0.0233,-0.034,-2.04,worse than random,0.021825,12.2577,0.61,57.0389
+questions,link prediction (AUC),link prediction,clustering,clustering,auc,0.4464,0.0071,-0.0506,-8.94,worse than random,0.128647,6.2192,83.1,3.8736
+questions,link prediction (AUC),link prediction,const,,auc,0.6764,0.0924,0.1794,2.74,beats random,,,,
+questions,link prediction (AUC),link prediction,deg_cent,,auc,0.447,0.02,-0.05,-3.48,worse than random,,,,
+questions,link prediction (AUC),link prediction,degree,degree,auc,0.3638,0.0556,-0.1332,-3.38,worse than random,27.112726,17.4282,0.0,0.6541
+questions,link prediction (AUC),link prediction,psi,psi,auc,0.4062,0.0241,-0.0908,-5.27,worse than random,188.71594,-18.3424,0.0,33.6788
+questions,link prediction (AUC),link prediction,random,,auc,0.497,0.0037,0.0,0.0,tied with random,,,,
+roman_empire,link prediction (AUC),link prediction,all,,auc,0.5407,0.0027,-0.0163,-5.93,worse than random,,,,
+roman_empire,link prediction (AUC),link prediction,centrality,eigenvector_centrality,auc,0.5312,0.0091,-0.0258,-3.83,worse than random,0.011353,47.4272,37.0,99.9956
+roman_empire,link prediction (AUC),link prediction,clustering,clustering,auc,0.5471,0.0086,-0.0099,-1.55,tied with random,0.368491,0.6571,28.65,0.1368
+roman_empire,link prediction (AUC),link prediction,const,,auc,0.4936,0.0111,-0.0634,-7.83,worse than random,,,,
+roman_empire,link prediction (AUC),link prediction,deg_cent,,auc,0.5543,0.0054,-0.0027,-0.63,tied with random,,,,
+roman_empire,link prediction (AUC),link prediction,degree,degree,auc,0.5419,0.0071,-0.0151,-2.8,worse than random,1.025649,1.5077,0.0,0.0485
+roman_empire,link prediction (AUC),link prediction,psi,psi,auc,0.5514,0.0036,-0.0056,-1.74,tied with random,1.243408,-26.9601,0.0,99.9956
+roman_empire,link prediction (AUC),link prediction,random,,auc,0.557,0.0028,0.0,0.0,tied with random,,,,
+tolokers,link prediction (AUC),link prediction,all,,auc,0.7007,0.0032,0.2036,81.47,beats random,,,,
+tolokers,link prediction (AUC),link prediction,centrality,eigenvector_centrality,auc,0.5492,0.0096,0.0521,7.58,beats random,0.101974,3.9551,0.23,98.6137
+tolokers,link prediction (AUC),link prediction,clustering,clustering,auc,0.7625,0.0178,0.2654,21.01,beats random,0.282159,0.2242,5.0,58.0371
+tolokers,link prediction (AUC),link prediction,const,,auc,0.4849,0.0699,-0.0122,-0.25,tied with random,,,,
+tolokers,link prediction (AUC),link prediction,deg_cent,,auc,0.5705,0.0154,0.0734,6.71,beats random,,,,
+tolokers,link prediction (AUC),link prediction,degree,degree,auc,0.5518,0.0122,0.0547,6.29,beats random,161.818791,4.3006,0.0,6.4127
+tolokers,link prediction (AUC),link prediction,psi,psi,auc,0.5251,0.022,0.028,1.8,tied with random,5217.663596,-4.7678,0.0,29.4353
+tolokers,link prediction (AUC),link prediction,random,,auc,0.4971,0.0015,0.0,0.0,tied with random,,,,
+cora,node classification (weighted F1),node classification,all,,weighted_f1,0.2351,0.0085,0.0854,10.97,beats random,,,,
+cora,node classification (weighted F1),node classification,centrality,eigenvector_centrality,weighted_f1,0.2328,0.0028,0.0831,15.59,beats random,0.245917,3.2902,2.62,87.0753
+cora,node classification (weighted F1),node classification,clustering,clustering,weighted_f1,0.1791,0.006,0.0294,4.51,beats random,0.32202,1.3077,45.72,4.8375
+cora,node classification (weighted F1),node classification,const,,weighted_f1,0.1406,0.0,-0.0091,-1.84,tied with random,,,,
+cora,node classification (weighted F1),node classification,deg_cent,,weighted_f1,0.2462,0.0056,0.0965,15.22,beats random,,,,
+cora,node classification (weighted F1),node classification,degree,degree,weighted_f1,0.2153,0.0068,0.0656,9.51,beats random,5.227818,15.2714,0.0,1.3663
+cora,node classification (weighted F1),node classification,none_mp,,weighted_f1,0.1834,0.0079,0.0337,4.52,beats random,,,,
+cora,node classification (weighted F1),node classification,psi,psi,weighted_f1,0.1743,0.0097,0.0246,2.91,beats random,31.740084,-16.6766,0.0,82.5332
+cora,node classification (weighted F1),node classification,random,,weighted_f1,0.1497,0.007,0.0,0.0,tied with random,,,,
+enzymes,node classification (weighted F1),node classification,all,,weighted_f1,0.548,0.0048,0.0691,16.45,beats random,,,,
+enzymes,node classification (weighted F1),node classification,centrality,eigenvector_centrality,weighted_f1,0.5117,0.0061,0.0328,6.6,beats random,0.32197,0.6219,0.09,85.3035
+enzymes,node classification (weighted F1),node classification,clustering,clustering,weighted_f1,0.5401,0.0039,0.0612,16.52,beats random,0.297867,0.3818,19.68,0.2208
+enzymes,node classification (weighted F1),node classification,const,,weighted_f1,0.3277,0.0,-0.1512,-61.09,worse than random,,,,
+enzymes,node classification (weighted F1),node classification,deg_cent,,weighted_f1,0.5204,0.0126,0.0415,4.49,beats random,,,,
+enzymes,node classification (weighted F1),node classification,degree,degree,weighted_f1,0.5019,0.0127,0.023,2.47,beats random,1.116135,0.3976,0.0,0.0462
+enzymes,node classification (weighted F1),node classification,none_mp,,weighted_f1,0.4997,0.0019,0.0208,7.39,beats random,,,,
+enzymes,node classification (weighted F1),node classification,psi,psi,weighted_f1,0.5002,0.0025,0.0213,7.0,beats random,60.310161,-0.5329,0.0,45.8817
+enzymes,node classification (weighted F1),node classification,random,,weighted_f1,0.4789,0.0035,0.0,0.0,tied with random,,,,
+ogbn_arxiv,node classification (OGB official),node classification,all,,test_acc,0.2466,0.0019,0.188,139.93,beats random,,,,
+ogbn_arxiv,node classification (OGB official),node classification,centrality,eigenvector_centrality,test_acc,0.253,0.0009,0.1944,305.47,beats random,0.006399,47.7474,24.84,96.0282
+ogbn_arxiv,node classification (OGB official),node classification,clustering,clustering,test_acc,0.1069,0.0015,0.0483,45.54,beats random,0.243751,1.5538,26.98,5.9902
+ogbn_arxiv,node classification (OGB official),node classification,const,,test_acc,0.0586,0.0,0.0,,tied with random,,,,
+ogbn_arxiv,node classification (OGB official),node classification,deg_cent,,test_acc,0.2489,0.0022,0.1903,122.33,beats random,,,,
+ogbn_arxiv,node classification (OGB official),node classification,degree,degree,test_acc,0.1925,0.0033,0.1339,57.38,beats random,68.638109,106.1425,0.0,0.323
+ogbn_arxiv,node classification (OGB official),node classification,psi,psi,test_acc,0.1746,0.0044,0.116,37.28,beats random,775.207561,-126.4463,0.0,90.113
+ogbn_arxiv,node classification (OGB official),node classification,random,,test_acc,0.0586,0.0,0.0,,tied with random,,,,
+questions,node classification (weighted F1),node classification,all,,weighted_f1,0.9554,0.0,-0.0001,,metric constant,,,,
+questions,node classification (weighted F1),node classification,centrality,eigenvector_centrality,weighted_f1,0.9555,0.0,0.0,,metric constant,0.021825,12.2577,0.61,57.0389
+questions,node classification (weighted F1),node classification,clustering,clustering,weighted_f1,0.9555,0.0,0.0,,metric constant,0.128647,6.2192,83.1,3.8736
+questions,node classification (weighted F1),node classification,const,,weighted_f1,0.9555,0.0,0.0,,metric constant,,,,
+questions,node classification (weighted F1),node classification,deg_cent,,weighted_f1,0.9555,0.0,0.0,,metric constant,,,,
+questions,node classification (weighted F1),node classification,degree,degree,weighted_f1,0.9554,0.0,-0.0001,,metric constant,27.112726,17.4282,0.0,0.6541
+questions,node classification (weighted F1),node classification,psi,psi,weighted_f1,0.9555,0.0,0.0,,metric constant,188.71594,-18.3424,0.0,33.6788
+questions,node classification (weighted F1),node classification,random,,weighted_f1,0.9555,0.0,0.0,,metric constant,,,,
+roman_empire,node classification (weighted F1),node classification,all,,weighted_f1,0.2069,0.0018,0.1362,104.46,beats random,,,,
+roman_empire,node classification (weighted F1),node classification,centrality,eigenvector_centrality,weighted_f1,0.0469,0.0096,-0.0238,-3.5,worse than random,0.011353,47.4272,37.0,99.9956
+roman_empire,node classification (weighted F1),node classification,clustering,clustering,weighted_f1,0.1719,0.0037,0.1012,38.46,beats random,0.368491,0.6571,28.65,0.1368
+roman_empire,node classification (weighted F1),node classification,const,,weighted_f1,0.0342,0.0,-0.0365,-129.05,worse than random,,,,
+roman_empire,node classification (weighted F1),node classification,deg_cent,,weighted_f1,0.1356,0.0038,0.0649,24.02,beats random,,,,
+roman_empire,node classification (weighted F1),node classification,degree,degree,weighted_f1,0.1378,0.0041,0.0671,23.04,beats random,1.025649,1.5077,0.0,0.0485
+roman_empire,node classification (weighted F1),node classification,psi,psi,weighted_f1,0.0931,0.0032,0.0224,9.82,beats random,1.243408,-26.9601,0.0,99.9956
+roman_empire,node classification (weighted F1),node classification,random,,weighted_f1,0.0707,0.0004,0.0,0.0,tied with random,,,,
+tolokers,node classification (weighted F1),node classification,all,,weighted_f1,0.7129,0.0044,0.0269,8.65,beats random,,,,
+tolokers,node classification (weighted F1),node classification,centrality,eigenvector_centrality,weighted_f1,0.7083,0.003,0.0223,10.51,beats random,0.101974,3.9551,0.23,98.6137
+tolokers,node classification (weighted F1),node classification,clustering,clustering,weighted_f1,0.6918,0.0009,0.0058,9.11,beats random,0.282159,0.2242,5.0,58.0371
+tolokers,node classification (weighted F1),node classification,const,,weighted_f1,0.686,0.0,0.0,,tied with random,,,,
+tolokers,node classification (weighted F1),node classification,deg_cent,,weighted_f1,0.7097,0.0021,0.0237,15.96,beats random,,,,
+tolokers,node classification (weighted F1),node classification,degree,degree,weighted_f1,0.7041,0.0018,0.0181,14.22,beats random,161.818791,4.3006,0.0,6.4127
+tolokers,node classification (weighted F1),node classification,psi,psi,weighted_f1,0.704,0.0014,0.018,18.18,beats random,5217.663596,-4.7678,0.0,29.4353
+tolokers,node classification (weighted F1),node classification,random,,weighted_f1,0.686,0.0,0.0,,tied with random,,,,

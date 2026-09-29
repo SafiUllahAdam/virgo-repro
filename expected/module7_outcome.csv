@@ -1,0 +1,7 @@
+dataset,best_variant,best_score,runner_up,runner_up_score,margin,seed_band,margin_clears_band,original,original_rank,vs_original,predicted_signal,winning_signal,runner_up_signal,correct_by_margin,resolved,correct_by_band
+amherst41,centrality,0.6749,hybrid_centrality,0.6718,0.0031,0.0058,False,0.6651,5,0.0098,centrality,centrality,centrality,True,True,True
+johnshopkins55,centrality,0.716,hybrid_centrality,0.7021,0.0139,0.0056,True,0.6854,5,0.0306,centrality,centrality,centrality,True,True,True
+cornell5,centrality,0.7078,hybrid,0.705,0.0028,0.0034,False,0.691,6,0.0168,centrality,centrality,psi,True,False,
+chameleon_filtered,original,0.8877,hybrid_centrality,0.883,0.0047,0.0053,False,0.8877,1,0.0,centrality,original,centrality,False,False,
+texas,original,0.5126,hybrid_centrality,0.5113,0.0013,0.0227,False,0.5126,1,0.0,centrality,original,centrality,False,False,
+twitch_pt,hybrid_degree,0.6161,psi,0.6141,0.002,0.0068,False,0.5303,7,0.0858,centrality,degree,psi,False,False,

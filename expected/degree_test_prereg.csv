@@ -1,0 +1,8 @@
+dataset,nodes,edges,distinct_degrees,side,FROZEN_DEGREE_predicts
+celegans_neural,453,4172,58,BELOW,degree
+messal_shale,686,6277,72,BELOW,degree
+plant_pol_robertson,1884,15255,130,BELOW,degree
+escorts,16730,39044,118,BELOW,degree
+nematode_mammal,30516,61597,124,BELOW,degree
+bag_of_words_kos,10336,353160,437,above,psi
+artnet_exp,50405,280348,196,above,psi

@@ -1,0 +1,8 @@
+zone,predictor,tier,n_cells,n_psi,n_degree,psi_values,degree_values,spearman_rho,threshold,psi_side,n_exceptions,accuracy,interval_lo,interval_hi,loo_accuracy,loo_correct,loo_folds,majority_baseline,separation_by_chance,expected_free_winners,rho_vs_avg_degree,rho_vs_density,rule
+all,avg_degree,primary,5,2,3,88.2803|32.2464,7.0155|6.2771|9.9141,0.866,21.0802,high,0,1.0,9.9141,32.2464,0.8,4,5,0.6,0.2,1.4,,1.0,use psi when avg_degree is high (> 21.0802)
+all,avg_clustering,primary,5,2,3,0.5329|0.2009,0.0802|0.0307|0.1309,0.866,0.1659,high,0,1.0,0.1309,0.2009,0.8,4,5,0.6,0.2,1.4,1.0,1.0,use psi when avg_clustering is high (> 0.1659)
+all,density,exploratory,5,2,3,0.0075|0.0034,0.0009|0.0001|0.0014,0.866,0.0024,high,0,1.0,0.0014,0.0034,0.8,4,5,0.6,0.2,1.4,1.0,,use psi when density is high (> 0.0024)
+all,degree_gini,exploratory,5,2,3,0.6905|0.6304,0.5691|0.7455|0.6106,0.2887,0.6205,high,1,0.8,0.6106,0.6304,0.4,2,5,0.6,0.2,1.4,0.0,0.0,use psi when degree_gini is high (> 0.6205)
+all,degree_skew,exploratory,5,2,3,4.3006|19.9644,51.7858|17.4282|14.4123,-0.2887,9.3565,low,1,0.8,4.3006,14.4123,0.6,3,5,0.6,0.2,1.4,-0.5,-0.5,use psi when degree_skew is low (< 9.3565)
+all,degree_assortativity,exploratory,5,2,3,-0.0803|-0.1152,-0.0469|-0.1519|-0.1219,0.2887,-0.1185,high,1,0.8,-0.1219,-0.1152,0.4,2,5,0.6,0.2,1.4,0.4,0.4,use psi when degree_assortativity is high (> -0.1185)
+all,nodes,exploratory,5,2,3,11758.0000|9498.0000,7600.0000|48921.0000|7126.0000,0.2887,8549.0,high,1,0.8,7600.0,9498.0,0.6,3,5,0.6,0.2,1.4,-0.1,-0.1,use psi when nodes is high (> 8549.0)

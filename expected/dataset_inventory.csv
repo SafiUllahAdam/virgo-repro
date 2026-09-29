@@ -1,0 +1,73 @@
+dataset,role,on board
+actor,Stage1 held-out (M3) + Stage2 fit (M6),yes
+airports_brazil,Degree corpus (M10),yes
+airports_europe,Degree corpus (M10),yes
+airports_usa,Degree corpus (M10),yes
+amazon_computers,Degree corpus (M10),yes
+amazon_photo,Stage1 held-out (M3) + Stage2 fit (M6),yes
+amazon_ratings,Stage1 held-out (M3) + Stage2 fit (M6),yes
+amherst41,Gate held-out (M5) + Stage2 held-out (M7),yes
+artnet_exp,Degree test (M12),yes
+bag_of_words_kos,Degree test (M12),yes
+bag_of_words_nips,Degree family batch2 (M12),yes
+blogcatalog,Degree corpus (M10),yes
+board_directors,Degree family batch2 (M12),yes
+celegans_neural,Degree test (M12),yes
+chameleon,Degree batch (M9),yes
+chameleon_filtered,Degree batch (M9),yes
+citeseer_linqs,Stage1 held-out (M3) + Stage2 fit (M6),yes
+coauthor_cs,Degree corpus (M10),yes
+coauthor_physics,Degree corpus (M10),yes
+cora,Stage1 discovery (M2) + Stage2 fit (M6),yes
+cora_full,Degree validation (M11),yes
+cora_ml,Degree corpus (M10),yes
+cornell5,Gate held-out (M5) + Stage2 held-out (M7),yes
+cornell_webkb,Degree batch (M9),yes
+crocodile,Degree validation (M11),yes
+dblp,Degree corpus (M10),yes
+deezer_europe,Degree batch (M9),yes
+email_eu_core,Degree corpus (M10),yes
+enzymes,Stage1 discovery (M2) + Stage2 fit (M6),yes
+escorts,Degree test (M12),yes
+flickr_attr,Degree corpus (M10),yes
+foursquare_checkin,Degree family batch2 (M12),yes
+foursquare_tips,Degree family batch2 (M12),yes
+genetic_fission_yeast,Degree family test (M14),yes
+genius,Degree validation (M11),yes
+github,Degree corpus (M10),yes
+johnshopkins55,Gate held-out (M5) + Stage2 held-out (M7),yes
+lastfm_asia,Stage1 held-out (M3) + Stage2 fit (M6),yes
+messal_shale,Degree test (M12),yes
+minesweeper,Stage1 held-out (M3) + Stage2 fit (M6),yes
+nematode_mammal,Degree test (M12),yes
+ogbl_ddi,Stage1 discovery (M2),yes
+ogbn_arxiv,Stage1 discovery (M2),yes
+penn94,Degree validation (M11),yes
+plant_pol_kato,Degree family batch2 (M12),yes
+plant_pol_robertson,Degree test (M12),yes
+polblogs,Degree corpus (M10),yes
+ppi_fly,Degree family test (M14),yes
+ppi_human,Degree family test (M14),yes
+ppi_mouse,Degree family batch2 (M12),yes
+ppi_rat,Degree family batch2 (M12),yes
+ppi_yeast,Degree family test (M14),yes
+proteins,Stage1 held-out (M3) + Stage2 fit (M6),yes
+pubmed,Stage1 held-out (M3) + Stage2 fit (M6),yes
+questions,Stage1 discovery (M2) + Stage2 fit (M6),yes
+reed98,Gate held-out (M5),yes
+roman_empire,Stage1 discovery (M2) + Stage2 fit (M6),yes
+spanish_highschool_6,(scored only),yes
+squirrel,Degree corpus (M10),yes
+squirrel_filtered,Stage1 held-out (M3) + Stage2 fit (M6),yes
+texas,Degree batch (M9),yes
+tolokers,Stage1 discovery (M2) + Stage2 fit (M6),yes
+twitch_de,Degree batch (M9),yes
+twitch_engb,Degree corpus (M10),yes
+twitch_es,Degree corpus (M10),yes
+twitch_fr,Degree corpus (M10),yes
+twitch_gamers,Degree validation (M11),yes
+twitch_ptbr,Degree corpus (M10),yes
+twitch_ru,Degree corpus (M10),yes
+wiki_attr,Degree validation (M11),yes
+wikics,Degree corpus (M10),yes
+wisconsin,Degree batch (M9),yes

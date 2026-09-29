@@ -1,0 +1,29 @@
+task_family,target,predictor,predictor_family,canonical,n_cells,n_decided,n_augment,distinct_values,distinct_augment,spearman_rho,p_value,p_bonferroni,lodo_min_abs_rho,lodo_sign_stable,threshold,augment_side,n_exceptions,accuracy,interval_lo,interval_hi,loo_accuracy,loo_correct,loo_folds,loo_threshold_lo,loo_threshold_hi,majority_baseline,loo_beats_majority,rule,credible
+link prediction,gap_fixed_rel,avg_clustering,avg_clustering,True,6,6,4,6,4,0.2,0.704,1.0,0.1,False,0.3133,high,2,0.6667,0.2407,0.3859,0.0,0,6,0.1357,0.4583,0.6667,False,link prediction: augment when avg_clustering is high (> 0.3133),False
+link prediction,gap_fixed_rel,avg_degree,avg_degree,True,6,6,4,6,4,0.3143,0.5441,1.0,0.2,False,5.0876,high,1,0.8333,3.8981,6.2771,0.6667,4,6,5.053,46.0892,0.6667,False,link prediction: augment when avg_degree is high (> 5.0876),False
+link prediction,gap_fixed_rel,components,fragmentation,False,6,6,4,3,1,-0.7775,0.0687,0.4809,0.7071,True,39.5,low,0,1.0,1.0,78.0,0.8333,5,6,39.5,320.5,0.6667,True,link prediction: augment when components is low (< 39.5),True
+link prediction,gap_fixed_rel,homophily_adjusted,homophily_adjusted,True,5,5,3,5,3,-1.0,0.0167,0.1169,1.0,True,0.227,low,0,1.0,0.0926,0.3613,0.8,4,5,0.191,0.4319,0.6,True,link prediction: augment when homophily_adjusted is low (< 0.227),True
+link prediction,gap_fixed_rel,largest_component_frac,fragmentation,True,6,6,4,3,1,0.7775,0.0687,0.4809,0.7071,True,0.9588,high,0,1.0,0.9177,1.0,0.8333,5,6,0.5032,0.9588,0.6667,True,link prediction: augment when largest_component_frac is high (> 0.9588),True
+link prediction,gap_fixed_rel,n_classes,n_classes,True,6,6,4,5,3,-0.4058,0.4247,1.0,0.0513,False,2.5,low,1,0.8333,2.0,3.0,0.6667,4,6,2.5,4.5,0.6667,False,link prediction: augment when n_classes is low (< 2.5),False
+link prediction,gap_fixed_rel,nbr_predictability_adjusted,nbr_predictability_adjusted,True,5,5,3,5,3,-0.6,0.2848,1.0,0.2,True,0.4084,low,0,1.0,0.3324,0.4844,0.6,3,5,0.2402,0.5734,0.6,False,link prediction: augment when nbr_predictability_adjusted is low (< 0.4084),False
+link prediction,gap_rel,avg_clustering,avg_clustering,True,6,6,4,6,4,0.0857,0.8717,1.0,0.0,False,0.3133,high,2,0.6667,0.2407,0.3859,0.0,0,6,0.1357,0.4583,0.6667,False,link prediction: augment when avg_clustering is high (> 0.3133),False
+link prediction,gap_rel,avg_degree,avg_degree,True,6,6,4,6,4,0.4857,0.3287,1.0,0.1,True,5.0876,high,1,0.8333,3.8981,6.2771,0.6667,4,6,5.053,46.0892,0.6667,False,link prediction: augment when avg_degree is high (> 5.0876),False
+link prediction,gap_rel,components,fragmentation,False,6,6,4,3,1,-0.7775,0.0687,0.4809,0.7071,True,39.5,low,0,1.0,1.0,78.0,0.8333,5,6,39.5,320.5,0.6667,True,link prediction: augment when components is low (< 39.5),True
+link prediction,gap_rel,homophily_adjusted,homophily_adjusted,True,5,5,3,5,3,-0.9,0.0374,0.2618,0.8,True,0.227,low,0,1.0,0.0926,0.3613,0.8,4,5,0.191,0.4319,0.6,True,link prediction: augment when homophily_adjusted is low (< 0.227),True
+link prediction,gap_rel,largest_component_frac,fragmentation,True,6,6,4,3,1,0.7775,0.0687,0.4809,0.7071,True,0.9588,high,0,1.0,0.9177,1.0,0.8333,5,6,0.5032,0.9588,0.6667,True,link prediction: augment when largest_component_frac is high (> 0.9588),True
+link prediction,gap_rel,n_classes,n_classes,True,6,6,4,5,3,-0.6088,0.1997,1.0,0.3078,True,2.5,low,1,0.8333,2.0,3.0,0.6667,4,6,2.5,4.5,0.6667,False,link prediction: augment when n_classes is low (< 2.5),False
+link prediction,gap_rel,nbr_predictability_adjusted,nbr_predictability_adjusted,True,5,5,3,5,3,-0.7,0.1881,1.0,0.4,True,0.4084,low,0,1.0,0.3324,0.4844,0.6,3,5,0.2402,0.5734,0.6,False,link prediction: augment when nbr_predictability_adjusted is low (< 0.4084),False
+node classification,gap_fixed_rel,avg_clustering,avg_clustering,True,5,4,0,4,0,0.6,0.2848,1.0,0.4,True,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_fixed_rel,avg_degree,avg_degree,True,5,4,0,4,0,0.2,0.7471,1.0,0.0,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_fixed_rel,components,fragmentation,False,5,4,0,2,0,0.2236,0.7177,1.0,0.3162,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_fixed_rel,homophily_adjusted,homophily_adjusted,True,5,4,0,4,0,-0.3,0.6238,1.0,0.2,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_fixed_rel,largest_component_frac,fragmentation,True,5,4,0,2,0,-0.2236,0.7177,1.0,0.3162,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_fixed_rel,n_classes,n_classes,True,5,4,0,4,0,-0.5,0.391,1.0,0.2,True,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_fixed_rel,nbr_predictability_adjusted,nbr_predictability_adjusted,True,5,4,0,4,0,-0.5,0.391,1.0,0.0,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_rel,avg_clustering,avg_clustering,True,5,4,0,4,0,0.6,0.2848,1.0,0.4,True,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_rel,avg_degree,avg_degree,True,5,4,0,4,0,0.2,0.7471,1.0,0.0,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_rel,components,fragmentation,False,5,4,0,2,0,0.2236,0.7177,1.0,0.3162,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_rel,homophily_adjusted,homophily_adjusted,True,5,4,0,4,0,-0.3,0.6238,1.0,0.2,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_rel,largest_component_frac,fragmentation,True,5,4,0,2,0,-0.2236,0.7177,1.0,0.3162,False,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_rel,n_classes,n_classes,True,5,4,0,4,0,-0.5,0.391,1.0,0.2,True,,,-1,,,,,0,0,,,1.0,False,,False
+node classification,gap_rel,nbr_predictability_adjusted,nbr_predictability_adjusted,True,5,4,0,4,0,-0.5,0.391,1.0,0.0,False,,,-1,,,,,0,0,,,1.0,False,,False

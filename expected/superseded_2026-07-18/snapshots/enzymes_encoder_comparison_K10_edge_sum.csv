@@ -1,0 +1,3 @@
+task,deepwalk_phase2,graphsage_edge_sum_phase3,improvement,winner
+node classification (weighted F1),0.4971,0.5114,0.0142,graphsage_edge_sum
+link prediction (AUC),0.511,0.5063,-0.0046,deepwalk

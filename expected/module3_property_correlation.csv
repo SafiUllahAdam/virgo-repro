@@ -1,0 +1,3 @@
+property,homophily_adjusted,largest_component_frac,n_values,distinct_values,n_at_1.0,n_datasets,spearman_p
+homophily_adjusted,1.0,-0.4146,15,15,0,15,0.1244
+largest_component_frac,-0.4146,1.0,16,6,11,15,0.1244

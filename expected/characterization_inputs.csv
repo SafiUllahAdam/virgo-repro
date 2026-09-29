@@ -1,0 +1,61 @@
+dataset,task,graph_variant,metric,mean,std,seeds
+cora,link prediction (AUC),centrality,auc,0.5659,0.0056,42|43|44
+cora,link prediction (AUC),degree,auc,0.5391,0.0053,42|43|44
+cora,link prediction (AUC),hybrid,auc,0.5463,0.0126,42|43|44
+cora,link prediction (AUC),original,auc,0.613,0.0014,42|43|44
+cora,link prediction (AUC),psi,auc,0.515,0.0038,42|43|44
+cora,node classification (weighted F1),centrality,weighted_f1,0.2942,0.0153,42|43|44
+cora,node classification (weighted F1),degree,weighted_f1,0.2351,0.0083,42|43|44
+cora,node classification (weighted F1),hybrid,weighted_f1,0.2918,0.0035,42|43|44
+cora,node classification (weighted F1),original,weighted_f1,0.4266,0.0154,42|43|44
+cora,node classification (weighted F1),psi,weighted_f1,0.2351,0.0085,42|43|44
+enzymes,link prediction (AUC),centrality,auc,0.6563,0.0054,42|43|44
+enzymes,link prediction (AUC),degree,auc,0.5484,0.0133,42|43|44
+enzymes,link prediction (AUC),hybrid,auc,0.6322,0.0018,42|43|44
+enzymes,link prediction (AUC),original,auc,0.7,0.0086,42|43|44
+enzymes,link prediction (AUC),psi,auc,0.6236,0.0019,42|43|44
+enzymes,node classification (weighted F1),centrality,weighted_f1,0.5372,0.0034,42|43|44
+enzymes,node classification (weighted F1),degree,weighted_f1,0.5474,0.0058,42|43|44
+enzymes,node classification (weighted F1),hybrid,weighted_f1,0.5546,0.0059,42|43|44
+enzymes,node classification (weighted F1),original,weighted_f1,0.5591,0.0075,42|43|44
+enzymes,node classification (weighted F1),psi,weighted_f1,0.548,0.0048,42|43|44
+ogbl_ddi,link prediction (OGB official),centrality,test_hits@20,0.0519,0.0127,42|43|44
+ogbl_ddi,link prediction (OGB official),degree,test_hits@20,0.0331,0.0134,42|43|44
+ogbl_ddi,link prediction (OGB official),hybrid,test_hits@20,0.0344,0.0174,42|43|44
+ogbl_ddi,link prediction (OGB official),original,test_hits@20,0.0173,0.0129,42|43|44
+ogbl_ddi,link prediction (OGB official),psi,test_hits@20,0.0423,0.0143,42|43|44
+ogbn_arxiv,node classification (OGB official),centrality,test_acc,0.2658,0.0019,42|43|44
+ogbn_arxiv,node classification (OGB official),degree,test_acc,0.2416,0.0032,42|43|44
+ogbn_arxiv,node classification (OGB official),hybrid,test_acc,0.3618,0.0032,42|43|44
+ogbn_arxiv,node classification (OGB official),original,test_acc,0.3918,0.006,42|43|44
+ogbn_arxiv,node classification (OGB official),psi,test_acc,0.2466,0.0019,42|43|44
+questions,link prediction (AUC),centrality,auc,0.5078,0.024,42|43|44
+questions,link prediction (AUC),degree,auc,0.5272,0.0096,42|43|44
+questions,link prediction (AUC),hybrid,auc,0.5526,0.0232,42|43|44
+questions,link prediction (AUC),original,auc,0.4665,0.013,42|43|44
+questions,link prediction (AUC),psi,auc,0.4923,0.0251,42|43|44
+questions,node classification (weighted F1),centrality,weighted_f1,0.9554,0.0,42|43|44
+questions,node classification (weighted F1),degree,weighted_f1,0.9554,0.0,42|43|44
+questions,node classification (weighted F1),hybrid,weighted_f1,0.9555,0.0,42|43|44
+questions,node classification (weighted F1),original,weighted_f1,0.9555,0.0,42|43|44
+questions,node classification (weighted F1),psi,weighted_f1,0.9554,0.0,42|43|44
+roman_empire,link prediction (AUC),centrality,auc,0.698,0.0139,42|43|44
+roman_empire,link prediction (AUC),degree,auc,0.5092,0.0033,42|43|44
+roman_empire,link prediction (AUC),hybrid,auc,0.5408,0.0026,42|43|44
+roman_empire,link prediction (AUC),original,auc,0.6019,0.0124,42|43|44
+roman_empire,link prediction (AUC),psi,auc,0.5407,0.0027,42|43|44
+roman_empire,node classification (weighted F1),centrality,weighted_f1,0.2093,0.0049,42|43|44
+roman_empire,node classification (weighted F1),degree,weighted_f1,0.2108,0.0044,42|43|44
+roman_empire,node classification (weighted F1),hybrid,weighted_f1,0.2144,0.0076,42|43|44
+roman_empire,node classification (weighted F1),original,weighted_f1,0.2561,0.0092,42|43|44
+roman_empire,node classification (weighted F1),psi,weighted_f1,0.2069,0.0018,42|43|44
+tolokers,link prediction (AUC),centrality,auc,0.688,0.0057,42|43|44
+tolokers,link prediction (AUC),degree,auc,0.6936,0.0033,42|43|44
+tolokers,link prediction (AUC),hybrid,auc,0.6831,0.014,42|43|44
+tolokers,link prediction (AUC),original,auc,0.6444,0.0188,42|43|44
+tolokers,link prediction (AUC),psi,auc,0.7007,0.0032,42|43|44
+tolokers,node classification (weighted F1),centrality,weighted_f1,0.7132,0.0029,42|43|44
+tolokers,node classification (weighted F1),degree,weighted_f1,0.7158,0.0049,42|43|44
+tolokers,node classification (weighted F1),hybrid,weighted_f1,0.7265,0.006,42|43|44
+tolokers,node classification (weighted F1),original,weighted_f1,0.7345,0.0037,42|43|44
+tolokers,node classification (weighted F1),psi,weighted_f1,0.7129,0.0044,42|43|44

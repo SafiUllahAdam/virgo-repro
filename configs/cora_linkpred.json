@@ -1,0 +1,5 @@
+{
+  "task": "linkpred",
+  "dataset": "cora",
+  "seed": 42
+}

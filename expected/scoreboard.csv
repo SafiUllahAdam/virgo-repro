@@ -1,0 +1,1436 @@
+dataset,encoder,graph_variant,top_K_neighbors,task,metric,seeds,mean,std
+actor,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5041,0.0074
+actor,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.6152,0.003
+actor,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.6329,0.0046
+actor,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6368,0.0091
+actor,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5996,0.0057
+actor,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.7016,0.0043
+actor,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5034,0.0061
+actor,features_only,psi,10,link prediction (AUC),auc,42|43|44,0.5871,0.0291
+actor,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5065,0.0257
+actor,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5092,0.0273
+actor,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6894,0.0171
+actor,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6532,0.0475
+actor,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6741,0.0435
+actor,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.6573,0.0135
+actor,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.602,0.0315
+actor,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5887,0.0116
+actor,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6649,0.0114
+actor,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6408,0.012
+actor,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6157,0.0146
+actor,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6534,0.0121
+actor,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.597,0.0225
+actor,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6485,0.0113
+actor,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6414,0.009
+actor,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.636,0.0046
+actor,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.547,0.0088
+actor,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.5882,0.0132
+actor,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.4923,0.035
+actor,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.5891,0.0109
+actor,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.5223,0.0223
+actor,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.4633,0.0044
+actor,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.4963,0.0072
+actor,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.1967,0.0034
+actor,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.1837,0.0108
+actor,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2026,0.0076
+actor,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.1999,0.0045
+actor,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.195,0.0174
+actor,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.2075,0.0146
+actor,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2026,0.0028
+actor,features_only,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1602,0.0119
+actor,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.1653,0.0102
+actor,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.1674,0.0025
+actor,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.1729,0.0031
+actor,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.1677,0.0131
+actor,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.1678,0.0033
+actor,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.1847,0.0068
+actor,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1692,0.0062
+actor,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1466,0.0108
+actor,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1498,0.0234
+actor,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1061,0.0
+actor,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.159,0.0094
+actor,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1252,0.01
+actor,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1076,0.0009
+actor,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1889,0.011
+airports_brazil,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5425,0.0235
+airports_brazil,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5116,0.0162
+airports_brazil,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.751,0.0509
+airports_brazil,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.752,0.0239
+airports_brazil,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7283,0.0404
+airports_brazil,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7537,0.0294
+airports_brazil,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5163,0.035
+airports_brazil,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5468,0.042
+airports_brazil,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5296,0.0128
+airports_brazil,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6235,0.0165
+airports_brazil,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6393,0.0172
+airports_brazil,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6176,0.0194
+airports_brazil,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5307,0.0475
+airports_brazil,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5413,0.0253
+airports_europe,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6008,0.0289
+airports_europe,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6294,0.0694
+airports_europe,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.8004,0.0084
+airports_europe,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7918,0.0046
+airports_europe,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7944,0.0108
+airports_europe,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.6657,0.0234
+airports_europe,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6319,0.0744
+airports_europe,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6221,0.0266
+airports_europe,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6309,0.0184
+airports_europe,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6564,0.014
+airports_europe,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6332,0.0213
+airports_europe,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6593,0.0147
+airports_europe,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5173,0.028
+airports_europe,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6284,0.026
+airports_usa,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.7128,0.0204
+airports_usa,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6964,0.0361
+airports_usa,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.8401,0.0118
+airports_usa,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8536,0.0083
+airports_usa,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.8097,0.0021
+airports_usa,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.8857,0.0105
+airports_usa,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6994,0.0356
+airports_usa,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7387,0.0199
+airports_usa,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.723,0.0133
+airports_usa,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7237,0.0243
+airports_usa,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7011,0.0214
+airports_usa,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7148,0.0251
+airports_usa,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6066,0.0196
+airports_usa,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7067,0.0139
+amazon_computers,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6059,0.0098
+amazon_computers,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.617,0.0354
+amazon_computers,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7855,0.0151
+amazon_computers,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.804,0.0235
+amazon_computers,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7181,0.1048
+amazon_computers,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.8041,0.0187
+amazon_computers,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6612,0.0271
+amazon_computers,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6792,0.0163
+amazon_computers,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6683,0.0099
+amazon_computers,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7289,0.0164
+amazon_computers,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7217,0.0142
+amazon_computers,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7323,0.0123
+amazon_computers,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7196,0.0146
+amazon_computers,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6949,0.0117
+amazon_photo,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5197,0.008
+amazon_photo,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4801,0.0098
+amazon_photo,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.9542,0.0002
+amazon_photo,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.9505,0.001
+amazon_photo,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.9328,0.0011
+amazon_photo,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9585,0.0001
+amazon_photo,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5058,0.0107
+amazon_photo,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6837,0.0212
+amazon_photo,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6746,0.0087
+amazon_photo,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7816,0.0157
+amazon_photo,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7829,0.0149
+amazon_photo,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7778,0.015
+amazon_photo,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7915,0.0177
+amazon_photo,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7176,0.0125
+amazon_photo,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6559,0.006
+amazon_photo,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6729,0.0058
+amazon_photo,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.3477,0.0127
+amazon_photo,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.1887,0.002
+amazon_photo,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.8253,0.0118
+amazon_photo,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.8238,0.0094
+amazon_photo,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.8437,0.0078
+amazon_photo,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.918,0.0015
+amazon_photo,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2292,0.0086
+amazon_photo,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.4667,0.0143
+amazon_photo,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.3759,0.0126
+amazon_photo,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.5301,0.0096
+amazon_photo,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5689,0.0062
+amazon_photo,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5177,0.0104
+amazon_photo,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.6174,0.0227
+amazon_photo,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4195,0.0146
+amazon_ratings,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.7112,0.0075
+amazon_ratings,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5491,0.003
+amazon_ratings,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.9407,0.0011
+amazon_ratings,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.922,0.0022
+amazon_ratings,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7971,0.0018
+amazon_ratings,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9982,0.0001
+amazon_ratings,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5073,0.0033
+amazon_ratings,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6235,0.0137
+amazon_ratings,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.4537,0.0042
+amazon_ratings,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6555,0.0104
+amazon_ratings,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6929,0.0157
+amazon_ratings,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.512,0.0075
+amazon_ratings,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7571,0.0178
+amazon_ratings,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5632,0.0102
+amazon_ratings,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.4759,0.0015
+amazon_ratings,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5595,0.0023
+amazon_ratings,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2488,0.0057
+amazon_ratings,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2123,0.0047
+amazon_ratings,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2616,0.0046
+amazon_ratings,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2881,0.0058
+amazon_ratings,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.286,0.0053
+amazon_ratings,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.3447,0.0069
+amazon_ratings,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2308,0.0034
+amazon_ratings,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2469,0.008
+amazon_ratings,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2543,0.0044
+amazon_ratings,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2623,0.0015
+amazon_ratings,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2689,0.0031
+amazon_ratings,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2662,0.0015
+amazon_ratings,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.2875,0.0029
+amazon_ratings,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2546,0.003
+amherst41,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6394,0.0155
+amherst41,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6239,0.0271
+amherst41,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7837,0.0149
+amherst41,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7831,0.0213
+amherst41,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7834,0.0171
+amherst41,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7946,0.0193
+amherst41,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.623,0.0249
+amherst41,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6749,0.0111
+amherst41,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6528,0.007
+amherst41,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6693,0.0178
+amherst41,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6718,0.0145
+amherst41,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.67,0.017
+amherst41,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6651,0.0155
+amherst41,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6517,0.0081
+amherst41,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6367,0.0101
+amherst41,graphsage_edge,psi_qnorm,10,link prediction (AUC),auc,42|43|44,0.6611,0.0051
+amherst41,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.637,0.0092
+artnet_exp,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6625,0.0048
+artnet_exp,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6764,0.0027
+artnet_exp,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6412,0.0174
+artnet_exp,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6353,0.0145
+artnet_exp,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6624,0.0121
+artnet_exp,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5892,0.0099
+artnet_exp,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6676,0.0078
+bag_of_words_kos,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.4814,0.0176
+bag_of_words_kos,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5005,0.0129
+bag_of_words_kos,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5185,0.0198
+bag_of_words_kos,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.4839,0.0242
+bag_of_words_kos,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5198,0.0213
+bag_of_words_kos,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.3976,0.0217
+bag_of_words_kos,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4912,0.0091
+bag_of_words_nips,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.4103,0.0353
+bag_of_words_nips,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.4569,0.0155
+bag_of_words_nips,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.3556,0.0149
+bag_of_words_nips,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.3234,0.0391
+bag_of_words_nips,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.3547,0.0142
+bag_of_words_nips,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.2361,0.0207
+bag_of_words_nips,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4546,0.031
+blogcatalog,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5759,0.0133
+blogcatalog,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5079,0.0087
+blogcatalog,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7099,0.018
+blogcatalog,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7131,0.0172
+blogcatalog,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6842,0.0078
+blogcatalog,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.6949,0.0208
+blogcatalog,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5401,0.0061
+blogcatalog,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6012,0.0096
+blogcatalog,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5947,0.0057
+blogcatalog,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6082,0.0164
+blogcatalog,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6037,0.0157
+blogcatalog,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.607,0.0158
+blogcatalog,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5877,0.0124
+blogcatalog,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5997,0.0062
+board_directors,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.4069,0.042
+board_directors,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.3543,0.0358
+board_directors,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.4538,0.0224
+board_directors,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.397,0.0386
+board_directors,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.3539,0.0329
+board_directors,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4417,0.0096
+board_directors,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4382,0.0129
+celegans_neural,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6232,0.0195
+celegans_neural,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5857,0.0118
+celegans_neural,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6478,0.0132
+celegans_neural,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6659,0.015
+celegans_neural,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6316,0.0074
+celegans_neural,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.6688,0.019
+celegans_neural,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6026,0.0102
+chameleon,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5988,0.0018
+chameleon,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4968,0.0166
+chameleon,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.934,0.0044
+chameleon,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.9457,0.0008
+chameleon,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.906,0.0016
+chameleon,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9536,0.0013
+chameleon,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.538,0.0087
+chameleon,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.713,0.014
+chameleon,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6357,0.013
+chameleon,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.824,0.0159
+chameleon,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8294,0.017
+chameleon,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.8053,0.0236
+chameleon,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.8105,0.035
+chameleon,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6865,0.0099
+chameleon_filtered,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.7885,0.0174
+chameleon_filtered,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6726,0.042
+chameleon_filtered,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.8672,0.0083
+chameleon_filtered,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8966,0.01
+chameleon_filtered,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.8288,0.0067
+chameleon_filtered,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.8939,0.0337
+chameleon_filtered,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.7586,0.0246
+chameleon_filtered,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.8348,0.0165
+chameleon_filtered,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.7457,0.0095
+chameleon_filtered,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8775,0.0109
+chameleon_filtered,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.855,0.011
+chameleon_filtered,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.8819,0.0051
+chameleon_filtered,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.798,0.0083
+chameleon_filtered,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.7373,0.0032
+chameleon_filtered,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.7727,0.0087
+citeseer_linqs,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.6593,0.0083
+citeseer_linqs,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.541,0.0076
+citeseer_linqs,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.6504,0.0185
+citeseer_linqs,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8232,0.0136
+citeseer_linqs,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5975,0.0059
+citeseer_linqs,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9234,0.0071
+citeseer_linqs,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5331,0.0147
+citeseer_linqs,features_only,psi,10,link prediction (AUC),auc,42|43|44,0.4505,0.015
+citeseer_linqs,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5036,0.0223
+citeseer_linqs,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5201,0.0193
+citeseer_linqs,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.4924,0.0236
+citeseer_linqs,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5422,0.0565
+citeseer_linqs,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.523,0.0047
+citeseer_linqs,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.5355,0.0061
+citeseer_linqs,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4829,0.0261
+citeseer_linqs,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5335,0.0193
+citeseer_linqs,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5477,0.0099
+citeseer_linqs,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5185,0.0207
+citeseer_linqs,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5598,0.0209
+citeseer_linqs,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5664,0.0098
+citeseer_linqs,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6279,0.015
+citeseer_linqs,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.501,0.0205
+citeseer_linqs,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5391,0.0138
+citeseer_linqs,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5137,0.0219
+citeseer_linqs,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.4199,0.0183
+citeseer_linqs,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.497,0.0172
+citeseer_linqs,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.4942,0.0176
+citeseer_linqs,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.5014,0.0145
+citeseer_linqs,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.5489,0.0239
+citeseer_linqs,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.4695,0.019
+citeseer_linqs,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.5144,0.0151
+citeseer_linqs,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.3533,0.0083
+citeseer_linqs,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.1931,0.0113
+citeseer_linqs,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.3146,0.013
+citeseer_linqs,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.4099,0.0107
+citeseer_linqs,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.286,0.0049
+citeseer_linqs,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.5473,0.0125
+citeseer_linqs,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2255,0.0085
+citeseer_linqs,features_only,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2139,0.0204
+citeseer_linqs,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2818,0.016
+citeseer_linqs,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2291,0.012
+citeseer_linqs,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2698,0.0082
+citeseer_linqs,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.3069,0.0119
+citeseer_linqs,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2597,0.0154
+citeseer_linqs,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.3298,0.0081
+citeseer_linqs,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2327,0.008
+citeseer_linqs,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2365,0.0219
+citeseer_linqs,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1707,0.0176
+citeseer_linqs,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.0717,0.0
+citeseer_linqs,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2412,0.0021
+citeseer_linqs,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1886,0.0166
+citeseer_linqs,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.194,0.0225
+citeseer_linqs,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1726,0.0147
+coauthor_cs,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6675,0.007
+coauthor_cs,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6274,0.0086
+coauthor_cs,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6764,0.011
+coauthor_cs,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6996,0.0085
+coauthor_cs,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6539,0.0118
+coauthor_cs,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7185,0.0143
+coauthor_cs,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6456,0.0069
+coauthor_physics,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7153,0.0103
+coauthor_physics,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6542,0.0109
+coauthor_physics,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.728,0.0176
+coauthor_physics,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.76,0.0165
+coauthor_physics,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6992,0.0138
+coauthor_physics,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7517,0.0199
+coauthor_physics,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6785,0.0077
+cora,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5634,0.0062
+cora,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5501,0.0177
+cora,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.6738,0.0159
+cora,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7887,0.0116
+cora,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5587,0.0155
+cora,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.8971,0.0081
+cora,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.499,0.0062
+cora,features_only,psi,10,link prediction (AUC),auc,42|43|44,0.4831,0.0077
+cora,gin_edge,centrality,10,link prediction (AUC),auc,42,0.5,0.0
+cora,gin_edge,degree,10,link prediction (AUC),auc,42,0.5,0.0
+cora,gin_edge,hybrid,10,link prediction (AUC),auc,42,0.5029,0.0
+cora,gin_edge,hybrid_centrality,10,link prediction (AUC),auc,42,0.5609,0.0
+cora,gin_edge,hybrid_degree,10,link prediction (AUC),auc,42,0.4762,0.0
+cora,gin_edge,original,10,link prediction (AUC),auc,42,0.648,0.0
+cora,gin_edge,psi,10,link prediction (AUC),auc,42,0.5,0.0
+cora,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5621,0.0159
+cora,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5333,0.008
+cora,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5424,0.0162
+cora,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5854,0.0142
+cora,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5474,0.0086
+cora,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6189,0.0135
+cora,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5095,0.0172
+cora,graphsage_edge,psi_lambda,10,link prediction (AUC),auc,42|43|44,0.5176,0.0062
+cora,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5295,0.0009
+cora,graphsage_edge,psi_qnorm,10,link prediction (AUC),auc,42|43|44,0.5348,0.0084
+cora,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5026,0.011
+cora,graphsage_edge,psi_w_deg,10,link prediction (AUC),auc,42|43|44,0.5166,0.0068
+cora,graphsage_edge,psi_w_delta,10,link prediction (AUC),auc,42|43|44,0.4933,0.0216
+cora,graphsage_edge,psi_w_ev,10,link prediction (AUC),auc,42|43|44,0.5906,0.0126
+cora,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.4349,0.0213
+cora,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.5298,0.0104
+cora,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.497,0.0235
+cora,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.4864,0.0042
+cora,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.496,0.0135
+cora,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.4594,0.0093
+cora,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.5134,0.0081
+cora,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.3668,0.0171
+cora,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.159,0.0143
+cora,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.4469,0.0067
+cora,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5232,0.0068
+cora,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.4593,0.0099
+cora,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.81,0.0194
+cora,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2133,0.0091
+cora,features_only,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1834,0.0079
+cora,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2942,0.0153
+cora,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2351,0.0083
+cora,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2918,0.0035
+cora,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.3554,0.0135
+cora,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2661,0.0074
+cora,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.4266,0.0154
+cora,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2351,0.0085
+cora,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2328,0.0028
+cora,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1791,0.006
+cora,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1406,0.0
+cora,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2462,0.0056
+cora,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2153,0.0068
+cora,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1743,0.0097
+cora,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1497,0.007
+cora_full,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6001,0.0514
+cora_full,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6097,0.0121
+cora_full,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6889,0.0306
+cora_full,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7196,0.0184
+cora_full,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6748,0.0107
+cora_full,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7204,0.0263
+cora_full,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5921,0.0195
+cora_full,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6543,0.0056
+cora_full,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6285,0.0098
+cora_full,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6679,0.0083
+cora_full,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7084,0.0179
+cora_full,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.667,0.0066
+cora_full,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.706,0.0147
+cora_full,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6337,0.0031
+cora_ml,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6318,0.0171
+cora_ml,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6158,0.0088
+cora_ml,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6368,0.0187
+cora_ml,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6814,0.0212
+cora_ml,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6434,0.0077
+cora_ml,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7004,0.0138
+cora_ml,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5958,0.0198
+cornell5,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6637,0.0126
+cornell5,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6297,0.0269
+cornell5,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7706,0.0324
+cornell5,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7535,0.034
+cornell5,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7511,0.0374
+cornell5,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7655,0.0197
+cornell5,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6418,0.0305
+cornell5,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7078,0.0072
+cornell5,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6842,0.0114
+cornell5,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.705,0.0078
+cornell5,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.702,0.0087
+cornell5,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7036,0.0097
+cornell5,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.691,0.0087
+cornell5,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6918,0.0127
+cornell5,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6774,0.0076
+cornell5,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6804,0.0115
+cornell_webkb,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.525,0.0219
+cornell_webkb,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4991,0.0281
+cornell_webkb,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.4988,0.0301
+cornell_webkb,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5051,0.0623
+cornell_webkb,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.4625,0.0286
+cornell_webkb,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.5375,0.0384
+cornell_webkb,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.4652,0.0265
+cornell_webkb,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5239,0.0473
+cornell_webkb,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.4648,0.0163
+cornell_webkb,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.4854,0.0069
+cornell_webkb,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5134,0.0337
+cornell_webkb,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.4679,0.0238
+cornell_webkb,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4985,0.0497
+cornell_webkb,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4912,0.0039
+crocodile,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5802,0.0288
+crocodile,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5365,0.0566
+crocodile,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6985,0.061
+crocodile,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7127,0.0461
+crocodile,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7018,0.0386
+crocodile,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.486,0.1081
+crocodile,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5676,0.0307
+crocodile,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6195,0.0324
+crocodile,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5919,0.018
+crocodile,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7352,0.0331
+crocodile,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7158,0.0463
+crocodile,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7269,0.0371
+crocodile,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.6652,0.0595
+crocodile,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5989,0.0082
+dblp,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6626,0.0179
+dblp,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6627,0.0109
+dblp,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6762,0.008
+dblp,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7083,0.014
+dblp,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7025,0.0083
+dblp,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7073,0.0109
+dblp,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6451,0.0112
+deezer_europe,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5088,0.003
+deezer_europe,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.6169,0.0085
+deezer_europe,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.7379,0.002
+deezer_europe,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7674,0.0007
+deezer_europe,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6712,0.0032
+deezer_europe,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.8912,0.0005
+deezer_europe,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.4987,0.0006
+deezer_europe,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6213,0.054
+deezer_europe,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6139,0.0817
+deezer_europe,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6726,0.0202
+deezer_europe,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.685,0.0333
+deezer_europe,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6526,0.0146
+deezer_europe,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7278,0.0088
+deezer_europe,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6206,0.0386
+deezer_europe,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6672,0.0072
+deezer_europe,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6677,0.0105
+deezer_europe,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6809,0.005
+deezer_europe,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.699,0.0055
+deezer_europe,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6813,0.0034
+deezer_europe,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.7032,0.0201
+deezer_europe,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6645,0.0066
+email_eu_core,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.664,0.0273
+email_eu_core,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6717,0.018
+email_eu_core,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6392,0.0134
+email_eu_core,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6221,0.0117
+email_eu_core,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6389,0.014
+email_eu_core,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5589,0.009
+email_eu_core,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.671,0.0166
+enzymes,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5283,0.0018
+enzymes,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5052,0.001
+enzymes,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.7765,0.0031
+enzymes,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7896,0.0032
+enzymes,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5623,0.0016
+enzymes,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9007,0.0009
+enzymes,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5039,0.0038
+enzymes,features_only,psi,10,link prediction (AUC),auc,42|43|44,0.6201,0.0007
+enzymes,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6391,0.0297
+enzymes,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5199,0.021
+enzymes,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.628,0.0077
+enzymes,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6684,0.0127
+enzymes,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5204,0.0173
+enzymes,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.6931,0.0063
+enzymes,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6118,0.003
+enzymes,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6542,0.0093
+enzymes,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5516,0.0083
+enzymes,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6326,0.0076
+enzymes,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6666,0.0091
+enzymes,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5632,0.0072
+enzymes,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6986,0.0099
+enzymes,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6247,0.0049
+enzymes,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5379,0.0133
+enzymes,graphsage_edge,psi_qnorm,10,link prediction (AUC),auc,42|43|44,0.5416,0.0091
+enzymes,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6094,0.0108
+enzymes,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.6498,0.0026
+enzymes,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.532,0.0013
+enzymes,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.4877,0.0367
+enzymes,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.6445,0.0078
+enzymes,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.5468,0.0045
+enzymes,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.6385,0.002
+enzymes,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.5103,0.0057
+enzymes,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.4946,0.0057
+enzymes,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5175,0.005
+enzymes,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.4998,0.0083
+enzymes,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5077,0.0017
+enzymes,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5255,0.0092
+enzymes,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.5086,0.0048
+enzymes,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5005,0.0052
+enzymes,features_only,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4997,0.0019
+enzymes,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5374,0.0037
+enzymes,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5472,0.0056
+enzymes,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.5547,0.0065
+enzymes,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5384,0.0056
+enzymes,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5485,0.0071
+enzymes,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.5591,0.0083
+enzymes,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5473,0.0057
+enzymes,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5117,0.0061
+enzymes,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5401,0.0039
+enzymes,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.3277,0.0
+enzymes,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5204,0.0126
+enzymes,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5019,0.0127
+enzymes,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5002,0.0025
+enzymes,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4789,0.0035
+escorts,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.624,0.0073
+escorts,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6262,0.0206
+escorts,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6125,0.0129
+escorts,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6323,0.0301
+escorts,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6522,0.0165
+escorts,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5686,0.0213
+escorts,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5733,0.0065
+flickr_attr,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6139,0.0148
+flickr_attr,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6197,0.011
+flickr_attr,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.4943,0.0333
+flickr_attr,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.4626,0.0369
+flickr_attr,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.4969,0.0314
+flickr_attr,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.4137,0.025
+flickr_attr,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6188,0.0086
+foursquare_checkin,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5632,0.0158
+foursquare_checkin,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5708,0.0096
+foursquare_checkin,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5736,0.0153
+foursquare_checkin,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5662,0.012
+foursquare_checkin,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5705,0.015
+foursquare_checkin,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5238,0.0185
+foursquare_checkin,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5706,0.0181
+foursquare_tips,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.4576,0.0227
+foursquare_tips,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5682,0.0073
+foursquare_tips,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.4804,0.0098
+foursquare_tips,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.4712,0.0122
+foursquare_tips,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5705,0.0039
+foursquare_tips,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4854,0.0294
+foursquare_tips,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4743,0.0311
+genetic_fission_yeast,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5134,0.023
+genetic_fission_yeast,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5134,0.0184
+genetic_fission_yeast,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.7541,0.0048
+genetic_fission_yeast,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7669,0.0043
+genetic_fission_yeast,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7498,0.0041
+genetic_fission_yeast,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.4922,0.006
+genetic_fission_yeast,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5147,0.0115
+genetic_fission_yeast,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6327,0.023
+genetic_fission_yeast,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6336,0.0177
+genetic_fission_yeast,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6085,0.0084
+genetic_fission_yeast,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5729,0.0032
+genetic_fission_yeast,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6213,0.0107
+genetic_fission_yeast,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4798,0.024
+genetic_fission_yeast,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6332,0.0175
+genetic_fission_yeast,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.9901,0.0012
+genetic_fission_yeast,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9899,0.0005
+genetic_fission_yeast,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9904,0.0003
+genetic_fission_yeast,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genetic_fission_yeast,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9902,0.0
+genius,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.3399,0.0242
+genius,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.3601,0.0051
+genius,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5561,0.1014
+genius,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.4335,0.0241
+genius,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.2961,0.0991
+genius,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.4041,0.1431
+genius,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.2709,0.0166
+genius,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.4012,0.0288
+genius,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.3539,0.0014
+genius,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6121,0.009
+genius,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.4962,0.0272
+genius,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5468,0.0053
+genius,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4916,0.0367
+genius,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.3648,0.0131
+github,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5761,0.0098
+github,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6717,0.0116
+github,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6167,0.022
+github,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5417,0.027
+github,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6373,0.0238
+github,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5099,0.0224
+github,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6711,0.0069
+johnshopkins55,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6815,0.0243
+johnshopkins55,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6277,0.0293
+johnshopkins55,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7936,0.0194
+johnshopkins55,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.799,0.0111
+johnshopkins55,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7956,0.0183
+johnshopkins55,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.8063,0.0192
+johnshopkins55,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6366,0.0218
+johnshopkins55,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.716,0.0108
+johnshopkins55,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6818,0.0116
+johnshopkins55,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7003,0.0125
+johnshopkins55,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7021,0.0141
+johnshopkins55,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7012,0.0135
+johnshopkins55,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6854,0.0156
+johnshopkins55,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6819,0.0125
+johnshopkins55,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6687,0.0089
+johnshopkins55,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6686,0.0081
+lastfm_asia,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5412,0.0012
+lastfm_asia,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.6219,0.0114
+lastfm_asia,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.8304,0.0029
+lastfm_asia,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8549,0.0003
+lastfm_asia,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7386,0.0024
+lastfm_asia,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9432,0.0013
+lastfm_asia,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5167,0.0084
+lastfm_asia,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6737,0.0101
+lastfm_asia,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6669,0.0103
+lastfm_asia,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7049,0.0083
+lastfm_asia,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7284,0.0096
+lastfm_asia,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7041,0.0093
+lastfm_asia,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7159,0.0173
+lastfm_asia,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6661,0.0079
+lastfm_asia,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6487,0.0135
+lastfm_asia,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6544,0.0097
+lastfm_asia,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.213,0.0118
+lastfm_asia,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.1245,0.0059
+lastfm_asia,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.6186,0.0048
+lastfm_asia,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.8543,0.0037
+lastfm_asia,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.145,0.0055
+lastfm_asia,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2615,0.0008
+lastfm_asia,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2296,0.0022
+lastfm_asia,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2844,0.0118
+lastfm_asia,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.377,0.0067
+lastfm_asia,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.223,0.0029
+messal_shale,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.545,0.0178
+messal_shale,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.556,0.0098
+messal_shale,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5682,0.013
+messal_shale,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5695,0.0125
+messal_shale,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5702,0.0136
+messal_shale,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5742,0.0136
+messal_shale,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5491,0.0066
+minesweeper,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5498,0.0051
+minesweeper,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5176,0.0056
+minesweeper,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.9303,0.0023
+minesweeper,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.9635,0.001
+minesweeper,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7536,0.0037
+minesweeper,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9998,0.0001
+minesweeper,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5023,0.0035
+minesweeper,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5961,0.0405
+minesweeper,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5564,0.0042
+minesweeper,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6489,0.0205
+minesweeper,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6858,0.0546
+minesweeper,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5285,0.0028
+minesweeper,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7031,0.0044
+minesweeper,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6134,0.0191
+minesweeper,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5979,0.0205
+minesweeper,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5613,0.0072
+minesweeper,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6684,0.0124
+minesweeper,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6534,0.0171
+minesweeper,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5762,0.0087
+minesweeper,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7133,0.0106
+minesweeper,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6246,0.0125
+minesweeper,graphsage_edge,psi_lambda,10,link prediction (AUC),auc,42|43|44,0.5481,0.0031
+minesweeper,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5686,0.0076
+minesweeper,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6209,0.0094
+minesweeper,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.7111,0.0
+minesweeper,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.7111,0.0
+minesweeper,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.7111,0.0
+minesweeper,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.7111,0.0
+minesweeper,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.7111,0.0
+nematode_mammal,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5922,0.0097
+nematode_mammal,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6299,0.0148
+nematode_mammal,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5992,0.0124
+nematode_mammal,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6191,0.0305
+nematode_mammal,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6615,0.0127
+nematode_mammal,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5835,0.0316
+nematode_mammal,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5623,0.0038
+ogbl_ddi,deepwalk,centrality,10,link prediction (OGB official),test_hits@20,42|43|44,0.01,0.002
+ogbl_ddi,deepwalk,degree,10,link prediction (OGB official),test_hits@20,42|43|44,0.008,0.0024
+ogbl_ddi,deepwalk,hybrid,10,link prediction (OGB official),test_hits@20,42|43|44,0.0533,0.0062
+ogbl_ddi,deepwalk,original,10,link prediction (OGB official),test_hits@20,42|43|44,0.0378,0.0084
+ogbl_ddi,deepwalk,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0081,0.0031
+ogbl_ddi,graphsage_edge,centrality,10,link prediction (OGB official),test_hits@20,42|43|44,0.0519,0.0127
+ogbl_ddi,graphsage_edge,degree,10,link prediction (OGB official),test_hits@20,42|43|44,0.0331,0.0134
+ogbl_ddi,graphsage_edge,hybrid,10,link prediction (OGB official),test_hits@20,42|43|44,0.0344,0.0174
+ogbl_ddi,graphsage_edge,original,10,link prediction (OGB official),test_hits@20,42|43|44,0.0173,0.0129
+ogbl_ddi,graphsage_edge,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0423,0.0143
+ogbl_ddi,graphsage_edge_feat_centrality,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0368,0.0096
+ogbl_ddi,graphsage_edge_feat_clustering,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0118,0.0021
+ogbl_ddi,graphsage_edge_feat_const,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge_feat_deg_cent,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0421,0.0252
+ogbl_ddi,graphsage_edge_feat_degree,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0291,0.0052
+ogbl_ddi,graphsage_edge_feat_psi,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0347,0.0034
+ogbl_ddi,graphsage_edge_feat_random,psi,10,link prediction (OGB official),test_hits@20,42|43|44,0.0005,0.0001
+ogbl_ddi,deepwalk,centrality,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0004,0.0
+ogbl_ddi,deepwalk,degree,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0001,0.0
+ogbl_ddi,deepwalk,hybrid,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,deepwalk,original,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0012,0.0001
+ogbl_ddi,deepwalk,psi,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge,centrality,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge,degree,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge,hybrid,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0001,0.0
+ogbl_ddi,graphsage_edge,original,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge,psi,10,link prediction (OGB official),test_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,deepwalk,centrality,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0077,0.0009
+ogbl_ddi,deepwalk,degree,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0071,0.0011
+ogbl_ddi,deepwalk,hybrid,10,link prediction (OGB official),valid_hits@20,42|43|44,0.1038,0.004
+ogbl_ddi,deepwalk,hybrid_centrality,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0873,0.0049
+ogbl_ddi,deepwalk,hybrid_degree,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0941,0.0109
+ogbl_ddi,deepwalk,original,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0772,0.0082
+ogbl_ddi,deepwalk,original_k,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0303,0.0014
+ogbl_ddi,deepwalk,psi,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0071,0.0007
+ogbl_ddi,deepwalk,random_k,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0006,0.0002
+ogbl_ddi,graphsage_edge,centrality,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0326,0.0051
+ogbl_ddi,graphsage_edge,degree,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0227,0.009
+ogbl_ddi,graphsage_edge,hybrid,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0554,0.0087
+ogbl_ddi,graphsage_edge,hybrid_centrality,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0548,0.0051
+ogbl_ddi,graphsage_edge,hybrid_degree,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0565,0.0099
+ogbl_ddi,graphsage_edge,original,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0413,0.0142
+ogbl_ddi,graphsage_edge,original_k,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0371,0.0074
+ogbl_ddi,graphsage_edge,psi,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0251,0.0127
+ogbl_ddi,graphsage_edge,psi_pqnorm,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0198,0.0078
+ogbl_ddi,graphsage_edge,psi_shift,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0233,0.01
+ogbl_ddi,graphsage_edge,random_k,10,link prediction (OGB official),valid_hits@20,42|43|44,0.0078,0.002
+ogbl_ddi,deepwalk,centrality,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0005,0.0001
+ogbl_ddi,deepwalk,degree,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0003,0.0001
+ogbl_ddi,deepwalk,hybrid,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0001,0.0001
+ogbl_ddi,deepwalk,original,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0128,0.0006
+ogbl_ddi,deepwalk,psi,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0004,0.0001
+ogbl_ddi,graphsage_edge,centrality,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge,degree,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge,hybrid,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0014,0.0001
+ogbl_ddi,graphsage_edge,original,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0,0.0
+ogbl_ddi,graphsage_edge,psi,10,link prediction (OGB official),valid_hits@20_cos,42|43|44,0.0,0.0
+ogbn_arxiv,deepwalk,centrality,10,node classification (OGB official),test_acc,42|43|44,0.1242,0.0054
+ogbn_arxiv,deepwalk,degree,10,node classification (OGB official),test_acc,42|43|44,0.1055,0.0045
+ogbn_arxiv,deepwalk,hybrid,10,node classification (OGB official),test_acc,42|43|44,0.438,0.0024
+ogbn_arxiv,deepwalk,original,10,node classification (OGB official),test_acc,42|43|44,0.6661,0.0016
+ogbn_arxiv,deepwalk,psi,10,node classification (OGB official),test_acc,42|43|44,0.0705,0.0015
+ogbn_arxiv,graphsage_edge,centrality,10,node classification (OGB official),test_acc,42|43|44,0.2658,0.0019
+ogbn_arxiv,graphsage_edge,degree,10,node classification (OGB official),test_acc,42|43|44,0.2416,0.0032
+ogbn_arxiv,graphsage_edge,hybrid,10,node classification (OGB official),test_acc,42|43|44,0.3618,0.0032
+ogbn_arxiv,graphsage_edge,original,10,node classification (OGB official),test_acc,42|43|44,0.3918,0.006
+ogbn_arxiv,graphsage_edge,psi,10,node classification (OGB official),test_acc,42|43|44,0.2466,0.0019
+ogbn_arxiv,graphsage_edge_feat_centrality,psi,10,node classification (OGB official),test_acc,42|43|44,0.253,0.0009
+ogbn_arxiv,graphsage_edge_feat_clustering,psi,10,node classification (OGB official),test_acc,42|43|44,0.1069,0.0015
+ogbn_arxiv,graphsage_edge_feat_const,psi,10,node classification (OGB official),test_acc,42|43|44,0.0586,0.0
+ogbn_arxiv,graphsage_edge_feat_deg_cent,psi,10,node classification (OGB official),test_acc,42|43|44,0.2489,0.0022
+ogbn_arxiv,graphsage_edge_feat_degree,psi,10,node classification (OGB official),test_acc,42|43|44,0.1925,0.0033
+ogbn_arxiv,graphsage_edge_feat_psi,psi,10,node classification (OGB official),test_acc,42|43|44,0.1746,0.0044
+ogbn_arxiv,graphsage_edge_feat_random,psi,10,node classification (OGB official),test_acc,42|43|44,0.0586,0.0
+ogbn_arxiv,deepwalk,centrality,10,node classification (OGB official),test_macro_f1,42|43|44,0.0133,0.0002
+ogbn_arxiv,deepwalk,degree,10,node classification (OGB official),test_macro_f1,42|43|44,0.0107,0.0006
+ogbn_arxiv,deepwalk,hybrid,10,node classification (OGB official),test_macro_f1,42|43|44,0.1056,0.0019
+ogbn_arxiv,deepwalk,original,10,node classification (OGB official),test_macro_f1,42|43|44,0.4136,0.0042
+ogbn_arxiv,deepwalk,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0053,0.0003
+ogbn_arxiv,graphsage_edge,centrality,10,node classification (OGB official),test_macro_f1,42|43|44,0.0234,0.0002
+ogbn_arxiv,graphsage_edge,degree,10,node classification (OGB official),test_macro_f1,42|43|44,0.0204,0.0002
+ogbn_arxiv,graphsage_edge,hybrid,10,node classification (OGB official),test_macro_f1,42|43|44,0.047,0.0013
+ogbn_arxiv,graphsage_edge,original,10,node classification (OGB official),test_macro_f1,42|43|44,0.0583,0.0038
+ogbn_arxiv,graphsage_edge,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0217,0.0006
+ogbn_arxiv,graphsage_edge_feat_centrality,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0228,0.0005
+ogbn_arxiv,graphsage_edge_feat_clustering,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0113,0.0004
+ogbn_arxiv,graphsage_edge_feat_const,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0028,0.0
+ogbn_arxiv,graphsage_edge_feat_deg_cent,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0205,0.0004
+ogbn_arxiv,graphsage_edge_feat_degree,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0161,0.0001
+ogbn_arxiv,graphsage_edge_feat_psi,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0166,0.0001
+ogbn_arxiv,graphsage_edge_feat_random,psi,10,node classification (OGB official),test_macro_f1,42|43|44,0.0028,0.0
+ogbn_arxiv,deepwalk,centrality,10,node classification (OGB official),test_weighted_f1,42|43|44,0.0768,0.0026
+ogbn_arxiv,deepwalk,degree,10,node classification (OGB official),test_weighted_f1,42|43|44,0.0742,0.0047
+ogbn_arxiv,deepwalk,hybrid,10,node classification (OGB official),test_weighted_f1,42|43|44,0.3806,0.0017
+ogbn_arxiv,deepwalk,original,10,node classification (OGB official),test_weighted_f1,42|43|44,0.6424,0.002
+ogbn_arxiv,deepwalk,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.028,0.0022
+ogbn_arxiv,graphsage_edge,centrality,10,node classification (OGB official),test_weighted_f1,42|43|44,0.1542,0.0029
+ogbn_arxiv,graphsage_edge,degree,10,node classification (OGB official),test_weighted_f1,42|43|44,0.1482,0.0017
+ogbn_arxiv,graphsage_edge,hybrid,10,node classification (OGB official),test_weighted_f1,42|43|44,0.2758,0.0051
+ogbn_arxiv,graphsage_edge,original,10,node classification (OGB official),test_weighted_f1,42|43|44,0.2997,0.0087
+ogbn_arxiv,graphsage_edge,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.1546,0.0031
+ogbn_arxiv,graphsage_edge_feat_centrality,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.1623,0.0035
+ogbn_arxiv,graphsage_edge_feat_clustering,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.073,0.0019
+ogbn_arxiv,graphsage_edge_feat_const,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.0065,0.0
+ogbn_arxiv,graphsage_edge_feat_deg_cent,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.1429,0.0027
+ogbn_arxiv,graphsage_edge_feat_degree,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.1152,0.0003
+ogbn_arxiv,graphsage_edge_feat_psi,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.1212,0.0009
+ogbn_arxiv,graphsage_edge_feat_random,psi,10,node classification (OGB official),test_weighted_f1,42|43|44,0.0065,0.0001
+ogbn_arxiv,deepwalk,centrality,10,node classification (OGB official),valid_acc,42|43|44,0.1418,0.0038
+ogbn_arxiv,deepwalk,degree,10,node classification (OGB official),valid_acc,42|43|44,0.1231,0.0022
+ogbn_arxiv,deepwalk,hybrid,10,node classification (OGB official),valid_acc,42|43|44,0.4301,0.0024
+ogbn_arxiv,deepwalk,hybrid_centrality,10,node classification (OGB official),valid_acc,42|43|44,0.4411,0.0006
+ogbn_arxiv,deepwalk,hybrid_degree,10,node classification (OGB official),valid_acc,42|43|44,0.4815,0.003
+ogbn_arxiv,deepwalk,original,10,node classification (OGB official),valid_acc,42|43|44,0.6718,0.0022
+ogbn_arxiv,deepwalk,psi,10,node classification (OGB official),valid_acc,42|43|44,0.0929,0.0031
+ogbn_arxiv,graphsage_edge,centrality,10,node classification (OGB official),valid_acc,42|43|44,0.2855,0.0006
+ogbn_arxiv,graphsage_edge,degree,10,node classification (OGB official),valid_acc,42|43|44,0.2567,0.0028
+ogbn_arxiv,graphsage_edge,hybrid,10,node classification (OGB official),valid_acc,42|43|44,0.3661,0.0031
+ogbn_arxiv,graphsage_edge,hybrid_centrality,10,node classification (OGB official),valid_acc,42|43|44,0.3747,0.0017
+ogbn_arxiv,graphsage_edge,hybrid_degree,10,node classification (OGB official),valid_acc,42|43|44,0.3528,0.0012
+ogbn_arxiv,graphsage_edge,original,10,node classification (OGB official),valid_acc,42|43|44,0.3998,0.0041
+ogbn_arxiv,graphsage_edge,psi,10,node classification (OGB official),valid_acc,42|43|44,0.2613,0.002
+ogbn_arxiv,graphsage_edge,psi_pqnorm,10,node classification (OGB official),valid_acc,42|43|44,0.2554,0.0023
+ogbn_arxiv,graphsage_edge,psi_shift,10,node classification (OGB official),valid_acc,42|43|44,0.2632,0.0006
+penn94,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6824,0.0109
+penn94,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6705,0.0109
+penn94,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6705,0.0103
+penn94,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6698,0.011
+penn94,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6689,0.0061
+penn94,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.6557,0.0177
+penn94,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6654,0.0086
+plant_pol_kato,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5737,0.031
+plant_pol_kato,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.3183,0.0473
+plant_pol_kato,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5255,0.0494
+plant_pol_kato,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5484,0.0219
+plant_pol_kato,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.4614,0.0043
+plant_pol_kato,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4332,0.0323
+plant_pol_kato,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5183,0.0677
+plant_pol_robertson,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5248,0.0116
+plant_pol_robertson,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5393,0.0131
+plant_pol_robertson,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5539,0.0117
+plant_pol_robertson,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5273,0.0056
+plant_pol_robertson,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5472,0.005
+plant_pol_robertson,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.3825,0.0053
+plant_pol_robertson,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5355,0.0041
+polblogs,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6866,0.0156
+polblogs,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6901,0.0169
+polblogs,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.721,0.0192
+polblogs,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.711,0.0178
+polblogs,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7212,0.0176
+polblogs,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6787,0.0315
+polblogs,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.687,0.0132
+ppi_fly,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5096,0.0037
+ppi_fly,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5133,0.0109
+ppi_fly,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.7672,0.0018
+ppi_fly,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7933,0.0007
+ppi_fly,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7462,0.0016
+ppi_fly,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.7158,0.0021
+ppi_fly,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.4959,0.0089
+ppi_fly,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6439,0.0134
+ppi_fly,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6334,0.014
+ppi_fly,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.623,0.0184
+ppi_fly,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5943,0.0181
+ppi_fly,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6303,0.0198
+ppi_fly,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5201,0.0026
+ppi_fly,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6279,0.0094
+ppi_fly,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9606,0.0028
+ppi_fly,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0
+ppi_fly,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.9632,0.0017
+ppi_fly,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9636,0.0022
+ppi_fly,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0001
+ppi_fly,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.9613,0.0003
+ppi_fly,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9609,0.0016
+ppi_fly,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0
+ppi_fly,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0
+ppi_fly,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0
+ppi_fly,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0
+ppi_fly,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0
+ppi_fly,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.9631,0.0011
+ppi_fly,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9553,0.0
+ppi_human,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5027,0.005
+ppi_human,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5152,0.0055
+ppi_human,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.8093,0.0005
+ppi_human,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8444,0.0007
+ppi_human,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.8016,0.0018
+ppi_human,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.6524,0.0006
+ppi_human,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5029,0.0018
+ppi_human,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.685,0.0121
+ppi_human,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.7003,0.0102
+ppi_human,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5978,0.0228
+ppi_human,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5545,0.0143
+ppi_human,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.604,0.0248
+ppi_human,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4833,0.0104
+ppi_human,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6832,0.0117
+ppi_human,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.64,0.0093
+ppi_human,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.6234,0.0018
+ppi_human,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.7277,0.0011
+ppi_human,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.7524,0.0019
+ppi_human,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.724,0.0065
+ppi_human,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.7736,0.0021
+ppi_human,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.6231,0.0017
+ppi_human,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.6464,0.0032
+ppi_human,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.6549,0.0036
+ppi_human,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.7035,0.0044
+ppi_human,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.7197,0.0017
+ppi_human,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.7058,0.0031
+ppi_human,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.763,0.0036
+ppi_human,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.6352,0.0121
+ppi_mouse,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5198,0.0104
+ppi_mouse,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5909,0.014
+ppi_mouse,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5788,0.0146
+ppi_mouse,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5102,0.0404
+ppi_mouse,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6035,0.0091
+ppi_mouse,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5283,0.0282
+ppi_mouse,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5893,0.0062
+ppi_rat,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5152,0.0228
+ppi_rat,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5249,0.0029
+ppi_rat,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5749,0.0153
+ppi_rat,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5299,0.0197
+ppi_rat,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5677,0.0086
+ppi_rat,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5292,0.0184
+ppi_rat,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5803,0.0014
+ppi_rat,graphsage_edge,psi_lambda,10,link prediction (AUC),auc,42|43|44,0.5269,0.0036
+ppi_rat,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.4927,0.0058
+ppi_rat,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5066,0.0064
+ppi_yeast,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5136,0.0115
+ppi_yeast,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4774,0.0047
+ppi_yeast,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.7728,0.0016
+ppi_yeast,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7774,0.0054
+ppi_yeast,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7728,0.0024
+ppi_yeast,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.4943,0.0023
+ppi_yeast,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.4917,0.0029
+ppi_yeast,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6276,0.0164
+ppi_yeast,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6487,0.0101
+ppi_yeast,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5791,0.0253
+ppi_yeast,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5488,0.0202
+ppi_yeast,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5808,0.0249
+ppi_yeast,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5078,0.0165
+ppi_yeast,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6484,0.0122
+ppi_yeast,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.8807,0.0095
+ppi_yeast,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.8853,0.0021
+ppi_yeast,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.8948,0.0004
+ppi_yeast,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9184,0.0007
+ppi_yeast,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.891,0.0031
+ppi_yeast,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.8492,0.0062
+ppi_yeast,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.884,0.0021
+ppi_yeast,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9077,0.0009
+ppi_yeast,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.8915,0.0017
+ppi_yeast,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.9223,0.0024
+ppi_yeast,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9215,0.0013
+ppi_yeast,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9212,0.0011
+ppi_yeast,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.9293,0.0026
+ppi_yeast,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.8922,0.0028
+proteins,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5222,0.0051
+proteins,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5067,0.0031
+proteins,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.8023,0.0008
+proteins,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7801,0.0065
+proteins,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5774,0.0014
+proteins,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9413,0.0014
+proteins,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5232,0.0094
+proteins,features_only,psi,10,link prediction (AUC),auc,42|43|44,0.5661,0.0016
+proteins,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5445,0.0052
+proteins,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5358,0.0181
+proteins,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5444,0.0262
+proteins,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5585,0.0141
+proteins,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5377,0.0206
+proteins,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.6642,0.0143
+proteins,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5403,0.017
+proteins,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5805,0.0067
+proteins,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5513,0.0059
+proteins,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5653,0.0059
+proteins,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5895,0.0086
+proteins,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5579,0.0051
+proteins,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6739,0.0099
+proteins,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5615,0.0056
+proteins,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5271,0.0132
+proteins,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5713,0.0129
+proteins,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.5491,0.0065
+proteins,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.5054,0.0015
+proteins,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.4737,0.0539
+proteins,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.5914,0.0084
+proteins,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.5389,0.0074
+proteins,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.5483,0.009
+proteins,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.5105,0.0017
+proteins,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.4792,0.0019
+proteins,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5142,0.0034
+proteins,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.4913,0.0067
+proteins,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.5215,0.0028
+proteins,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4882,0.0031
+proteins,features_only,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5216,0.004
+proteins,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5543,0.0021
+proteins,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5588,0.0012
+proteins,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.5646,0.0017
+proteins,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.5797,0.0017
+proteins,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5588,0.0032
+proteins,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4983,0.0028
+proteins,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5449,0.0043
+proteins,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.3184,0.0
+proteins,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5349,0.0034
+proteins,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5059,0.0017
+proteins,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4901,0.0009
+proteins,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4753,0.0018
+pubmed,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5044,0.001
+pubmed,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.6003,0.0039
+pubmed,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.684,0.0029
+pubmed,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7299,0.0051
+pubmed,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6358,0.0035
+pubmed,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9214,0.0007
+pubmed,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5055,0.0012
+pubmed,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5763,0.0406
+pubmed,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.446,0.0833
+pubmed,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6091,0.0241
+pubmed,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6294,0.0341
+pubmed,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5139,0.0196
+pubmed,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.6541,0.0267
+pubmed,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5565,0.0524
+pubmed,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6201,0.0053
+pubmed,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5449,0.0053
+pubmed,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6195,0.0134
+pubmed,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6533,0.0119
+pubmed,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.565,0.0057
+pubmed,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6283,0.0223
+pubmed,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5873,0.0085
+pubmed,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5277,0.0156
+pubmed,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5815,0.0078
+pubmed,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.4118,0.0095
+pubmed,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.3527,0.0075
+pubmed,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.5219,0.0071
+pubmed,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5955,0.0066
+pubmed,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.5214,0.007
+pubmed,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.8036,0.0038
+pubmed,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4191,0.0049
+pubmed,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5151,0.0193
+pubmed,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.4674,0.006
+pubmed,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.5123,0.0035
+pubmed,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5629,0.0021
+pubmed,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.4999,0.0014
+pubmed,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.5958,0.0019
+pubmed,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.4717,0.0054
+questions,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5008,0.008
+questions,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.6112,0.0088
+questions,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.6537,0.0026
+questions,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6816,0.0022
+questions,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6315,0.0024
+questions,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.6589,0.0033
+questions,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.575,0.0066
+questions,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.4494,0.0167
+questions,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.4447,0.0755
+questions,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5695,0.0792
+questions,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6739,0.0413
+questions,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5866,0.062
+questions,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.4889,0.1973
+questions,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4137,0.014
+questions,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.519,0.0203
+questions,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5308,0.0072
+questions,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5583,0.0326
+questions,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5584,0.0223
+questions,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5757,0.0203
+questions,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.4769,0.0253
+questions,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.4996,0.0204
+questions,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.4798,0.0087
+questions,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5211,0.0316
+questions,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.463,0.0233
+questions,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.4464,0.0071
+questions,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.6764,0.0924
+questions,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.447,0.02
+questions,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.3638,0.0556
+questions,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.4062,0.0241
+questions,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.497,0.0037
+questions,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9554,0.0
+questions,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9554,0.0
+questions,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9554,0.0
+questions,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9554,0.0
+questions,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+questions,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.9555,0.0
+reed98,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6252,0.0179
+reed98,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6213,0.0478
+reed98,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7712,0.0068
+reed98,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7757,0.0099
+reed98,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7624,0.0089
+reed98,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7581,0.0243
+reed98,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6309,0.0414
+reed98,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6562,0.0154
+reed98,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6455,0.0124
+reed98,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6485,0.0093
+reed98,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6161,0.0161
+reed98,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6455,0.0142
+reed98,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.63,0.0092
+reed98,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6253,0.0063
+roman_empire,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.6875,0.0188
+roman_empire,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4774,0.0055
+roman_empire,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.8065,0.002
+roman_empire,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8095,0.0155
+roman_empire,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.555,0.0057
+roman_empire,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.9994,0.0
+roman_empire,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5703,0.0053
+roman_empire,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.7082,0.0238
+roman_empire,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5068,0.0118
+roman_empire,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5491,0.0089
+roman_empire,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7173,0.0205
+roman_empire,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5227,0.0261
+roman_empire,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.5709,0.0111
+roman_empire,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.552,0.0031
+roman_empire,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6853,0.0166
+roman_empire,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.509,0.0035
+roman_empire,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5379,0.0055
+roman_empire,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6872,0.017
+roman_empire,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5089,0.0044
+roman_empire,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5885,0.0143
+roman_empire,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.5376,0.005
+roman_empire,graphsage_edge,psi_lambda,10,link prediction (AUC),auc,42|43|44,0.5518,0.005
+roman_empire,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5132,0.0053
+roman_empire,graphsage_edge,psi_qnorm,10,link prediction (AUC),auc,42|43|44,0.5101,0.005
+roman_empire,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.5369,0.0015
+roman_empire,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.5312,0.0091
+roman_empire,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.5471,0.0086
+roman_empire,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.4936,0.0111
+roman_empire,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.5543,0.0054
+roman_empire,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.5419,0.0071
+roman_empire,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.5514,0.0036
+roman_empire,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.557,0.0028
+roman_empire,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.0846,0.0031
+roman_empire,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.1352,0.0055
+roman_empire,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.1064,0.0012
+roman_empire,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.0896,0.0034
+roman_empire,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.137,0.0005
+roman_empire,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.1207,0.0018
+roman_empire,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.0907,0.0011
+roman_empire,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2093,0.0049
+roman_empire,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2108,0.0044
+roman_empire,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2144,0.0073
+roman_empire,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2158,0.0065
+roman_empire,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2169,0.0038
+roman_empire,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.2562,0.0091
+roman_empire,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2069,0.0018
+roman_empire,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.0469,0.0096
+roman_empire,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1719,0.0037
+roman_empire,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.0342,0.0
+roman_empire,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1356,0.0038
+roman_empire,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.1378,0.0041
+roman_empire,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.0931,0.0032
+roman_empire,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.0707,0.0004
+spanish_highschool_6,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5639,0.0166
+spanish_highschool_6,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4958,0.0125
+spanish_highschool_6,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.953,0.0042
+spanish_highschool_6,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5638,0.0108
+spanish_highschool_6,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.7026,0.0203
+spanish_highschool_6,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5684,0.0079
+spanish_highschool_6,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7654,0.0199
+spanish_highschool_6,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.7991,0.0315
+spanish_highschool_6,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6702,0.0206
+spanish_highschool_6,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5196,0.0089
+spanish_highschool_6,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.4786,0.037
+spanish_highschool_6,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.724,0.0311
+spanish_highschool_6,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.7164,0.0638
+spanish_highschool_6,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.7499,0.015
+spanish_highschool_6,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.8444,0.016
+spanish_highschool_6,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.5025,0.017
+spanish_highschool_6,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.5923,0.0453
+spanish_highschool_6,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.639,0.0324
+spanish_highschool_6,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.6321,0.0219
+spanish_highschool_6,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.6277,0.0303
+spanish_highschool_6,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.6111,0.0312
+spanish_highschool_6,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.6167,0.0323
+spanish_highschool_6,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.6134,0.048
+squirrel,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5948,0.0259
+squirrel,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6048,0.0268
+squirrel,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7262,0.0326
+squirrel,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7181,0.0313
+squirrel,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7282,0.0303
+squirrel,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6844,0.0381
+squirrel,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6064,0.022
+squirrel_filtered,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.607,0.0257
+squirrel_filtered,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5826,0.0152
+squirrel_filtered,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.9332,0.001
+squirrel_filtered,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.94,0.0001
+squirrel_filtered,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.9094,0.0014
+squirrel_filtered,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.8985,0.001
+squirrel_filtered,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.5833,0.0297
+squirrel_filtered,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.7514,0.0265
+squirrel_filtered,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6791,0.0989
+squirrel_filtered,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7453,0.0163
+squirrel_filtered,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7565,0.0141
+squirrel_filtered,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7245,0.012
+squirrel_filtered,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7625,0.0265
+squirrel_filtered,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.7506,0.0292
+squirrel_filtered,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7764,0.0074
+squirrel_filtered,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7746,0.0057
+squirrel_filtered,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7599,0.0138
+squirrel_filtered,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7552,0.0133
+squirrel_filtered,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7628,0.0142
+squirrel_filtered,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7423,0.0133
+squirrel_filtered,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7607,0.0076
+squirrel_filtered,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.758,0.0019
+squirrel_filtered,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.7631,0.0034
+squirrel_filtered,graphsage_edge,psi_w_deg,10,link prediction (AUC),auc,42|43|44,0.7626,0.0031
+squirrel_filtered,graphsage_edge,psi_w_delta,10,link prediction (AUC),auc,42|43|44,0.7449,0.0056
+squirrel_filtered,graphsage_edge,psi_w_ev,10,link prediction (AUC),auc,42|43|44,0.7263,0.0191
+squirrel_filtered,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2871,0.0231
+squirrel_filtered,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.3156,0.0142
+squirrel_filtered,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.2937,0.0041
+squirrel_filtered,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.2799,0.0123
+squirrel_filtered,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.2838,0.0177
+squirrel_filtered,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.291,0.0028
+squirrel_filtered,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.2994,0.0233
+squirrel_filtered,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.3119,0.0243
+squirrel_filtered,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.3413,0.0245
+squirrel_filtered,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.3336,0.0211
+squirrel_filtered,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.3264,0.0152
+squirrel_filtered,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.3313,0.0092
+squirrel_filtered,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.3358,0.0187
+squirrel_filtered,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.35,0.0103
+squirrel_filtered,graphsage_edge,psi_pqnorm,10,node classification (weighted F1),weighted_f1,42|43|44,0.339,0.0153
+squirrel_filtered,graphsage_edge,psi_shift,10,node classification (weighted F1),weighted_f1,42|43|44,0.3376,0.0282
+texas,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.507,0.0593
+texas,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.4411,0.0393
+texas,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5122,0.0672
+texas,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.447,0.0292
+texas,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5074,0.0308
+texas,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5003,0.0383
+texas,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.4137,0.0238
+texas,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.493,0.0347
+tolokers,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5142,0.0028
+tolokers,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4469,0.0087
+tolokers,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.8954,0.0006
+tolokers,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8837,0.0004
+tolokers,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.8959,0.0002
+tolokers,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.7859,0.0003
+tolokers,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.4751,0.005
+tolokers,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6426,0.025
+tolokers,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6243,0.0133
+tolokers,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.8415,0.0185
+tolokers,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.8308,0.0206
+tolokers,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.8398,0.0162
+tolokers,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.8509,0.012
+tolokers,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6593,0.005
+tolokers,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7013,0.014
+tolokers,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.7002,0.0119
+tolokers,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6929,0.0257
+tolokers,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6783,0.0275
+tolokers,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6943,0.0256
+tolokers,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.6552,0.0298
+tolokers,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47|48|49|50|51,0.708,0.0134
+tolokers,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6762,0.007
+tolokers,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6824,0.0023
+tolokers,graphsage_edge_feat_centrality,psi,10,link prediction (AUC),auc,42|43|44,0.5492,0.0096
+tolokers,graphsage_edge_feat_clustering,psi,10,link prediction (AUC),auc,42|43|44,0.7625,0.0178
+tolokers,graphsage_edge_feat_const,psi,10,link prediction (AUC),auc,42|43|44,0.4849,0.0699
+tolokers,graphsage_edge_feat_deg_cent,psi,10,link prediction (AUC),auc,42|43|44,0.5705,0.0154
+tolokers,graphsage_edge_feat_degree,psi,10,link prediction (AUC),auc,42|43|44,0.5518,0.0122
+tolokers,graphsage_edge_feat_psi,psi,10,link prediction (AUC),auc,42|43|44,0.5251,0.022
+tolokers,graphsage_edge_feat_random,psi,10,link prediction (AUC),auc,42|43|44,0.4971,0.0015
+tolokers,deepwalk,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.6877,0.003
+tolokers,deepwalk,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.6907,0.0028
+tolokers,deepwalk,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.7443,0.0023
+tolokers,deepwalk,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.7391,0.0056
+tolokers,deepwalk,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.7403,0.0013
+tolokers,deepwalk,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.7543,0.0049
+tolokers,deepwalk,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.6897,0.0027
+tolokers,graphsage_edge,centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.7132,0.0029
+tolokers,graphsage_edge,degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.7158,0.0049
+tolokers,graphsage_edge,hybrid,10,node classification (weighted F1),weighted_f1,42|43|44,0.7265,0.006
+tolokers,graphsage_edge,hybrid_centrality,10,node classification (weighted F1),weighted_f1,42|43|44,0.7238,0.0044
+tolokers,graphsage_edge,hybrid_degree,10,node classification (weighted F1),weighted_f1,42|43|44,0.725,0.0037
+tolokers,graphsage_edge,original,10,node classification (weighted F1),weighted_f1,42|43|44,0.7336,0.0052
+tolokers,graphsage_edge,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.7131,0.0041
+tolokers,graphsage_edge_feat_centrality,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.7083,0.003
+tolokers,graphsage_edge_feat_clustering,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.6918,0.0009
+tolokers,graphsage_edge_feat_const,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.686,0.0
+tolokers,graphsage_edge_feat_deg_cent,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.7097,0.0021
+tolokers,graphsage_edge_feat_degree,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.7041,0.0018
+tolokers,graphsage_edge_feat_psi,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.704,0.0014
+tolokers,graphsage_edge_feat_random,psi,10,node classification (weighted F1),weighted_f1,42|43|44,0.686,0.0
+twitch_de,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5159,0.0085
+twitch_de,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.4648,0.0114
+twitch_de,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.7576,0.0027
+twitch_de,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7701,0.0008
+twitch_de,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7166,0.0021
+twitch_de,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.6324,0.0009
+twitch_de,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.487,0.0048
+twitch_de,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5838,0.0468
+twitch_de,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6063,0.021
+twitch_de,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6038,0.0742
+twitch_de,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5976,0.0573
+twitch_de,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5802,0.134
+twitch_de,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.4458,0.0933
+twitch_de,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6244,0.0427
+twitch_de,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5886,0.004
+twitch_de,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6046,0.0039
+twitch_de,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5555,0.02
+twitch_de,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5239,0.0182
+twitch_de,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5704,0.0142
+twitch_de,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.4888,0.0053
+twitch_de,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6258,0.0072
+twitch_de,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6092,0.0074
+twitch_de,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6061,0.0151
+twitch_engb,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5171,0.04
+twitch_engb,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5935,0.0582
+twitch_engb,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6693,0.0267
+twitch_engb,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6629,0.0301
+twitch_engb,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6992,0.0276
+twitch_engb,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.5765,0.0241
+twitch_engb,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6011,0.0554
+twitch_engb,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5665,0.0092
+twitch_engb,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6564,0.0021
+twitch_engb,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6406,0.0089
+twitch_engb,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6132,0.0113
+twitch_engb,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6573,0.0071
+twitch_engb,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5894,0.0111
+twitch_engb,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6364,0.0164
+twitch_es,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.607,0.0227
+twitch_es,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5554,0.033
+twitch_es,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.7258,0.054
+twitch_es,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7084,0.0268
+twitch_es,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7311,0.0459
+twitch_es,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.4902,0.0501
+twitch_es,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6559,0.0141
+twitch_es,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6038,0.0135
+twitch_es,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6175,0.0142
+twitch_es,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5882,0.0192
+twitch_es,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5596,0.0163
+twitch_es,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5986,0.0187
+twitch_es,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5044,0.014
+twitch_es,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6235,0.0116
+twitch_es,graphsage_edge,psi_lambda,10,link prediction (AUC),auc,42|43|44,0.5443,0.0094
+twitch_es,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6128,0.0219
+twitch_es,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6107,0.0235
+twitch_fr,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5848,0.0079
+twitch_fr,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6209,0.0094
+twitch_fr,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.583,0.0159
+twitch_fr,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.555,0.0205
+twitch_fr,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5933,0.0137
+twitch_fr,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.54,0.0116
+twitch_fr,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6217,0.0085
+twitch_fr,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6203,0.0113
+twitch_fr,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6174,0.0119
+twitch_gamers,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5452,0.0511
+twitch_gamers,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5948,0.0332
+twitch_gamers,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5036,0.0193
+twitch_gamers,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.544,0.0306
+twitch_gamers,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5304,0.0375
+twitch_gamers,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.5533,0.065
+twitch_gamers,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6282,0.0286
+twitch_gamers,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5999,0.0059
+twitch_gamers,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.613,0.0068
+twitch_gamers,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.5337,0.0231
+twitch_gamers,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5292,0.026
+twitch_gamers,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5442,0.0275
+twitch_gamers,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5138,0.0197
+twitch_gamers,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6228,0.0097
+twitch_gamers,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.6232,0.011
+twitch_gamers,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6208,0.0096
+twitch_ptbr,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5572,0.0187
+twitch_ptbr,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5458,0.0153
+twitch_ptbr,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.746,0.0323
+twitch_ptbr,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.7378,0.0099
+twitch_ptbr,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.7463,0.0353
+twitch_ptbr,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.5029,0.0859
+twitch_ptbr,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.5872,0.017
+twitch_ptbr,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5956,0.0141
+twitch_ptbr,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6142,0.0145
+twitch_ptbr,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6066,0.016
+twitch_ptbr,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5758,0.02
+twitch_ptbr,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6115,0.0174
+twitch_ptbr,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5262,0.0258
+twitch_ptbr,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6159,0.0145
+twitch_ptbr,graphsage_edge,psi_lambda,10,link prediction (AUC),auc,42|43|44,0.555,0.0077
+twitch_ptbr,graphsage_edge,psi_pqnorm,10,link prediction (AUC),auc,42|43|44,0.5948,0.0073
+twitch_ptbr,graphsage_edge,psi_shift,10,link prediction (AUC),auc,42|43|44,0.6044,0.0162
+twitch_ptbr,graphsage_edge,psi_w_deg,10,link prediction (AUC),auc,42|43|44,0.6153,0.009
+twitch_ptbr,graphsage_edge,psi_w_delta,10,link prediction (AUC),auc,42|43|44,0.6103,0.009
+twitch_ptbr,graphsage_edge,psi_w_ev,10,link prediction (AUC),auc,42|43|44,0.6144,0.0166
+twitch_ptbr,graphsage_edge,psi_lambda,10,node classification (weighted F1),weighted_f1,42|43|44,0.5805,0.0302
+twitch_ru,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5682,0.013
+twitch_ru,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6074,0.0192
+twitch_ru,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6022,0.0152
+twitch_ru,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5582,0.0152
+twitch_ru,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6169,0.0137
+twitch_ru,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.5004,0.0182
+twitch_ru,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.6134,0.0103
+wiki_attr,gatv2_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.5421,0.0134
+wiki_attr,gatv2_edge,degree,10,link prediction (AUC),auc,42|43|44,0.5876,0.0379
+wiki_attr,gatv2_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6944,0.0287
+wiki_attr,gatv2_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6744,0.0263
+wiki_attr,gatv2_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.657,0.0321
+wiki_attr,gatv2_edge,original,10,link prediction (AUC),auc,42|43|44,0.7433,0.017
+wiki_attr,gatv2_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6389,0.0335
+wiki_attr,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.6261,0.0106
+wiki_attr,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.6347,0.0149
+wiki_attr,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.6988,0.0121
+wiki_attr,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.6844,0.016
+wiki_attr,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.6807,0.0069
+wiki_attr,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.7072,0.0222
+wiki_attr,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.6587,0.0065
+wikics,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7226,0.0053
+wikics,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7166,0.0114
+wikics,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7332,0.0146
+wikics,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7243,0.0142
+wikics,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7339,0.0146
+wikics,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7027,0.0122
+wikics,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44|45|46|47,0.7113,0.0081
+wisconsin,deepwalk,centrality,10,link prediction (AUC),auc,42|43|44,0.5329,0.0414
+wisconsin,deepwalk,degree,10,link prediction (AUC),auc,42|43|44,0.5192,0.0652
+wisconsin,deepwalk,hybrid,10,link prediction (AUC),auc,42|43|44,0.5418,0.0269
+wisconsin,deepwalk,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.5911,0.0359
+wisconsin,deepwalk,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5129,0.0556
+wisconsin,deepwalk,original,10,link prediction (AUC),auc,42|43|44,0.685,0.047
+wisconsin,deepwalk,psi,10,link prediction (AUC),auc,42|43|44,0.4547,0.044
+wisconsin,graphsage_edge,centrality,10,link prediction (AUC),auc,42|43|44,0.4997,0.0195
+wisconsin,graphsage_edge,degree,10,link prediction (AUC),auc,42|43|44,0.496,0.0428
+wisconsin,graphsage_edge,hybrid,10,link prediction (AUC),auc,42|43|44,0.472,0.0619
+wisconsin,graphsage_edge,hybrid_centrality,10,link prediction (AUC),auc,42|43|44,0.4843,0.0103
+wisconsin,graphsage_edge,hybrid_degree,10,link prediction (AUC),auc,42|43|44,0.5028,0.0522
+wisconsin,graphsage_edge,original,10,link prediction (AUC),auc,42|43|44,0.5195,0.021
+wisconsin,graphsage_edge,psi,10,link prediction (AUC),auc,42|43|44,0.4744,0.0674

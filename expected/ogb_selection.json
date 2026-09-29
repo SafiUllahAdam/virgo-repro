@@ -1,0 +1,22 @@
+{
+ "ogbl_ddi": {
+  "encoder": "deepwalk",
+  "graph_variant": "hybrid",
+  "top_K_neighbors": 10,
+  "metric": "valid_hits@20",
+  "mean": 0.1038,
+  "std": 0.004,
+  "seeds": "42|43|44",
+  "locked_at": "2026-07-23T06:42:40"
+ },
+ "ogbn_arxiv": {
+  "encoder": "deepwalk",
+  "graph_variant": "original",
+  "top_K_neighbors": 10,
+  "metric": "valid_acc",
+  "mean": 0.6718,
+  "std": 0.0022,
+  "seeds": "42|43|44",
+  "locked_at": "2026-07-23T21:51:17"
+ }
+}

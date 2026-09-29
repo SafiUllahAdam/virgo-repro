@@ -1,0 +1,10 @@
+dataset,domain,tasks,homophily_adjusted,rule1_interval,rule1_pred,largest_component_frac,rule2_interval,rule2_pred,predicted_verdict
+citeseer_linqs,citation,NC+LP,0.6731,"(0.0926, 0.3613)",keep original,0.6464,"(0.9177, 1.0)",keep original,keep original
+proteins,biological,NC+LP,0.3552,"(0.0926, 0.3613)",keep original,0.0143,"(0.9177, 1.0)",keep original,keep original
+pubmed,citation,NC+LP,0.686,"(0.0926, 0.3613)",keep original,1.0,"(0.9177, 1.0)",augment,rules disagree
+actor,film,NC+LP,0.0028,"(0.0926, 0.3613)",augment,1.0,"(0.9177, 1.0)",augment,augment
+minesweeper,grid,NC+LP,0.0094,"(0.0926, 0.3613)",augment,1.0,"(0.9177, 1.0)",augment,augment
+amazon_photo,co-purchase,NC+LP,0.785,"(0.0926, 0.3613)",keep original,0.9787,"(0.9177, 1.0)",augment,rules disagree
+lastfm_asia,music social,NC+LP,0.8562,"(0.0926, 0.3613)",keep original,1.0,"(0.9177, 1.0)",augment,rules disagree
+amazon_ratings,co-purchase,NC+LP,0.1402,"(0.0926, 0.3613)",augment,1.0,"(0.9177, 1.0)",augment,augment
+squirrel_filtered,wikipedia,NC+LP,0.0086,"(0.0926, 0.3613)",augment,1.0,"(0.9177, 1.0)",augment,augment

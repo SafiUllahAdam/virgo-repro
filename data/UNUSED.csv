@@ -1,0 +1,32 @@
+item,kind,location,size,reason,how_to_get
+citeseer,registered dataset,input/citeseer.edgelist,,"author's LP-only graph, no aligned labels; superseded by citeseer_linqs",author input.zip edgelist + python -m virgo.data.make_labels (labels)
+city_la,registered dataset,input/city_la.edgelist,,"registered, probed or stage-1 routed away; never trained",python -m virgo.data.make_pyg --dataset city_la
+city_paris,registered dataset,input/city_paris.edgelist,,"registered, probed or stage-1 routed away; never trained",python -m virgo.data.make_pyg --dataset city_paris
+city_reviews,registered dataset,input/city_reviews.edgelist,,"registered, probed or stage-1 routed away; never trained",python -m virgo.data.make_pyg --dataset city_reviews
+city_roads_m,registered dataset,input/city_roads_m.edgelist,,"registered, probed or stage-1 routed away; never trained",python -m virgo.data.make_pyg --dataset city_roads_m
+city_shanghai,registered dataset,input/city_shanghai.edgelist,,"registered, probed or stage-1 routed away; never trained",python -m virgo.data.make_pyg --dataset city_shanghai
+enzymes_nr,registered dataset,input/enzymes_nr.edgelist,,alias/fallback of enzymes,UNKNOWN
+hm_categories,registered dataset,input/hm_categories.edgelist,,"registered, probed or stage-1 routed away; never trained",python -m virgo.data.make_pyg --dataset hm_categories
+jdk,registered dataset,input/jdk.edgelist,,"Module 14: stage 1 routed to keep original, training stopped",python -m virgo.data.make_netzschleuder --dataset jdk
+politics,registered dataset,input/politics.edgelist,,"ships no labels; LP-only, not in any reported panel",author input.zip edgelist + python -m virgo.data.make_labels (labels)
+proteins_nr,registered dataset,input/proteins_nr.edgelist,,alias of proteins (same rebuilt pair),UNKNOWN
+web-fraud,raw download,output/pyg_raw/graphland/web-fraud,17544.5 MB,attribute-driven fraud benchmark; excluded by the structural-only rule; 2.89M nodes,torch_geometric download (see virgo/data/make_pyg.py _load)
+web-topics,raw download,output/pyg_raw/graphland/web-topics,9994.0 MB,"same 2.89M-node graph as web-fraud; excluded, too large",torch_geometric download (see virgo/data/make_pyg.py _load)
+avazu-ctr,raw download,output/pyg_raw/graphland/avazu-ctr,784.7 MB,"probed GraphLand download, never registered",torch_geometric download (see virgo/data/make_pyg.py _load)
+hm-prices,raw download,output/pyg_raw/graphland/hm-prices,630.6 MB,"probed GraphLand download, never registered",torch_geometric download (see virgo/data/make_pyg.py _load)
+artnet-views,raw download,output/pyg_raw/graphland/artnet-views,54.8 MB,"probed GraphLand download, never registered",torch_geometric download (see virgo/data/make_pyg.py _load)
+city-roads-L,raw download,output/pyg_raw/graphland/city-roads-L,154.3 MB,"probed GraphLand download, never registered",torch_geometric download (see virgo/data/make_pyg.py _load)
+twitch-views,raw download,output/pyg_raw/graphland/twitch-views,424.0 MB,"IS twitch_gamers (same graph, regression target); rejected",torch_geometric download (see virgo/data/make_pyg.py _load)
+hm-categories,raw download,output/pyg_raw/graphland/hm-categories,603.1 MB,"hm_categories registered, never trained",torch_geometric download (see virgo/data/make_pyg.py _load)
+city-reviews,raw download,output/pyg_raw/graphland/city-reviews,221.1 MB,"city_reviews registered, never trained",torch_geometric download (see virgo/data/make_pyg.py _load)
+city-roads-M,raw download,output/pyg_raw/graphland/city-roads-M,31.6 MB,"city_roads_m registered, never trained",torch_geometric download (see virgo/data/make_pyg.py _load)
+city,raw download,output/pyg_raw/city,893.8 MB,"CityNetwork (city_paris/shanghai/la) registered, never trained",torch_geometric download (see virgo/data/make_pyg.py _load)
+twitter,raw download,output/pyg_raw/twitter,2745.4 MB,"AttributedGraphDataset Twitter: multi-label, rejected (Module 11)",torch_geometric download (see virgo/data/make_pyg.py _load)
+facebook,raw download,output/pyg_raw/facebook,26.2 MB,"AttributedGraphDataset Facebook: multi-label, rejected (Module 11)",torch_geometric download (see virgo/data/make_pyg.py _load)
+facebook_large,raw download,output/pyg_raw/facebook_large,0.0 MB,musae-facebook probe: dead at both hosts,torch_geometric download (see virgo/data/make_pyg.py _load)
+facebook_pagepage,raw download,output/pyg_raw/facebook_pagepage,0.0 MB,musae-facebook probe: dead at both hosts,torch_geometric download (see virgo/data/make_pyg.py _load)
+nell,raw download,output/pyg_raw/nell,67.7 MB,"NELL: codes unlabelled entities as class 0, rejected (Module 11)",torch_geometric download (see virgo/data/make_pyg.py _load)
+fb100_probe,raw download,output/pyg_raw/fb100_probe,0.0 MB,empty Facebook100 probe,torch_geometric download (see virgo/data/make_pyg.py _load)
+bitcoinotc,raw download,output/pyg_raw/bitcoinotc,9.5 MB,"probe download, no builder reads it",torch_geometric download (see virgo/data/make_pyg.py _load)
+wikipedia,raw download,output/pyg_raw/wikipedia,14.9 MB,"probe download, no builder reads it",torch_geometric download (see virgo/data/make_pyg.py _load)
+DE,raw download,output/pyg_raw/DE,0.0 MB,empty twitch probe; twitch_de is built from SNAP (output/pyg_raw/twitch_de),torch_geometric download (see virgo/data/make_pyg.py _load)

@@ -1,0 +1,13 @@
+dataset,predictor,value,cut,rule,stage1,predicted
+flickr_attr,nbr_label_entropy,0.7532,0.6724,nbr_label_entropy < 0.6724 => degree,augment,psi
+genetic_fission_yeast,nbr_label_entropy,0.0014,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree
+github,nbr_label_entropy,0.2907,0.6724,nbr_label_entropy < 0.6724 => degree,keep original,degree
+jdk,nbr_label_entropy,0.2962,0.6724,nbr_label_entropy < 0.6724 => degree,keep original,degree
+ppi_fly,nbr_label_entropy,0.0023,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree
+ppi_human,nbr_label_entropy,0.0299,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree
+ppi_mouse,nbr_label_entropy,0.0483,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree
+ppi_yeast,nbr_label_entropy,0.014,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree
+spanish_highschool_6,nbr_label_entropy,0.8632,0.6724,nbr_label_entropy < 0.6724 => degree,keep original,psi
+squirrel,nbr_label_entropy,0.7351,0.6724,nbr_label_entropy < 0.6724 => degree,augment,psi
+twitch_fr,nbr_label_entropy,0.8036,0.6724,nbr_label_entropy < 0.6724 => degree,augment,psi
+twitch_ru,nbr_label_entropy,0.6378,0.6724,nbr_label_entropy < 0.6724 => degree,augment,degree

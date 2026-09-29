@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Rebuilt locally, never committed (see AGENT.md).
+input/
+labels/
+splits/
+output/
+results/
+logs/
+release/
+verify/report*.csv

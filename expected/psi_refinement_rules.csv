@@ -1,0 +1,3 @@
+target,n,n_positive,spearman_rho,threshold,positive_side,n_exceptions,accuracy,interval_lo,interval_hi,loo_accuracy,loo_correct,loo_folds,majority_baseline,loo_majority,p_shuffle_as_good,rho_vs_density,rho_vs_nodes,rho_vs_avg_degree,rho_vs_degree_classes,kill_i_confounded,kill_ii_predicts_ties_better,survives
+degree wins alone,39,9,-0.3244,0.1219,low,9,0.7692,0.111,0.1329,0.5897,23,39,0.7692,0.7692,0.7275,0.7587,-0.3725,0.7931,0.3871,True,False,False
+the winner is a TIE (kill test ii),39,13,0.2271,0.9397,high,12,0.6923,0.9298,0.9496,0.6154,24,39,0.6667,0.6667,0.7605,0.7587,-0.3725,0.7931,0.3871,True,False,False

@@ -1,0 +1,13 @@
+dataset,task,task_family,metric,original,best_augmented,best_variant,best_variant_kind,gap_abs,gap_rel,gap_sigma,original_rank,verdict,fixed_variant,fixed_augmented,gap_fixed_abs,gap_fixed_rel,gap_fixed_sigma,verdict_fixed,verdict_agrees,usable
+cora,link prediction (AUC),link prediction,auc,0.613,0.5659,centrality,replacement,-0.0471,-0.0768,-11.54,1,keep original,centrality,0.5659,-0.0471,-0.0768,-11.54,keep original,True,True
+enzymes,link prediction (AUC),link prediction,auc,0.7,0.6563,centrality,replacement,-0.0437,-0.0624,-6.09,1,keep original,centrality,0.6563,-0.0437,-0.0624,-6.09,keep original,True,True
+ogbl_ddi,link prediction (OGB official),link prediction,test_hits@20,0.0173,0.0519,centrality,replacement,0.0346,2.0,2.7,5,augment,centrality,0.0519,0.0346,2.0,2.7,augment,True,True
+questions,link prediction (AUC),link prediction,auc,0.4665,0.5526,hybrid,additive,0.0861,0.1846,4.58,5,augment,centrality,0.5078,0.0413,0.0885,2.14,augment,True,True
+roman_empire,link prediction (AUC),link prediction,auc,0.6019,0.698,centrality,replacement,0.0961,0.1597,7.3,2,augment,centrality,0.698,0.0961,0.1597,7.3,augment,True,True
+tolokers,link prediction (AUC),link prediction,auc,0.6444,0.7007,psi,replacement,0.0563,0.0874,4.18,5,augment,centrality,0.688,0.0436,0.0677,3.14,augment,True,True
+cora,node classification (weighted F1),node classification,weighted_f1,0.4266,0.2942,centrality,replacement,-0.1324,-0.3104,-8.63,1,keep original,hybrid,0.2918,-0.1348,-0.316,-12.07,keep original,True,True
+enzymes,node classification (weighted F1),node classification,weighted_f1,0.5591,0.5546,hybrid,additive,-0.0045,-0.008,-0.67,1,tie,hybrid,0.5546,-0.0045,-0.008,-0.67,tie,True,True
+ogbn_arxiv,node classification (OGB official),node classification,test_acc,0.3918,0.3618,hybrid,additive,-0.03,-0.0766,-6.24,1,keep original,hybrid,0.3618,-0.03,-0.0766,-6.24,keep original,True,True
+questions,node classification (weighted F1),node classification,weighted_f1,0.9555,0.9555,hybrid,additive,0.0,0.0,,1,keep original,hybrid,0.9555,0.0,0.0,,keep original,True,False
+roman_empire,node classification (weighted F1),node classification,weighted_f1,0.2561,0.2144,hybrid,additive,-0.0417,-0.1628,-4.94,1,keep original,hybrid,0.2144,-0.0417,-0.1628,-4.94,keep original,True,True
+tolokers,node classification (weighted F1),node classification,weighted_f1,0.7345,0.7265,hybrid,additive,-0.008,-0.0109,-1.6,1,keep original,hybrid,0.7265,-0.008,-0.0109,-1.6,keep original,True,True

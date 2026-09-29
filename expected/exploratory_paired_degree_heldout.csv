@@ -1,0 +1,49 @@
+contrast,predictor,tier,rule,dataset,value,predicted,winner_signals,actual,seeds,scored,correct
+degree_vs_rest,deg_psi_overlap_ratio,degree,use degree when deg_psi_overlap_ratio is low (< 0.1215),twitch_ptbr,0.91,not degree,psi,not degree,6,True,True
+degree_vs_rest,deg_psi_sig_spearman,degree,use degree when deg_psi_sig_spearman is high (> -0.2703),twitch_ptbr,-0.9665,not degree,psi,not degree,6,True,True
+degree_vs_rest,density,exploratory,use degree when density is low (< 0.0002),twitch_ptbr,0.017132,not degree,psi,not degree,6,True,True
+degree_vs_rest,avg_degree,primary,use degree when avg_degree is low (< 3.0368),twitch_ptbr,32.7395,not degree,psi,not degree,6,True,True
+degree_vs_rest,distinct_degree_frac,degree,use degree when distinct_degree_frac is low (< 0.0041),twitch_ptbr,0.097803,not degree,psi,not degree,6,True,True
+degree_vs_rest,degree_vg_stability,degree,use degree when degree_vg_stability is low (< 0.0164),twitch_ptbr,0.336,not degree,psi,not degree,6,True,True
+degree_vs_rest,deg_psi_jaccard,degree,use degree when deg_psi_jaccard is low (< 0.0022),twitch_ptbr,0.3058,not degree,psi,not degree,6,True,True
+degree_vs_rest,deg_psi_profile_gap,degree,use degree when deg_psi_profile_gap is high (> 0.4524),twitch_ptbr,0.0262,not degree,psi,not degree,6,True,True
+degree_vs_rest,degree_tie_ratio,degree,use degree when degree_tie_ratio is low (< 0.6913),twitch_ptbr,0.8844,not degree,psi,not degree,6,True,True
+degree_vs_rest,degree_skew,exploratory,use degree when degree_skew is high (> 47.0803),twitch_ptbr,5.637,not degree,psi,not degree,6,True,True
+degree_vs_rest,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is high (> 0.8769),twitch_ptbr,0.7472,not degree,psi,not degree,6,True,True
+degree_vs_rest,avg_clustering,primary,use degree when avg_clustering is high (> 0.5361),twitch_ptbr,0.3199,not degree,psi,not degree,6,True,True
+degree_vs_rest,nodes,exploratory,use degree when nodes is low (< 585.5),twitch_ptbr,1912.0,not degree,psi,not degree,6,True,True
+degree_vs_rest,distinct_degrees,degree,use degree when distinct_degrees is low (< 23.0),twitch_ptbr,187.0,not degree,psi,not degree,6,True,True
+degree_vs_rest,homophily_adjusted,primary,use degree when homophily_adjusted is high (> 0.8643),twitch_ptbr,0.1069,not degree,psi,not degree,6,True,True
+degree_vs_rest,components,primary,use degree when components is high (> 421.0),twitch_ptbr,1.0,not degree,psi,not degree,6,True,True
+degree_vs_rest,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is low (< -0.1985),twitch_ptbr,0.1422,not degree,psi,not degree,6,True,True
+degree_vs_rest,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9018),twitch_ptbr,1.0,not degree,psi,not degree,6,True,True
+degree_vs_rest,degree_assortativity,exploratory,use degree when degree_assortativity is low (< -0.3085),twitch_ptbr,-0.2325,not degree,psi,not degree,6,True,True
+degree_vs_rest,majority_class_frac,exploratory,use degree when majority_class_frac is high (> 0.8961),twitch_ptbr,0.6543,not degree,psi,not degree,6,True,True
+degree_vs_rest,degree_gini,exploratory,use degree when degree_gini is high (> 0.7391),twitch_ptbr,0.6069,not degree,psi,not degree,6,True,True
+degree_vs_rest,edge_homophily,exploratory,use degree when edge_homophily is high (> 0.9186),twitch_ptbr,0.5708,not degree,psi,not degree,6,True,True
+degree_vs_rest,n_classes,primary,use degree when n_classes is high (> 30.0),twitch_ptbr,2.0,not degree,psi,not degree,6,True,True
+degree_vs_rest,psi_vg_stability,degree,use degree when psi_vg_stability is low (< 0.1252),twitch_ptbr,0.404,not degree,psi,not degree,6,True,True
+degree_vs_psi,deg_psi_overlap_ratio,degree,use degree when deg_psi_overlap_ratio is low (< 0.2643),twitch_ptbr,0.91,psi,psi,psi,6,True,True
+degree_vs_psi,deg_psi_jaccard,degree,use degree when deg_psi_jaccard is low (< 0.0073),twitch_ptbr,0.3058,psi,psi,psi,6,True,True
+degree_vs_psi,deg_psi_sig_spearman,degree,use degree when deg_psi_sig_spearman is high (> -0.771),twitch_ptbr,-0.9665,psi,psi,psi,6,True,True
+degree_vs_psi,nbr_label_entropy,exploratory,use degree when nbr_label_entropy is low (< 0.5336),twitch_ptbr,0.7472,psi,psi,psi,6,True,True
+degree_vs_psi,avg_degree,primary,use degree when avg_degree is low (< 13.659),twitch_ptbr,32.7395,psi,psi,psi,6,True,True
+degree_vs_psi,degree_tie_ratio,degree,use degree when degree_tie_ratio is high (> 0.9694),twitch_ptbr,0.8844,psi,psi,psi,6,True,True
+degree_vs_psi,deg_psi_profile_gap,degree,use degree when deg_psi_profile_gap is high (> 0.2289),twitch_ptbr,0.0262,psi,psi,psi,6,True,True
+degree_vs_psi,components,primary,use degree when components is high (> 108.0),twitch_ptbr,1.0,psi,psi,psi,6,True,True
+degree_vs_psi,avg_clustering,primary,use degree when avg_clustering is low (< 0.1108),twitch_ptbr,0.3199,psi,psi,psi,6,True,True
+degree_vs_psi,distinct_degree_frac,degree,use degree when distinct_degree_frac is low (< 0.0264),twitch_ptbr,0.097803,psi,psi,psi,6,True,True
+degree_vs_psi,density,exploratory,use degree when density is low (< 0.0005),twitch_ptbr,0.017132,psi,psi,psi,6,True,True
+degree_vs_psi,degree_vg_stability,degree,use degree when degree_vg_stability is low (< 0.0277),twitch_ptbr,0.336,psi,psi,psi,6,True,True
+degree_vs_psi,largest_component_frac,primary,use degree when largest_component_frac is low (< 0.9938),twitch_ptbr,1.0,psi,psi,psi,6,True,True
+degree_vs_psi,degree_gini,exploratory,use degree when degree_gini is low (< 0.6262),twitch_ptbr,0.6069,degree,psi,psi,6,True,False
+degree_vs_psi,distinct_degrees,degree,use degree when distinct_degrees is low (< 213.5),twitch_ptbr,187.0,degree,psi,psi,6,True,False
+degree_vs_psi,degree_assortativity,exploratory,use degree when degree_assortativity is high (> -0.0684),twitch_ptbr,-0.2325,psi,psi,psi,6,True,True
+degree_vs_psi,psi_vg_stability,degree,use degree when psi_vg_stability is high (> 0.4246),twitch_ptbr,0.404,psi,psi,psi,6,True,True
+degree_vs_psi,majority_class_frac,exploratory,use degree when majority_class_frac is low (< 0.5882),twitch_ptbr,0.6543,psi,psi,psi,6,True,True
+degree_vs_psi,homophily_adjusted,primary,use degree when homophily_adjusted is low (< 0.0875),twitch_ptbr,0.1069,psi,psi,psi,6,True,True
+degree_vs_psi,n_classes,primary,use degree when n_classes is high (> 9.5),twitch_ptbr,2.0,psi,psi,psi,6,True,True
+degree_vs_psi,edge_homophily,exploratory,use degree when edge_homophily is high (> 0.7047),twitch_ptbr,0.5708,psi,psi,psi,6,True,True
+degree_vs_psi,nodes,exploratory,use degree when nodes is high (> 12755.0),twitch_ptbr,1912.0,psi,psi,psi,6,True,True
+degree_vs_psi,degree_skew,exploratory,use degree when degree_skew is high (> 9.475),twitch_ptbr,5.637,psi,psi,psi,6,True,True
+degree_vs_psi,nbr_predictability_adjusted,primary,use degree when nbr_predictability_adjusted is high (> 0.7354),twitch_ptbr,0.1422,psi,psi,psi,6,True,True

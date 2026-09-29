@@ -1,0 +1,13 @@
+task_family,target,held_out,picked_predictor,threshold,augment_side,value,predicted,actual,correct
+link prediction,gap_rel,cora,homophily_adjusted,0.227,low,0.7711,keep original,keep original,True
+link prediction,gap_rel,enzymes,homophily_adjusted,0.4319,low,0.3613,augment,keep original,False
+link prediction,gap_rel,ogbl_ddi,homophily_adjusted,0.227,low,,n/a,augment,False
+link prediction,gap_rel,questions,homophily_adjusted,0.227,low,0.0207,augment,augment,True
+link prediction,gap_rel,roman_empire,homophily_adjusted,0.227,low,-0.0468,augment,augment,True
+link prediction,gap_rel,tolokers,nbr_predictability_adjusted,0.4084,low,-0.3274,augment,augment,True
+link prediction,gap_fixed_rel,cora,homophily_adjusted,0.227,low,0.7711,keep original,keep original,True
+link prediction,gap_fixed_rel,enzymes,homophily_adjusted,0.4319,low,0.3613,augment,keep original,False
+link prediction,gap_fixed_rel,ogbl_ddi,homophily_adjusted,0.227,low,,n/a,augment,False
+link prediction,gap_fixed_rel,questions,homophily_adjusted,0.227,low,0.0207,augment,augment,True
+link prediction,gap_fixed_rel,roman_empire,homophily_adjusted,0.227,low,-0.0468,augment,augment,True
+link prediction,gap_fixed_rel,tolokers,homophily_adjusted,0.191,low,0.0926,augment,augment,True
