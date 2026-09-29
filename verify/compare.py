@@ -60,7 +60,7 @@ def check_hashes(root, kinds=None):
 def check_results(root, tol):
     '''One row per expected CSV: EXACT, WITHIN_TOLERANCE, OUT_OF_TOLERANCE, TEXT_MISMATCH, SHAPE_MISMATCH or MISSING.'''
     rows = []
-    for ref_path in sorted((root / "expected").glob("*.csv")):
+    for ref_path in sorted(p for p in (root / "expected").glob("*.csv") if p.name != "PRODUCERS.csv"):   # PRODUCERS.csv is an index, not a result
         new_path = root / "results" / ref_path.name
         row = {"check": "results", "kind": "table", "item": ref_path.name}
         if not new_path.exists():
