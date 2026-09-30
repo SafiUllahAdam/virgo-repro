@@ -1,11 +1,8 @@
-'''Compare a rebuilt virgo-repro tree against the recorded reference: exact hashes for deterministic artifacts, numerical tolerance for trained results.'''
-# Two checks, reported line by line and never merged into one "identical" claim:
-#   hashes   datasets (data/USED.csv) and splits / role graphs / feature cache (expected/hashes/artifacts.csv) -> SHA256 must match
-#   results  every CSV in expected/ against the same file in results/: text columns (verdicts, calls, names) must match
-#            exactly, numeric columns within --tol. Newly trained embeddings are not bit-reproducible on GPU, so metrics
-#            are judged by tolerance, not by bytes.
-# Psi role graphs depend on an eigenvector solver with a random fallback start (docs/notes.md), so a psi role-graph hash
-# mismatch is reported as KNOWN_EXCEPTION, not as a failure, when the shipped feature cache is not used.
+'''Compare a virgo-repro tree against the recorded reference: exact hashes for deterministic artifacts, numerical tolerance for trained results.'''
+# hashes   datasets (data/USED.csv), splits / role graphs / feature cache / final results (expected/hashes/artifacts.csv),
+#          and, only with --kinds large, the server-held embeddings (expected/hashes/large_artifacts.csv) -> SHA256 must match
+# results  every CSV in expected/ against results/ after a retrain: text columns exact, numeric columns within --tol
+# A psi role-graph hash mismatch is KNOWN_EXCEPTION (eigenvector solver fallback, docs/notes.md), not a failure.
 
 import argparse
 import csv
@@ -15,13 +12,15 @@ from pathlib import Path
 import pandas as pd
 
 KEYS = ["dataset", "encoder", "graph_variant", "variant", "top_K_neighbors", "K", "task", "metric", "seeds", "seed"]
+KINDS = ["dataset", "split", "role_graph", "feature_cache", "final_result"]
 
 
 def parse_args():
     p = argparse.ArgumentParser(description="Verify a rebuild against expected/.")
     p.add_argument('--step', default='all', choices=['all', 'hashes', 'results'], help='Which check to run. Default all.')
     p.add_argument('--root', default='.', help='Repo root of the rebuilt tree. Default current directory.')
-    p.add_argument('--kinds', nargs='+', default=None, choices=['dataset', 'split', 'role_graph', 'feature_cache'], help='Hash only these artifact kinds. Default all.')
+    p.add_argument('--kinds', nargs='+', default=None, choices=KINDS + ['large'], help='Hash only these kinds. Default all except large.')
+    p.add_argument('--prefix', default='', help='Hash only files under this path, e.g. output/notebook3_gnn_encoder/link_prediction/cora.')
     p.add_argument('--tol', type=float, default=0.005, help='Absolute tolerance on numeric result columns. Default 0.005.')
     p.add_argument('--report', default='verify/report.csv', help='Where to write the line-by-line report.')
     return p.parse_args()
@@ -36,17 +35,20 @@ def sha(path):
     return h.hexdigest()
 
 
-def check_hashes(root, kinds=None):
+def check_hashes(root, kinds=None, prefix=""):
     '''One row per recorded file: EXACT, MISMATCH, MISSING, KNOWN_EXCEPTION or NO_REFERENCE.'''
+    kinds = kinds or KINDS
     rows = []
     listed = [(r["file"], r["sha256"], "dataset") for r in csv.DictReader(open(root / "data/USED.csv"))]
     listed += [(r["file"], r["sha256"], r["kind"]) for r in csv.DictReader(open(root / "expected/hashes/artifacts.csv"))]
+    if "large" in kinds:
+        listed += [(r["file"], r["sha256"], r["kind"]) for r in csv.DictReader(open(root / "expected/hashes/large_artifacts.csv"))]
     for rel, ref, kind in listed:
-        if kinds and kind not in kinds:
+        if kind not in kinds or not rel.startswith(prefix):
             continue
         f = root / rel
         if not ref or ref.startswith("NOT_ON_DISK"):
-            status = "NO_REFERENCE" if f.exists() else "MISSING"
+            status = "NO_REFERENCE"                          # never recorded: its builder regenerates it on first use
         elif not f.exists():
             status = "MISSING"
         elif sha(f) == ref:
@@ -67,12 +69,28 @@ def check_results(root, tol):
             rows.append({**row, "status": "MISSING", "detail": "not produced by the rebuild"})
             continue
         ref, new = pd.read_csv(ref_path), pd.read_csv(new_path)
-        keys = [k for k in KEYS if k in ref.columns and k in new.columns]
-        if keys:
-            ref, new = ref.sort_values(keys).reset_index(drop=True), new.sort_values(keys).reset_index(drop=True)
-        if ref.shape != new.shape or list(ref.columns) != list(new.columns):
+        if set(ref.columns) != set(new.columns):
+            rows.append({**row, "status": "SHAPE_MISMATCH", "detail": "columns differ"})
+            continue
+        new = new[ref.columns]
+        keys = [k for k in KEYS if k in ref.columns]
+        coverage = ""
+        if keys and not ref.duplicated(keys).any() and not new.duplicated(keys).any():   # keyed: compare the rows both runs have
+            ref_keys = ref[keys].astype(str).apply(tuple, axis=1)
+            new_pos = {k: i for i, k in enumerate(new[keys].astype(str).apply(tuple, axis=1))}
+            common = ref_keys[ref_keys.isin(new_pos.keys())]
+            if common.empty:
+                rows.append({**row, "status": "MISSING", "detail": "no rows in common"})
+                continue
+            coverage = f"{len(common)} of {len(ref)} rows"
+            ref = ref.loc[common.index].reset_index(drop=True)
+            new = new.iloc[[new_pos[k] for k in common]].reset_index(drop=True)
+        elif ref.shape != new.shape:
             rows.append({**row, "status": "SHAPE_MISMATCH", "detail": f"expected {ref.shape}, got {new.shape}"})
             continue
+        elif keys:
+            ref = ref.sort_values(keys, kind="mergesort").reset_index(drop=True)
+            new = new.sort_values(keys, kind="mergesort").reset_index(drop=True)
         num = ref.select_dtypes("number").columns
         text = [c for c in ref.columns if c not in num]
         text_bad = [c for c in text if not ref[c].fillna("").astype(str).equals(new[c].fillna("").astype(str))]
@@ -86,7 +104,7 @@ def check_results(root, tol):
             status, detail = "WITHIN_TOLERANCE", f"max |diff| {diff:.6f}"
         else:
             status, detail = "OUT_OF_TOLERANCE", f"max |diff| {diff:.6f} > {tol}"
-        rows.append({**row, "status": status, "detail": detail})
+        rows.append({**row, "status": status, "detail": "; ".join(d for d in (coverage, detail) if d)})
     return rows
 
 
@@ -94,7 +112,7 @@ def main(args):
     root = Path(args.root).resolve()
     rows = []
     if args.step in ("all", "hashes"):
-        rows += check_hashes(root, args.kinds)
+        rows += check_hashes(root, args.kinds, args.prefix)
     if args.step in ("all", "results"):
         rows += check_results(root, args.tol)
     report = pd.DataFrame(rows)

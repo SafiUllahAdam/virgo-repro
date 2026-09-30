@@ -22,4 +22,4 @@ else
     echo "usage: $0 [release|rebuild]"; exit 1
 fi
 
-python verify/compare.py --step hashes --kinds dataset feature_cache --report verify/report_data.csv
+python verify/compare.py --step hashes --kinds dataset feature_cache final_result --report verify/report_data.csv
