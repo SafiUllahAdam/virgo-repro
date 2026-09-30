@@ -97,14 +97,14 @@ def winners(datasets, band="sem", board=None):
     '''Per dataset: best LP variant, every variant the seeds cannot separate from it, and the role signals that band names.'''
     board = pd.read_csv(cfg.SCOREBOARD_CSV) if board is None else board   # a caller may pass a board that also carries withdrawn rows
     b = board[(board["encoder"] == "graphsage_edge") & (board["top_K_neighbors"] == 10)
-              & board["graph_variant"].isin(cfg.VG_SIMS) & board["dataset"].isin(datasets)
+              & board["graph_variant"].isin(cfg.VG_SIMS_OFFICIAL) & board["dataset"].isin(datasets)
               & board["task"].isin(LP_TASKS)]
     b = b[[LP_METRIC.get(t) == m for t, m in zip(b["task"], b["metric"])]]
     assert band in BANDS, f"band must be one of {BANDS}"
     rows = []
     for (ds, task), g in b.groupby(["dataset", "task"]):
         s = g.set_index("graph_variant")
-        assert len(s) == len(cfg.VG_SIMS), f"{ds}: only {len(s)} of {len(cfg.VG_SIMS)} variants scored - run the sweep first"
+        assert len(s) == len(cfg.VG_SIMS_OFFICIAL), f"{ds}: only {len(s)} of {len(cfg.VG_SIMS_OFFICIAL)} variants scored - run the sweep first"
         n = s["seeds"].str.count(r"\|").astype(float) + 1                      # seeds are recorded as "42|43|44"
         top = s["mean"].idxmax()
         width = (np.sqrt(s.loc[top, "std"] ** 2 / n[top] + s["std"] ** 2 / n) if band == "sem"
@@ -249,7 +249,7 @@ def panel_table(datasets, band="sem"):
     win = winners(datasets, band).set_index("dataset")
     board = pd.read_csv(cfg.SCOREBOARD_CSV)
     board = board[(board["encoder"] == "graphsage_edge") & (board["top_K_neighbors"] == 10)
-                  & board["graph_variant"].isin(cfg.VG_SIMS) & board["dataset"].isin(datasets)
+                  & board["graph_variant"].isin(cfg.VG_SIMS_OFFICIAL) & board["dataset"].isin(datasets)
                   & board["task"].isin(LP_TASKS)]
     rows = []
     for ds in win.index:

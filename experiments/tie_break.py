@@ -36,7 +36,7 @@ def per_seed(datasets, k, seeds, encoder="graphsage_edge"):
     '''One row per dataset x variant x seed, scored from the embedding already on disk; never trains.'''
     rows = []
     for ds in datasets:
-        for sim in cfg.VG_SIMS:
+        for sim in cfg.VG_SIMS_OFFICIAL:
             for seed in seeds:
                 emb = cfg.NB3_DIR / TASK / ds / f"k{k}" / sim / f"{tag(encoder, 'all')}_s{seed}.emb"
                 if not emb.exists():                       # a seed that was never run for this variant: report, do not train

@@ -112,9 +112,9 @@ def score(pre, band="sem"):
     # on disk, so only the COMPLETE graphs are passed through, and the rest are reported as "not trained".
     b = pd.read_csv(cfg.SCOREBOARD_CSV)
     b = b[(b["encoder"] == "graphsage_edge") & (b["top_K_neighbors"] == 10)
-          & b["graph_variant"].isin(cfg.VG_SIMS) & b["task"].str.startswith("link prediction")]
+          & b["graph_variant"].isin(cfg.VG_SIMS_OFFICIAL) & b["task"].str.startswith("link prediction")]
     n_var = b.groupby("dataset")["graph_variant"].nunique()
-    have = [d for d in ds if n_var.get(d, 0) == len(cfg.VG_SIMS)]
+    have = [d for d in ds if n_var.get(d, 0) == len(cfg.VG_SIMS_OFFICIAL)]
     if not have:
         return pd.DataFrame(columns=list(pre.columns) + ["winner_signals", "beats_original", "actual", "scored", "correct"])
     w = winners(have, band, board(have)).set_index("dataset")
@@ -127,7 +127,7 @@ def score(pre, band="sem"):
     # The raw argmax winner and how big its lead is, read off the same board winners() used.
     raw = pd.read_csv(cfg.SCOREBOARD_CSV)
     raw = raw[(raw["encoder"] == "graphsage_edge") & (raw["top_K_neighbors"] == 10)
-              & raw["graph_variant"].isin(cfg.VG_SIMS) & raw["task"].str.startswith("link prediction")]
+              & raw["graph_variant"].isin(cfg.VG_SIMS_OFFICIAL) & raw["task"].str.startswith("link prediction")]
     rows = []
     for _, r in pre.iterrows():
         d = r["dataset"]
