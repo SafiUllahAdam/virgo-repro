@@ -4997,3 +4997,176 @@ a single property separates by luck at P ≈ 2.4e-6 — they are simply differen
 the best single property still leaves 3 of 23 graphs on the wrong side.
 
 Tables: `results/encoder_profile_{cells,groups,rules}.csv`. Notebook 8 §Q5. Nothing frozen.
+
+---
+
+## 2026-10-01 — Module 17 PRE-REGISTRATION: community structure on the social graphs (Louvain, pilot of 10)
+
+**The supervisor's question** (meeting relayed 2026-10-01, for the social-network framing of the WWW 2027 submission):
+does a social graph's *natural community structure* add an explanation to the calls the study already makes? Three
+readings were named: (H1) low homophily plus low clustering goes with weak or fragmented communities, where
+augmentation helps; (H2) strong community structure marks the graphs where the original should be kept; (H3) when
+augmentation helps, centrality is useful because it links important nodes *across* (or *within*) communities.
+
+**What this is.** An interpretation study on top of finished results. The LP scores stay the performance evidence and
+are READ from `expected/scoreboard.csv`; no encoder is trained, no rule is fitted, refitted or frozen, and
+`virgo/frozen_rules.py`, K=10, the seven official variants, the GraphSAGE settings and every seed are untouched. This
+entry is written BEFORE any community is measured; every number below it that is not a community number was already
+published.
+
+### Panel — fixed on size alone
+
+The 20 social graphs are every `characterize.STUDY` entry whose domain contains "social". Ranked by **edge count**
+(Louvain and the role-graph build both scale with edges):
+
+| set | graphs |
+|---|---|
+| **pilot (10 smallest)** | spanish_highschool_6, reed98, lastfm_asia, twitch_ptbr, twitch_engb, twitch_ru, twitch_es, amherst41, deezer_europe, twitch_fr |
+| **+5 to complete the panel** | twitch_de, blogcatalog, johnshopkins55, flickr_attr, artnet_exp |
+| **left out (5 largest)** | github, cornell5, genius, penn94, twitch_gamers |
+
+All three sets are written here and in `cfg.COMMUNITY_SOCIAL_PILOT / COMMUNITY_SOCIAL / COMMUNITY_SOCIAL_LEFT_OUT`.
+The pilot's outcome may decide **whether** the +5 are run (the supervisor's call); it may never change **which** five,
+nor any metric, hypothesis or setting below.
+
+### Graphs, partitions, metrics
+
+- **Graphs.** `original`, `psi`, `degree`, `centrality` at K=10, built from the FULL edgelist by
+  `VirtualGraph(G, seed=42).build(sim, 10)` — the node-classification / notebook-2 construction, on the same graph the
+  stage-1/2 predictors are measured on. (The LP role graphs were rebuilt per split inside `run_core.embed` and never
+  stored.) Hybrids are excluded: a hybrid is `original ∪ role graph`, and both parts are measured here. Where a
+  role-graph hash is recorded (`expected/hashes/artifacts.csv`: spanish_highschool_6 and lastfm_asia all four, psi for
+  reed98 and amherst41) the rebuild is checked against it; a Ψ mismatch is the known eigensolver exception.
+- **Louvain.** `networkx.community.louvain_communities`, resolution 1.0, threshold 1e-7, `weight="weight"` (original
+  edges 1.0, role edges their stored similarity weight), seeds 42, 43, 44. Communities are canonicalised by size and
+  each partition's hash is recorded, so a rerun elsewhere can confirm it found the same partition.
+- **H1/H2 — community strength of the original graph.** PRIMARY: modularity Q of the Louvain partition (mean of the
+  three seeds). Secondary: number of communities, largest-community share, coverage, node-weighted mean conductance,
+  NMI between communities and labels.
+- **H3 — where each graph's edges fall against the ORIGINAL partition (same seed), unweighted.** PRIMARY:
+  `hub_cross_share` = among edges touching a *hub*, the share joining two different original communities. Hub = top 10%
+  of nodes by the per-component eigenvector centrality of the original graph (the signal the `centrality` variant is
+  built from; ties broken by node id). Secondary: `cross_share` over all edges, its uniform-pair chance level,
+  `ref_modularity` (the original partition's modularity measured on that graph: ≈0 = blind to the communities, <0 =
+  crosses them preferentially), hub-to-hub cross share.
+- **Secondary — the role graphs' own communities.** Their Louvain modularity and NMI/ARI with the original partition.
+
+### Evidence they are read against (nothing re-derived)
+
+- **Calls:** `frozen_rules.predict_gated` and, only where it says augment, `predict_strategy`, on
+  `characterize.graph_properties`.
+- **LP verdicts:** GraphSAGE, K=10, LP AUC, `strategy_select`'s sem band, two variant sets: the **official** seven
+  (reed98 and spanish_highschool_6 have 5 of 7 scored, so theirs is read over those 5 and flagged) and the **non-hybrid**
+  four measured here. Gap = best non-original mean AUC − original mean AUC inside that set.
+
+### Pre-declared comparisons (descriptive Spearman, n = 10 in the pilot; |ρ| ≥ 0.648 is p < 0.05 two-sided)
+
+| | comparison | expected |
+|---|---|---|
+| H1 | ρ(Q, `homophily_adjusted`) · ρ(Q, `avg_clustering`) | both > 0 |
+| H2 | ρ(Q, gap official) · ρ(Q, gap non-hybrid) | both < 0 |
+| H2 | median Q of keep-verdict graphs − median Q of augment-verdict graphs (non-hybrid verdict; official as cross-check) | > 0 |
+| H3 | over graphs where augmentation helps (non-hybrid): ρ(`hub_cross_share` of `centrality`, AUC(centrality) − max AUC(psi, degree)) | > 0 reads *across*; < 0 reads *within* |
+| H3 | per graph: `hub_cross_share` of centrality vs psi, degree and the original, split by whether centrality is in the winner set | descriptive |
+
+Every row is reported whichever way it lands (seven rows: two H1, four H2, one H3 ρ). Nothing here is a threshold,
+and at n = 10 no single row is claimed beyond itself.
+
+### Known BEFORE measuring, so none of it can later be read as a community finding
+
+1. Every one of the 20 social graphs has `avg_clustering` 0.08–0.52, below the exception cut 0.5573: on social graphs
+   the exception never says *keep*, so stage 1 there is rule 1 (homophily) alone. H1's clustering half can therefore
+   only be read as a correlation, never off the frozen cut.
+2. Pilot stage-1 calls: keep = spanish_highschool_6, lastfm_asia; augment = the other eight.
+3. The LP verdicts are published and were tabulated today. Non-hybrid: keep = spanish_highschool_6, lastfm_asia,
+   deezer_europe. Official: keep = deezer_europe and spanish_highschool_6 (over its 5); lastfm_asia augments through
+   `hybrid_centrality`.
+
+Code: `virgo/community.py` (method), `experiments/community_social.py` (CLI, reads only), tables
+`results/community_*.csv`, narrative `notebooks/9-community_detection_social.ipynb`.
+
+## 2026-10-01 (cont.) — Module 17 AMENDMENT: the panel is re-ranked by NODE count
+
+**The change.** User decision, same day: the "10 smallest" are ranked by **number of nodes**, with edge counts reported
+alongside. The reason given: the size cut exists only to keep computation manageable, and the role-graph construction
+grows with the number of nodes; edges stay a secondary sanity check. Everything else registered above — graphs,
+Louvain settings, metrics, hypotheses and the seven comparison rows — is unchanged.
+
+| set | graphs (nodes / edges) |
+|---|---|
+| **pilot (10 smallest by nodes)** | spanish_highschool_6 (534 / 9.5K), reed98 (962 / 18.8K), twitch_ptbr (1,912 / 31.3K), amherst41 (2,235 / 91.0K), twitch_ru (4,385 / 37.3K), twitch_es (4,648 / 59.4K), johnshopkins55 (5,180 / 186.6K), blogcatalog (5,196 / 171.7K), twitch_fr (6,549 / 112.7K), twitch_engb (7,126 / 35.3K) |
+| **+5 to complete the panel** | flickr_attr (7,575 / 239.7K), lastfm_asia (7,624 / 27.8K), twitch_de (9,498 / 153.1K), cornell5 (18,660 / 790.8K), deezer_europe (28,281 / 92.8K) |
+| **left out (5 largest)** | github (37,700 / 289.0K), penn94 (41,554 / 1.36M), artnet_exp (50,405 / 280.3K), twitch_gamers (168,114 / 6.80M), genius (421,865 / 922.9K) |
+
+**Disclosure — the edge-ranked pilot had already been run when this change was made.** Its tables are kept, not
+deleted, in `results/community_edges_pilot/`; they are not the registered pilot. What had been seen: both H2 Spearman
+rows held (ρ −0.66 official gap, −0.73 non-hybrid gap) and its three keep-original graphs had its three highest Q;
+H1 held for homophily (ρ +0.48) and not for clustering (ρ −0.28); the H3 row ran against the *across* reading
+(ρ −0.50, n = 7). Two graphs leave the pilot — lastfm_asia and deezer_europe, both keep-original under the non-hybrid
+verdict — and two join it, johnshopkins55 and blogcatalog. The change was asked for on computational grounds, not on
+those numbers; it is recorded because it came after them.
+
+**Consequences, written down before the node-ranked pilot runs:**
+1. The pilot holds ONE keep-original graph under either verdict (spanish_highschool_6) against nine augment graphs,
+   so the two H2 group rows compare one graph with nine — their smallest attainable p is 0.2, and they can show a
+   direction only. The H2 Spearman rows still use all ten.
+2. Stage-1 calls: keep = spanish_highschool_6 and blogcatalog (rule 1), augment = the other eight. blogcatalog is the
+   pilot's one stage-1 miss — called keep, augments under both verdicts.
+3. lastfm_asia and deezer_europe return at the +5 stage, so the 15-graph panel holds every keep cell either ranking
+   would have produced; cornell5 replaces artnet_exp in the 15.
+
+## 2026-10-01 (cont.) — Module 17 PILOT RESULT: the 10 smallest social graphs by nodes
+
+**Run.** `python experiments/community_social.py` (default = `cfg.COMMUNITY_SOCIAL_PILOT`), laptop WSL, networkx
+3.6.1, 4 min. Tables `results/community_{graphs,partitions,placement,summary,compare,correlations}.csv`; narrative
+`notebooks/9-community_detection_social.ipynb`.
+
+**Reproducibility.** 7 rebuilt role graphs match the recorded hashes EXACT (spanish_highschool_6 all four; psi of
+reed98, amherst41, johnshopkins55); the other 33 have no recorded hash. The 8 graphs measured in both the edge- and
+the node-ranked run gave identical partitions (96/96 partition hashes) and identical role graphs (32/32 SHA256).
+
+**The seven pre-declared rows** — every one reported, none read as a threshold:
+
+| | comparison | n | value | p | expected | holds |
+|---|---|---|---|---|---|---|
+| H1 | ρ(Q, `homophily_adjusted`) | 10 | +0.370 | 0.29 | + | yes |
+| H1 | ρ(Q, `avg_clustering`) | 10 | −0.030 | 0.93 | + | no |
+| H2 | ρ(Q, gap official) | 10 | −0.539 | 0.11 | − | yes |
+| H2 | ρ(Q, gap non-hybrid) | 10 | −0.539 | 0.11 | − | yes |
+| H2 | median Q keep − augment, non-hybrid verdict | 1 / 9 | +0.346 | 0.20 | + | yes (direction only) |
+| H2 | median Q keep − augment, official verdict | 1 / 9 | +0.346 | 0.20 | + | yes (direction only) |
+| H3 | ρ(`hub_cross_share` centrality, centrality advantage), augmenting graphs | 9 | −0.259 | 0.50 | + (*across*) | no |
+
+**What the pilot says.**
+- **Community strength.** One graph has strong communities — spanish_highschool_6, Q 0.71, 97% of edges inside 4
+  communities, and those communities are not its label (NMI 0.002 with gender). The other nine sit at Q 0.29–0.45
+  with leaky boundaries (conductance 0.32–0.53) and seed-dependent partitions (stability NMI 0.41–0.87).
+- **H2 — direction holds, not yet a test.** The stronger the communities, the smaller the augmentation gain
+  (ρ −0.54 under both verdicts), and the only keep-original graph has the strongest communities by a wide margin —
+  but one keep graph against nine cannot reach significance (p 0.2 is the floor). blogcatalog, the pilot's one
+  stage-1 miss (homophily 0.27 says keep, LP augments under both verdicts), has the weak communities (Q 0.37) of the
+  augmenting graphs: community strength sides with the outcome where homophily does not.
+- **H1 — homophily half only.** Q rises weakly with homophily (+0.37) and not at all with clustering (−0.03): the
+  eight low-homophily graphs have moderate communities whatever their clustering (0.13–0.32). Local triangle
+  density is not meso-scale community strength.
+- **H3 — not *across*.** Pure role graphs are close to blind to the original communities (on augmenting graphs,
+  63–87% of hub-touching role edges cross, against 36–58% of original edges; chance 77–90%). Centrality is the least
+  blind of the three — highest original-partition modularity in 10/10 graphs, highest NMI with the original partition
+  in 9/10, lower hub-crossing than psi and degree in 8/9 augmenting graphs — but that holds where centrality wins
+  (the three Facebook100 graphs, blogcatalog) and where it loses (all five Twitch graphs) alike.
+- **Secondary.** Role graphs keep almost none of the communities (NMI 0.02–0.28; original-partition modularity on
+  them 0.00–0.26 against 0.29–0.71 on the original). Their own Q (0.89–0.99) is the banding of a 1-D nearest-
+  neighbour graph and is not read as community structure.
+
+**EXPLORATORY — not registered, recorded so it is not lost and not mistaken for a result.** Among the nine augmenting
+graphs, the share of original edges that touch a hub separates where centrality wins (0.43–0.51: amherst41,
+johnshopkins55, blogcatalog, reed98) from where it loses (0.63–0.74: the five Twitch graphs); ρ −0.65, p 0.058.
+Three reasons it is NOT a finding: it was seen after the data; it is a hub-concentration (degree-spread) property,
+not a community one; and it coincides exactly with the Facebook100/blogcatalog vs Twitch split, which this pilot
+cannot separate from it. If it is to be tested, it must be written down before the +5 run, whose augmenting cells
+(flickr_attr, twitch_de, cornell5) would be its only unseen test.
+
+**What the +5 can and cannot add.** They bring lastfm_asia and deezer_europe, the remaining keep cells of the
+smaller social graphs — what H2 needs to become a test at n = 15. Both were already measured in the superseded
+edge-ranked run (amendment above: Q 0.81 and 0.68), so the 15-graph H2 rows would not be blind; only flickr_attr,
+twitch_de and cornell5 are unseen. That must travel with any 15-graph number.

@@ -25,6 +25,7 @@ instead of duplicating them.
 | `score_module3.py` | scores those calls against what training produced | reads only |
 | `predict_gate.py` | build role graph → pre-register the gated stage-1 call → (train) → score | reads only |
 | `predict_strategy.py` | pre-registers and scores the stage-2 signal call | reads only |
+| `community_social.py` | Module 17: Louvain on the social graphs' original + pure role graphs, read against the stage-1/2 calls and the published LP verdicts (interpretation only) | reads only |
 | `train.py` | Phase-1 run file: graph → I2V walks → Word2Vec → `.emb` (`--cached` uses the fast path) | - |
 | `train_encoder.py` | trains ONE encoder over ONE role graph; `--arch` picks any encoder registered in `virgo.encoders` | - |
 | `benchmark_baselines.py` | I2V vs DeepWalk / node2vec / struc2vec across the benchmark datasets (no flags - runs the whole loop) | - |
