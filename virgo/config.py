@@ -211,6 +211,26 @@ ENCODER_PANEL = ["enzymes", "roman_empire", "tolokers", "questions", "citeseer_l
 # One graph per decision the framework makes, for a cheap smoke run before the full panel.
 ENCODER_SMOKE = ["roman_empire", "actor", "squirrel_filtered"]
 
+# --- Module 17: COMMUNITY structure on the social graphs (2026-10-01) ------------------------------------------------
+# An INTERPRETATION study, not a rule search: does a social graph's natural community structure line up with the calls
+# the frozen rules already make? Nothing is fitted, frozen or retrained - the LP verdicts are read from the scoreboard.
+# The 20 social graphs are every characterize.STUDY entry whose domain is social; ranked by NODE count (the size is
+# chosen only to keep computation manageable, and the role-graph build grows with the number of nodes; edge counts are
+# reported alongside) the 10 smallest are the pilot, the next 5 complete the panel and the 5 largest are left out.
+# Fixed on size alone: the pilot may decide WHETHER the +5 run, never WHICH five. (Amended 2026-10-01 from an edge
+# ranking that had already been run - paper_log records the change and why.)
+COMMUNITY_SOCIAL_PILOT = ["spanish_highschool_6", "reed98", "twitch_ptbr", "amherst41", "twitch_ru", "twitch_es",
+                          "johnshopkins55", "blogcatalog", "twitch_fr", "twitch_engb"]
+COMMUNITY_SOCIAL = COMMUNITY_SOCIAL_PILOT + ["flickr_attr", "lastfm_asia", "twitch_de", "cornell5", "deezer_europe"]
+COMMUNITY_SOCIAL_LEFT_OUT = ["github", "penn94", "artnet_exp", "twitch_gamers", "genius"]
+assert not (set(COMMUNITY_SOCIAL) & set(COMMUNITY_SOCIAL_LEFT_OUT)), "a social graph is both in the community panel and left out"
+# The pure graphs only: a hybrid is original ∪ role graph, and both of its parts are measured here. original comes
+# FIRST - every role graph is placed against the original graph's partition.
+COMMUNITY_VARIANTS = ["original", "psi", "degree", "centrality"]
+COMMUNITY_SEEDS = [42, 43, 44]          # Louvain seeds; the partition is a heuristic optimum, so its spread is reported
+LOUVAIN = {"resolution": 1.0, "threshold": 1e-7, "weight": "weight"}    # networkx defaults; role edges keep their similarity weight
+COMMUNITY_HUB_FRAC = 0.10               # "important node" = top 10% by the original graph's eigenvector centrality
+
 BENCH_DATASETS = ["cora", "citeseer", "enzymes"]  # citeseer = author graph, link-pred only (no aligned labels)
 BENCH_MODELS = ["identity2vec", "deepwalk", "node2vec", "struc2vec"]
 
