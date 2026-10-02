@@ -5170,3 +5170,88 @@ cannot separate from it. If it is to be tested, it must be written down before t
 smaller social graphs — what H2 needs to become a test at n = 15. Both were already measured in the superseded
 edge-ranked run (amendment above: Q 0.81 and 0.68), so the 15-graph H2 rows would not be blind; only flickr_attr,
 twitch_de and cornell5 are unseen. That must travel with any 15-graph number.
+
+## 2026-10-02 — Module 17: the 15-graph pool LOCKED (+5), written before the +5 are measured
+
+**The rule (user).** The +5 are the 5 smallest by nodes of the 10 social graphs not yet measured, and they must bring
+at least 2 — ideally 3 — graphs where the original should be kept, so that H2's keep-vs-augment comparison has more
+than the pilot's single keep graph. If the 5 smallest fall short, bigger graphs may be swapped in; a third keep case
+is not forced.
+
+**The check, read off the published scoreboard (no community number involved).** "Keep" is the **non-hybrid**
+verdict — the original beats the pure role graphs, which are the graphs this study measures; the official 7-variant
+verdict is reported next to it.
+
+| graph | nodes | edges | non-hybrid verdict | official verdict |
+|---|---|---|---|---|
+| flickr_attr | 7,575 | 239.7K | augment | augment |
+| lastfm_asia | 7,624 | 27.8K | **keep** (original +0.042 over the best role graph) | augment (hybrid_centrality +0.013) |
+| twitch_de | 9,498 | 153.1K | augment | augment |
+| cornell5 | 18,660 | 790.8K | augment | augment |
+| deezer_europe | 28,281 | 92.8K | **keep** | **keep** |
+
+The 5 smallest bring 2 keep graphs, so the pool is exactly the +5 registered on 2026-10-01 — nothing is swapped.
+The only other keep candidate among the remaining graphs, **genius** (421,865 nodes), is not taken: it is the largest
+graph, and its hybrid beats the original by +0.12 AUC, so it is no clean keep case.
+
+**Locked pool (15):** the pilot 10 + flickr_attr, lastfm_asia, twitch_de, cornell5, deezer_europe
+(`cfg.COMMUNITY_SOCIAL`). Left out: github, penn94, artnet_exp, twitch_gamers, genius. Keep graphs: 3 non-hybrid
+(spanish_highschool_6, lastfm_asia, deezer_europe), 2 official (spanish_highschool_6, deezer_europe).
+
+**Same experiment, nothing changed.** Same code, settings, seeds and pre-declared rows; the pilot's rows and its
+`results/community_correlations.csv` stay as they are, and the 15-graph rows go to `community_correlations_15.csv`.
+
+**Disclosures that travel with every 15-graph number.**
+1. The selection used the LP verdicts (a keep/augment quota), never a community number — but lastfm_asia's and
+   deezer_europe's Q were already seen in the superseded edge-ranked run (Q 0.81, 0.68). Only flickr_attr, twitch_de and
+   cornell5 are unseen, so the 15-graph H2 rows are not blind.
+2. The +5 are measured on Windows (`S:\conda-envs\virgo`, same versions as `env/versions.txt`), the pilot on Linux.
+   Re-measuring two pilot graphs on Windows reproduced the original, degree and centrality graphs and all their
+   partitions exactly; the psi role graph differs in its last floating-point digits (the known psi exception), which
+   moved psi's Q by at most 0.002. Every primary measure (original-graph Q, centrality hub crossing) is unaffected.
+
+## 2026-10-02 (cont.) — Module 17 FINAL RESULT: the locked 15-graph pool
+
+**Run.** The +5 measured with `python experiments/community_social.py --step measure --datasets flickr_attr lastfm_asia
+twitch_de cornell5 deezer_europe` (Windows, 8 min), then `--step compare` over all 15 with
+`--correlations results/community_correlations_15.csv`. The pilot's rows are unchanged to the last digit and its
+`community_correlations.csv` is kept as it was. Notebook 9 shows all 15 graphs in its existing tables and figures
+(the 5 marked *new*), with both statistics tables in the appendix.
+
+**Reproducibility.** Recorded role-graph hashes: 10 EXACT, 2 KNOWN_EXCEPTION (the psi graphs of lastfm_asia and
+cornell5, rebuilt on Windows), 48 without a recorded hash.
+
+**The seven pre-declared rows, 10 → 15 graphs:**
+
+| | comparison | pilot (10) | final (15) | expected | holds |
+|---|---|---|---|---|---|
+| H1 | ρ(Q, `homophily_adjusted`) | +0.370 (p 0.29) | +0.136 (p 0.63) | + | yes, weakly |
+| H1 | ρ(Q, `avg_clustering`) | −0.030 | −0.196 (p 0.48) | + | no |
+| H2 | ρ(Q, gap official) | −0.539 (p 0.11) | **−0.821 (p 0.0002)** | − | yes |
+| H2 | ρ(Q, gap non-hybrid) | −0.539 (p 0.11) | **−0.832 (p 0.0001)** | − | yes |
+| H2 | median Q keep − augment, non-hybrid | +0.346 (1/9) | **+0.359 (3/12, p 0.004)** | + | yes |
+| H2 | median Q keep − augment, official | +0.346 (1/9) | +0.331 (2/13, p 0.076) | + | yes (direction) |
+| H3 | ρ(centrality hub crossing, centrality advantage) | −0.259 (n 9) | −0.333 (n 12, p 0.29) | + | no |
+
+**What the 15 graphs say.**
+- **H2 — yes.** The three keep graphs (non-hybrid verdict) have the three strongest communities, Q 0.68–0.81; all
+  twelve augment graphs sit at Q ≤ 0.47. Both stage-1 misses are on the community-strength side of the outcome:
+  blogcatalog (homophily says keep; weak communities, augments) and deezer_europe (homophily says augment; strong
+  communities, keeps). lastfm_asia loses to every pure role graph; the official verdict counts it as augment only
+  because a hybrid, which keeps all original edges, gains +0.013.
+- **H1 — homophily half only, and weakly.** 11 of the 12 low-homophily graphs have weak communities and augment; the
+  exception is deezer_europe. Clustering does not track community strength.
+- **H3 — not *across*.** Role edges cross communities near chance; centrality's least (lower than psi and degree in
+  11 of 12 augmenting graphs, highest original-partition modularity in 15/15), in winners and losers alike.
+- **Mechanism.** Role graphs keep almost none of the original communities (NMI ≤ 0.28), so replacing the edges costs
+  most where the communities are strong.
+
+**Must travel with these numbers** (from the lock entry): the +5 were chosen with a keep/augment quota on the LP
+verdicts; lastfm_asia's and deezer_europe's Q had been seen in the superseded edge run; the three unseen graphs
+(flickr_attr, twitch_de, cornell5) all landed on the weak/augment side. With three keep graphs, two of them
+selected as keep cases, this is a strong descriptive pattern on 15 social graphs, not a validated rule — no threshold
+is read from it.
+
+**Exploratory note, updated.** The hub-edge-share hint (pilot entry) on the three new augmenting graphs: fits
+cornell5 (0.43, centrality wins) and twitch_de (0.71, loses), not flickr_attr (0.82, hub-dominated yet a three-way
+tie including centrality). Over the 12: ρ −0.59, p 0.04. Still not registered, still not a finding.

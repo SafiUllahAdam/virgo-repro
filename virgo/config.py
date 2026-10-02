@@ -221,7 +221,13 @@ ENCODER_SMOKE = ["roman_empire", "actor", "squirrel_filtered"]
 # ranking that had already been run - paper_log records the change and why.)
 COMMUNITY_SOCIAL_PILOT = ["spanish_highschool_6", "reed98", "twitch_ptbr", "amherst41", "twitch_ru", "twitch_es",
                           "johnshopkins55", "blogcatalog", "twitch_fr", "twitch_engb"]
-COMMUNITY_SOCIAL = COMMUNITY_SOCIAL_PILOT + ["flickr_attr", "lastfm_asia", "twitch_de", "cornell5", "deezer_europe"]
+# The +5 that complete the LOCKED 15-graph pool (2026-10-02, user rule): the 5 smallest of the remaining 10 by nodes,
+# which had to include at least 2 (ideally 3) graphs where the original should be kept, so keep-vs-augment can be
+# compared. "Keep" = the original beats the pure role graphs (non-hybrid LP verdict - the graphs this study measures):
+# lastfm_asia and deezer_europe qualify. The only other candidate, genius, was NOT swapped in: it is the largest graph,
+# and its hybrid gains +0.12 AUC over the original, so it is not a clean keep case.
+COMMUNITY_SOCIAL_ADDED = ["flickr_attr", "lastfm_asia", "twitch_de", "cornell5", "deezer_europe"]
+COMMUNITY_SOCIAL = COMMUNITY_SOCIAL_PILOT + COMMUNITY_SOCIAL_ADDED
 COMMUNITY_SOCIAL_LEFT_OUT = ["github", "penn94", "artnet_exp", "twitch_gamers", "genius"]
 assert not (set(COMMUNITY_SOCIAL) & set(COMMUNITY_SOCIAL_LEFT_OUT)), "a social graph is both in the community panel and left out"
 # The pure graphs only: a hybrid is original ∪ role graph, and both of its parts are measured here. original comes

@@ -105,7 +105,7 @@ def merge(path, rows, datasets):
     out = pd.concat([old[~old["dataset"].isin(datasets)], pd.DataFrame(rows)], ignore_index=True)
     out = out.sort_values("dataset", key=lambda s: s.map({d: i for i, d in enumerate(SOCIAL)}), kind="stable")
     path.parent.mkdir(parents=True, exist_ok=True)
-    out.to_csv(path, index=False)
+    out.to_csv(path, index=False, lineterminator="\n")           # LF on every OS, so a Windows run matches a Linux one byte for byte
     return out
 
 
@@ -160,7 +160,7 @@ def summarize(datasets):
     return out.round(4)
 
 
-def step_compare(datasets, board_path):
+def step_compare(datasets, board_path, corr_path=OUT["correlations"]):
     '''Join the measurements with the frozen calls and both LP verdicts, then run the pre-declared comparisons.'''
     summary = summarize(datasets)
     merge(OUT["summary"], summary.to_dict("records"), datasets)
@@ -200,8 +200,8 @@ def step_compare(datasets, board_path):
     cmp = merge(OUT["compare"], rows, datasets)
     cmp = cmp[cmp["dataset"].isin(datasets)]
     corr = correlations(cmp)
-    corr.to_csv(OUT["correlations"], index=False)                    # always recomputed over exactly `datasets`
-    print(f"wrote {OUT['summary']}\nwrote {OUT['compare']}\nwrote {OUT['correlations']}", flush=True)
+    corr.to_csv(corr_path, index=False, lineterminator="\n")         # always recomputed over exactly `datasets`
+    print(f"wrote {OUT['summary']}\nwrote {OUT['compare']}\nwrote {corr_path}", flush=True)
     return cmp, corr
 
 
@@ -231,7 +231,7 @@ def main(args):
     if args.step in ("measure", "all"):
         step_measure(args.datasets)
     if args.step in ("compare", "all"):
-        cmp, corr = step_compare(args.datasets, args.board)
+        cmp, corr = step_compare(args.datasets, args.board, args.correlations)
         print(corr.to_string(index=False))
 
 
@@ -245,6 +245,9 @@ def parse_args():
                         'cfg.COMMUNITY_SOCIAL is the full 15.')
     p.add_argument('--board', type=Path, default=BOARD,
                    help='Scoreboard the LP verdicts are read from. Default: the published expected/scoreboard.csv.')
+    p.add_argument('--correlations', type=Path, default=OUT["correlations"],
+                   help='Where the pre-declared comparisons are written; they cover exactly --datasets. Default: '
+                        'results/community_correlations.csv (the pilot). The 15-graph pool uses community_correlations_15.csv.')
     return p.parse_args()
 
 
