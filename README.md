@@ -9,39 +9,41 @@ with structural-role edges, and if so, which structural signal to build them fro
 K = 10 most structurally similar nodes by degree, eigenvector centrality or Identity2Vec's Ψ. This gives the encoder
 direct access to similar nodes outside its receptive field. Both decisions use properties of the original graph only.
 
+## The framework
+
 ```
-input graph -> Stage 1: augment? --no--> train the encoder on the original graph
-                    | yes
-                    v
-               Stage 2: which signal? -> build the role graph -> train the encoder
+graph ──► STAGE 1: augment, or keep the original?
+             │                        │
+       keep original               augment
+             │                        ▼
+             │            STAGE 2: which structural signal?
+             ▼                        ▼
+   train on the original      build that role graph, then train
 ```
 
-## Decision rules
+Both stages read properties of the **original graph** only, so nothing is built or trained before the call. The rules are frozen in [`virgo/frozen_rules.py`](virgo/frozen_rules.py). Each cut is the midpoint of a fitted interval, so read it as a range rather than a constant.
 
-The rules are frozen in [`virgo/frozen_rules.py`](virgo/frozen_rules.py). Each threshold is the midpoint of the range
-of cuts that fit the training graphs equally well.
+### Stage 1 - augment or not? *(locked)*
 
-**Stage 1: augment or keep the original graph?**
+| step | rule | reading |
+|---|---|---|
+| **decision** | adjusted homophily **< 0.227** ⇒ augment<br>*range 0.0926 to 0.3613* | When edges follow the labels, the original graph is the better guide - a reliable **veto**. Low homophily is necessary, not sufficient. |
+| **exception** *(low-homophily graphs only)* | average clustering **≥ 0.5573** ⇒ keep original<br>*range 0.5329 to 0.5769* | Dense, triangle-rich neighbourhoods already carry the local structure. |
+| **fallback** *(graphs without labels only)* | largest connected component **> 95.88%** of nodes ⇒ augment<br>*range 91.77% to 100%* | Homophily needs node labels. Without them, augment when the graph is essentially one connected piece. |
 
-| rule | condition | threshold (range) | interpretation |
-|---|---|---|---|
-| 1.1 | adjusted homophily < τ ⇒ augment, otherwise keep | 0.227 (0.093 to 0.361) | when edges already follow the labels, the original graph is the better guide |
-| 1.2 | if 1.1 says augment: average clustering ≥ τ ⇒ keep | 0.5573 (0.5329 to 0.5769) | triangle-rich neighbourhoods already carry the local structure |
-| 1.3 | graph without labels: largest-component share > τ ⇒ augment | 0.9588 (0.9177 to 1.0) | fallback when homophily cannot be computed |
+Homophily makes the decision; clustering is a safety check for the few low-homophily graphs where augmentation does not pay off. The fallback is used only when the graph has no labels.
 
-**Stage 2: which signal?** Applied only when Stage 1 says augment; requires node labels.
+### Stage 2 - which signal? *(only when stage 1 says augment)*
 
-| rule | condition | threshold (range) | interpretation |
-|---|---|---|---|
-| 2.1 | adjusted neighbour-label predictability > τ ⇒ centrality | 0.0092 (0.0060 to 0.0123) | a node's class can be guessed from its neighbours' label mix better than chance |
-| 2.2 | otherwise: neighbour-label entropy < τ ⇒ degree (family-dependent) | 0.6724 (0.6296 to 0.7151) | the labels around each node are concentrated rather than mixed |
-| | otherwise | | no recommendation between Ψ and degree |
+Three structural signals can build the role graph: **degree** (how many neighbours a node has), **eigenvector centrality** (how influential a node is through well-connected neighbours), and **Ψ** (Identity2Vec's score comparing the shape of two nodes' neighbourhoods). Both rules need node labels and are checked in this order.
 
-**Rule 2.2 is family-dependent.** It is not a universal rule: it applies only to graphs of the same family as the nine
-it was fitted on. That family is defined on the original graph as single-mode (not bipartite), nearly connected (largest
-component holds at least 97% of nodes), disassortative (degree assortativity between −0.30 and 0, so hubs tend to link
-to low-degree nodes), sparse (density at most 0.10, average degree 5 to 100), with 2 to 10 classes and 300 to 60,000
-nodes.
+| signal | rule | reading |
+|---|---|---|
+| **centrality** *(checked first)* | adjusted neighbour-label predictability **> 0.0092**<br>*range 0.0060 to 0.0123* | A node's neighbours' label mix predicts its class better than chance. |
+| **degree** *(if centrality is not chosen; family-dependent)* | neighbour-label entropy **< 0.6724**<br>*range 0.6296 to 0.7151* | The labels around each node are concentrated, not mixed. Above the cut the rule makes no claim; it does not mean Ψ. |
+| **Ψ or degree** *(neither rule fires)* | no rule | The framework makes no recommendation. |
+
+**The degree rule holds for one graph family only**: the family of the nine graphs it was fitted on. Measured on the original graph, that family is single-mode (not bipartite), nearly connected (largest component ≥ 97% of nodes), disassortative (degree assortativity between −0.30 and 0, so hubs link to low-degree nodes), sparse (density ≤ 0.10, average degree 5 to 100), with 2 to 10 classes and 300 to 60,000 nodes.
 
 ## Main results
 
