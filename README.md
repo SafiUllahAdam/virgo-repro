@@ -56,8 +56,25 @@ Structure only: published node features are ignored, so any gain comes from the 
 | GATv2, 30 graphs, 3 seeds | augmentation helps on 13 of 30 (21 of 30 with GraphSAGE) and recovers 8 of the 9 graphs where GATv2 alone fails |
 | community structure, 15 social graphs | stronger communities, smaller gain from augmentation (Spearman ρ = −0.82 GraphSAGE, −0.81 GATv2; p = 0.0002) |
 
-Augmentation remains useful on sparse, hub-dominated, weakly clustered graphs. Role edges typically join nodes 3 to 6
-hops apart, beyond the reach of a two-layer GNN. Details: [`docs/project_overview.md`](docs/project_overview.md).
+Details: [`docs/project_overview.md`](docs/project_overview.md).
+
+## With a stronger encoder: GATv2
+
+Every rule was fitted under GraphSAGE. Swapping in **GATv2** (attention) with the same graphs, splits and hyperparameters - only the convolution changes - on 30 graphs, 3 seeds:
+
+- **Augmentation still helps, on fewer graphs:** 13 of 30, against 21 of 30 under GraphSAGE.
+- **Augmentation and a stronger encoder are substitutes, not complements.** Where GATv2 alone already wins, rewiring adds almost nothing; where it fails, rewiring rescues 8 of 9 graphs.
+- **Stage 1 misses in one direction only.** Every disagreement is a graph where the stronger encoder made augmentation unnecessary - never one where it made augmentation newly necessary.
+
+**Which graphs still need it** - a description, not a rule:
+
+| still needs augmentation | does not |
+|---|---|
+| sparse, dominated by a few hubs | denser, evenly spread degrees |
+| hubs attached to leaves | similar nodes attached to each other |
+| few triangles | many triangles |
+
+Role edges typically join nodes 3-6 hops apart, beyond the 2-hop view of a standard GNN, so each node gets direct access to structurally similar nodes it could otherwise reach only by stacking more layers, which oversmooths.
 
 ## Repository
 
