@@ -74,6 +74,23 @@ Every rule was fitted under GraphSAGE. Swapping in **GATv2** (attention) with th
 
 Role edges typically join nodes 3-6 hops apart, beyond the 2-hop view of a standard GNN, so each node gets direct access to structurally similar nodes it could otherwise reach only by stacking more layers, which oversmooths.
 
+## Community structure on social graphs
+
+Do a social graph's natural communities explain when augmentation helps? We ran **Louvain** community detection on 15 social graphs and compared **community strength** (modularity: 0 means no communities, 1 means very strong ones) with the link-prediction results of both encoders. This describes the 15 graphs; it is not a new rule.
+
+- **Strong communities: keep the original graph. Weak communities: augment.** Role graphs keep almost none of the original communities, so replacing the edges costs the most where communities are strong.
+- **Same pattern for both encoders.** The weaker the communities, the more augmentation helps, under GraphSAGE and GATv2 alike.
+- **GATv2 needs augmentation on fewer graphs.** GraphSAGE keeps the original only on the graphs with the strongest communities; GATv2 also keeps it on graphs with medium-strength communities. Where GATv2 still gains, the gain comes almost entirely from hybrid graphs (original edges kept, role edges added).
+- **Community strength complements homophily.** It needs no labels, it follows the gain far better than homophily, and it gets right the graphs where the homophily rule fails.
+- **Communities do not explain clustering or Stage 2.** The clustering exception never fires on these graphs, and centrality role edges cross communities about as often as random edges, whether centrality wins or not.
+
+| gain from augmentation vs | GraphSAGE | GATv2 |
+|---|---|---|
+| homophily | ρ = −0.01 | ρ = −0.09 |
+| community strength | ρ = −0.82 | ρ = −0.81 |
+
+Details: [`notebooks/9-community_detection_social.ipynb`](notebooks/9-community_detection_social.ipynb).
+
 ## Repository
 
 | path | contents |
