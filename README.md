@@ -30,9 +30,7 @@ Both stages read properties of the **original graph** only, so nothing is built 
 | **decision** | adjusted homophily **< 0.227** ⇒ augment | When edges follow the labels, the original graph is the better guide - a reliable **veto**. Low homophily is necessary, not sufficient. |
 | **exception** *(low-homophily graphs only)* | average clustering **≥ 0.5573** ⇒ keep original | Dense, triangle-rich neighbourhoods already carry the local structure. |
 
-Homophily makes the decision; clustering is a safety check for the few low-homophily graphs where augmentation does not pay off.
-
-**Clustering** is how often two neighbours of a node are also linked to each other (how many triangles the graph has, from 0 to 1); it is checked only when homophily says augment, and a value of 0.5573 or higher overrides that call to keep the original.
+**When clustering matters:** only after homophily says augment. Low homophily usually means role edges will help, but not always. If the graph is also highly **clustered** (a node's neighbours are mostly linked to each other, forming many triangles), each neighbourhood already holds the local structure the encoder needs, so role edges add little and the original graph should be kept. If clustering is low, the augment call stands.
 
 ### Stage 2 - which signal? *(only when stage 1 says augment)*
 
