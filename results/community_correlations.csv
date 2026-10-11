@@ -1,0 +1,8 @@
+hypothesis,statistic,x,y,subset,n,value,p,expected,direction_holds
+H1,spearman,orig_modularity,homophily_adjusted,all,10,0.3697,0.2931,+,True
+H1,spearman,orig_modularity,avg_clustering,all,10,-0.0303,0.9338,+,False
+H2,spearman,orig_modularity,official_gap,all,10,-0.5394,0.1076,-,True
+H2,spearman,orig_modularity,nonhybrid_gap,all,10,-0.5394,0.1076,-,True
+H3,spearman,hub_cross_centrality,centrality_advantage,non-hybrid verdict augments,9,-0.2594,0.5003,+,False
+H2,median keep - median augment,orig_modularity,nonhybrid_verdict,all,1 keep / 9 augment,0.3459,0.2,+,True
+H2,median keep - median augment,orig_modularity,official_verdict,all,1 keep / 9 augment,0.3459,0.2,+,True
