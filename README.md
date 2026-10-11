@@ -21,29 +21,27 @@ graph ──► STAGE 1: augment, or keep the original?
    train on the original      build that role graph, then train
 ```
 
-Both stages read properties of the **original graph** only, so nothing is built or trained before the call. The rules are frozen in [`virgo/frozen_rules.py`](virgo/frozen_rules.py). Each cut is the midpoint of a fitted interval, so read it as a range rather than a constant.
+Both stages read properties of the **original graph** only, so nothing is built or trained before the call. The rules are frozen in `virgo/frozen_rules.py`. Each cut is the midpoint of a fitted interval, so read it as a range rather than a constant.
 
 ### Stage 1 - augment or not? *(locked)*
 
 | step | rule | reading |
 |---|---|---|
-| **decision** | adjusted homophily **< 0.227** ⇒ augment<br>*range 0.0926 to 0.3613* | When edges follow the labels, the original graph is the better guide - a reliable **veto**. Low homophily is necessary, not sufficient. |
-| **exception** *(low-homophily graphs only)* | average clustering **≥ 0.5573** ⇒ keep original<br>*range 0.5329 to 0.5769* | Dense, triangle-rich neighbourhoods already carry the local structure. |
-| **fallback** *(graphs without labels only)* | largest connected component **> 95.88%** of nodes ⇒ augment<br>*range 91.77% to 100%* | Homophily needs node labels. Without them, augment when the graph is essentially one connected piece. |
+| **decision** | adjusted homophily **< 0.227** ⇒ augment | When edges follow the labels, the original graph is the better guide - a reliable **veto**. Low homophily is necessary, not sufficient. |
+| **exception** *(low-homophily graphs only)* | average clustering **≥ 0.5573** ⇒ keep original | Dense, triangle-rich neighbourhoods already carry the local structure. |
 
-Homophily makes the decision; clustering is a safety check for the few low-homophily graphs where augmentation does not pay off. The fallback is used only when the graph has no labels.
+Homophily makes the decision; clustering is a safety check for the few low-homophily graphs where augmentation does not pay off.
 
 ### Stage 2 - which signal? *(only when stage 1 says augment)*
 
-Three structural signals can build the role graph: **degree** (how many neighbours a node has), **eigenvector centrality** (how influential a node is through well-connected neighbours), and **Ψ** (Identity2Vec's score comparing the shape of two nodes' neighbourhoods). Both rules need node labels and are checked in this order.
+Three structural signals can build the role graph: **degree** (how many neighbours a node has), **eigenvector centrality** (how influential a node is through well-connected neighbours), and **Ψ** (Identity2Vec's score comparing the shape of two nodes' neighbourhoods).
 
 | signal | rule | reading |
 |---|---|---|
-| **centrality** *(checked first)* | adjusted neighbour-label predictability **> 0.0092**<br>*range 0.0060 to 0.0123* | A node's neighbours' label mix predicts its class better than chance. |
-| **degree** *(if centrality is not chosen; family-dependent)* | neighbour-label entropy **< 0.6724**<br>*range 0.6296 to 0.7151* | The labels around each node are concentrated, not mixed. Above the cut the rule makes no claim; it does not mean Ψ. |
-| **Ψ or degree** *(neither rule fires)* | no rule | The framework makes no recommendation. |
+| **centrality** | adjusted neighbour-label predictability **> 0.0092** | A node's neighbours' label mix predicts its class better than chance. |
+| **degree** | neighbour-label entropy **< 0.6724** | The labels around each node are concentrated, not mixed. |
 
-**The degree rule holds for one graph family only**: the family of the nine graphs it was fitted on. Measured on the original graph, that family is single-mode (not bipartite), nearly connected (largest component ≥ 97% of nodes), disassortative (degree assortativity between −0.30 and 0, so hubs link to low-degree nodes), sparse (density ≤ 0.10, average degree 5 to 100), with 2 to 10 classes and 300 to 60,000 nodes.
+The degree rule is family-dependent: it holds for graphs like the nine it was fitted on, which are single-mode (not bipartite), nearly connected, disassortative, sparse, with 2 to 10 classes and 300 to 60,000 nodes.
 
 ## Main results
 
