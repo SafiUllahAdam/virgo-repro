@@ -23,7 +23,7 @@ graph ──► STAGE 1: augment, or keep the original?
 
 Both stages read properties of the **original graph** only, so nothing is built or trained before the call. The rules are frozen in `virgo/frozen_rules.py`. Each cut is the midpoint of a fitted interval, so read it as a range rather than a constant.
 
-### Stage 1 - augment or not? *(locked)*
+### Stage 1 - augment or not?
 
 | step | rule | reading |
 |---|---|---|
@@ -31,6 +31,8 @@ Both stages read properties of the **original graph** only, so nothing is built 
 | **exception** *(low-homophily graphs only)* | average clustering **≥ 0.5573** ⇒ keep original | Dense, triangle-rich neighbourhoods already carry the local structure. |
 
 Homophily makes the decision; clustering is a safety check for the few low-homophily graphs where augmentation does not pay off.
+
+**Clustering** is how often two neighbours of a node are also linked to each other (how many triangles the graph has, from 0 to 1); it is checked only when homophily says augment, and a value of 0.5573 or higher overrides that call to keep the original.
 
 ### Stage 2 - which signal? *(only when stage 1 says augment)*
 
@@ -41,7 +43,7 @@ Three structural signals can build the role graph: **degree** (how many neighbou
 | **centrality** | adjusted neighbour-label predictability **> 0.0092** | A node's neighbours' label mix predicts its class better than chance. |
 | **degree** | neighbour-label entropy **< 0.6724** | The labels around each node are concentrated, not mixed. |
 
-The degree rule is family-dependent: it holds for graphs like the nine it was fitted on, which are single-mode (not bipartite), nearly connected, disassortative, sparse, with 2 to 10 classes and 300 to 60,000 nodes.
+**The degree rule is family-dependent**, so it applies only to graphs like the nine it was fitted on: single-mode (not bipartite), nearly connected (largest component ≥ 97% of nodes), disassortative (hubs link to low-degree nodes), sparse (density ≤ 0.10), with 2 to 10 classes and 300 to 60,000 nodes.
 
 ## Main results
 
