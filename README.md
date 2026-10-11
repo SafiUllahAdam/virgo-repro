@@ -34,13 +34,14 @@ of cuts that fit the training graphs equally well.
 | rule | condition | threshold (range) | interpretation |
 |---|---|---|---|
 | 2.1 | adjusted neighbour-label predictability > τ ⇒ centrality | 0.0092 (0.0060 to 0.0123) | a node's class can be guessed from its neighbours' label mix better than chance |
-| 2.2 | otherwise: neighbour-label entropy < τ ⇒ degree | 0.6724 (0.6296 to 0.7151) | the labels around each node are concentrated rather than mixed |
+| 2.2 | otherwise: neighbour-label entropy < τ ⇒ degree (family-dependent) | 0.6724 (0.6296 to 0.7151) | the labels around each node are concentrated rather than mixed |
 | | otherwise | | no recommendation between Ψ and degree |
 
-**Validation.** On held-out graphs, rule 1.1 was correct on all its "keep" calls (3/3) but on only half of its
-"augment" calls (2/4), which motivates rule 1.2 (4/4 decided calls on six unseen graphs). The Stage 2 rules are fitted
-candidates with limited held-out evidence (2.1: 3/4; 2.2: 6/9). Rejected rules and full records are in
-`virgo/frozen_rules.py` and [`docs/paper_log.md`](docs/paper_log.md).
+**Rule 2.2 is family-dependent.** It is not a universal rule: it applies only to graphs of the same family as the nine
+it was fitted on. That family is defined on the original graph as single-mode (not bipartite), nearly connected (largest
+component holds at least 97% of nodes), disassortative (degree assortativity between −0.30 and 0, so hubs tend to link
+to low-degree nodes), sparse (density at most 0.10, average degree 5 to 100), with 2 to 10 classes and 300 to 60,000
+nodes.
 
 ## Main results
 
