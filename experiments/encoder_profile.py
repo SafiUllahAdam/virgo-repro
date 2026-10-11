@@ -1,5 +1,5 @@
 '''Module 16: WHICH graphs still need augmentation once the encoder is strong, and which do not - a property profile.'''
-# The supervisor's question after Module 15 (2026-09-17): "when the graph gives the useful information by its
+# The question after Module 15 (2026-09-17): "when the graph gives the useful information by its
 # construction, there is no need for augmentation... try to give deeper insight on what properties the graphs have in
 # both cases". Module 15 measured THAT the two groups exist; this asks WHAT separates them.
 # Two labels, kept apart because they are different questions:
@@ -70,7 +70,7 @@ def cells(datasets):
     return c.reset_index()
 
 
-# What the supervisor asked for: the two groups side by side, property by property.
+# What was asked for: the two groups side by side, property by property.
 def profile(c, label):
     '''Per property: the median in each group, the gap, and how strongly it ranks against the label.'''
     d = c[c[label].notna()].copy()

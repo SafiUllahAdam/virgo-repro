@@ -1254,12 +1254,12 @@ deleted, so it must come back through `virgo/data/make_hetero.py` before any tol
   (2026-09-13, "leave missing 4") and are not in the re-run.
 
 ## 2026-09-14 — DECISION REVERSED: keep old Ψ and old ω; the repairs are reported, not adopted
-- User + supervisor (email, 2026-09-14): "OK to keep old Psi but add a short note on the performance drop for a
+- Decision (email, 2026-09-14): "OK to keep old Psi but add a short note on the performance drop for a
   normalized version of it. The sensitivity check is convincing also."
 - `psi` and ω = degree + Ω remain THE implementation. The 2026-09-13 note adopting `psi_pqnorm` is SUPERSEDED.
 - `psi_qnorm` / `psi_pqnorm` / `psi_shift` / `psi_w_deg` / `psi_w_ev` / `psi_w_delta` / `psi_lambda` stay in `VG_SIMS`
   as DIAGNOSTICS (none in `VG_SIMS_LOCKED`); their results are paper material for the Ψ section, not pipeline changes.
-- Still open from the supervisor's checklist: rewrite the Ψ section to present the d = 1 choice as position-free by
+- Still open from the review checklist: rewrite the Ψ section to present the d = 1 choice as position-free by
   design. That is writing, not experiments.
 
 ## 2026-09-15 — GATv2 wired as a third encoder; GIN run for the first time

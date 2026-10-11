@@ -1,5 +1,5 @@
 '''Do the two principled repairs of Fix-8's 1e-12 clamp actually remove it, and what do they do to Ψ?'''
-# The clamp is a numerical patch, not I2V. Two repairs were proposed (supervisor, 2026-09-13):
+# The clamp is a numerical patch, not I2V. Two repairs were proposed (2026-09-13):
 #   (a) normalize Ω over N(u)            -> `psi_qnorm`
 #       and, because that alone does NOT bound λ, normalize Δ too -> `psi_pqnorm`, a true KL, λ >= 0 by Gibbs
 #   (b) shift λ so the graph minimum is 0 -> `psi_shift`, order-preserving, the floor then bites ONE node not a third

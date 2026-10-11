@@ -4,6 +4,8 @@
 # virgo/community.py - this file wires the social panel to it and writes results/community_*.csv.
 #   --step measure   build original + psi/degree/centrality (K=10, VG seed 42, full graph) -> Louvain x 3 seeds -> measure
 #   --step compare   join the measurements with the stage-1/2 calls and both LP verdicts -> the pre-declared comparisons
+# --encoder picks whose LP verdicts the communities are read against: graphsage_edge (the study's encoder, default) or
+# gatv2_edge (the Module-15 encoder). The communities themselves are graph properties and do not depend on it.
 # Incremental per dataset: measuring a graph replaces its own rows and keeps every other graph's, so the five graphs that
 # complete the panel can be added later without touching the pilot's numbers.
 
@@ -37,6 +39,7 @@ OUT = {name: cfg.RESULTS_DIR / f"community_{name}.csv"
        for name in ["graphs", "partitions", "placement", "summary", "compare", "correlations"]}
 RECORDED = cfg.PROJECT_ROOT / "expected" / "hashes" / "artifacts.csv"
 BOARD = cfg.PROJECT_ROOT / "expected" / "scoreboard.csv"        # the published LP results - the evidence, never retrained
+ENCODERS = {"graphsage_edge": "", "gatv2_edge": "_gatv2"}        # encoder -> suffix of its compare table (GraphSAGE keeps the plain name)
 ROLE = [v for v in cfg.COMMUNITY_VARIANTS if v != "original"]
 
 # The pre-declared comparisons (paper_log 2026-10-01), all descriptive: (hypothesis, x, y, subset, expected sign).
@@ -127,9 +130,9 @@ def step_measure(datasets):
 # strategy_select.winners' sem-band rule, applied to whichever of `variants` were scored. Needed because winners()
 # insists on all seven official variants, and two pilot graphs carry five; where all seven exist, compare() asserts
 # this reproduces winners() exactly.
-def verdict(board, ds, variants):
+def verdict(board, ds, variants, encoder="graphsage_edge"):
     '''LP verdict over `variants`: best variant, the signals its tie band names, whether augmentation beats the original, the gap.'''
-    s = board[(board["dataset"] == ds) & (board["encoder"] == "graphsage_edge") & (board["top_K_neighbors"] == K)
+    s = board[(board["dataset"] == ds) & (board["encoder"] == encoder) & (board["top_K_neighbors"] == K)
               & (board["task"] == "link prediction (AUC)") & (board["metric"] == "auc")
               & board["graph_variant"].isin(variants)].set_index("graph_variant")
     assert s.index.is_unique and "original" in s.index, f"{ds}: LP rows missing or duplicated on the board"
@@ -160,17 +163,24 @@ def summarize(datasets):
     return out.round(4)
 
 
-def step_compare(datasets, board_path, corr_path=OUT["correlations"]):
+def read_boards(paths):
+    '''One scoreboard from several files; a row in a later file replaces the same row in an earlier one.'''
+    key = ["dataset", "encoder", "graph_variant", "top_K_neighbors", "task", "metric"]
+    board = pd.concat([pd.read_csv(p) for p in paths], ignore_index=True)
+    return board.drop_duplicates(subset=key, keep="last").reset_index(drop=True)
+
+
+def step_compare(datasets, board_paths, corr_path=OUT["correlations"], encoder="graphsage_edge"):
     '''Join the measurements with the frozen calls and both LP verdicts, then run the pre-declared comparisons.'''
     summary = summarize(datasets)
     merge(OUT["summary"], summary.to_dict("records"), datasets)
-    board = pd.read_csv(board_path)
+    board = read_boards(board_paths)
     rows = []
     for ds in datasets:
         p = graph_properties(ds)
         _, _, call, why = fr.predict_gated(p)
-        off, nh = verdict(board, ds, cfg.VG_SIMS_OFFICIAL), verdict(board, ds, cfg.COMMUNITY_VARIANTS)
-        if off["scored"] == len(cfg.VG_SIMS_OFFICIAL):                       # the published verdict, reproduced exactly
+        off, nh = (verdict(board, ds, cfg.VG_SIMS_OFFICIAL, encoder), verdict(board, ds, cfg.COMMUNITY_VARIANTS, encoder))
+        if encoder == "graphsage_edge" and off["scored"] == len(cfg.VG_SIMS_OFFICIAL):   # the published verdict, reproduced exactly
             w = winners([ds], "sem", board=board).iloc[0]
             assert (w["best_variant"], w["winner_signals"], bool(w["beats_original"])) == \
                    (off["best"], off["winners"], off["verdict"] == "augment"), f"{ds}: verdict() drifted from winners()"
@@ -197,11 +207,12 @@ def step_compare(datasets, board_path, corr_path=OUT["correlations"]):
             row[f"own_modularity_{v}"] = S.loc[v, "modularity"]
             row[f"nmi_vs_original_{v}"] = S.loc[v, "nmi_vs_original"]
         rows.append(row)
-    cmp = merge(OUT["compare"], rows, datasets)
+    cmp_path = cfg.RESULTS_DIR / f"community_compare{ENCODERS[encoder]}.csv"
+    cmp = merge(cmp_path, rows, datasets)
     cmp = cmp[cmp["dataset"].isin(datasets)]
     corr = correlations(cmp)
     corr.to_csv(corr_path, index=False, lineterminator="\n")         # always recomputed over exactly `datasets`
-    print(f"wrote {OUT['summary']}\nwrote {OUT['compare']}\nwrote {corr_path}", flush=True)
+    print(f"wrote {OUT['summary']}\nwrote {cmp_path}\nwrote {corr_path}", flush=True)
     return cmp, corr
 
 
@@ -231,7 +242,7 @@ def main(args):
     if args.step in ("measure", "all"):
         step_measure(args.datasets)
     if args.step in ("compare", "all"):
-        cmp, corr = step_compare(args.datasets, args.board, args.correlations)
+        cmp, corr = step_compare(args.datasets, args.board, args.correlations, args.encoder)
         print(corr.to_string(index=False))
 
 
@@ -243,11 +254,15 @@ def parse_args():
     p.add_argument('--datasets', nargs='+', default=cfg.COMMUNITY_SOCIAL_PILOT, choices=SOCIAL,
                    help='Social graphs to run. Default: the 10-graph pilot (cfg.COMMUNITY_SOCIAL_PILOT); '
                         'cfg.COMMUNITY_SOCIAL is the full 15.')
-    p.add_argument('--board', type=Path, default=BOARD,
-                   help='Scoreboard the LP verdicts are read from. Default: the published expected/scoreboard.csv.')
+    p.add_argument('--board', type=Path, nargs='+', default=[BOARD],
+                   help='Scoreboard(s) the LP verdicts are read from; a row in a later file replaces the same row in an '
+                        'earlier one. Default: the published expected/scoreboard.csv.')
     p.add_argument('--correlations', type=Path, default=OUT["correlations"],
                    help='Where the pre-declared comparisons are written; they cover exactly --datasets. Default: '
                         'results/community_correlations.csv (the pilot). The 15-graph pool uses community_correlations_15.csv.')
+    p.add_argument('--encoder', default='graphsage_edge', choices=list(ENCODERS),
+                   help='Whose LP verdicts to read: graphsage_edge (default, writes community_compare.csv) or gatv2_edge '
+                        '(writes community_compare_gatv2.csv). Communities do not depend on it.')
     return p.parse_args()
 
 

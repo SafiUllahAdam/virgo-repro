@@ -2040,9 +2040,9 @@ discovery agreements on the augment side are in-sample.
 
 ---
 
-## 2026-08-11 — Supervisor reframe: structural graph AUGMENTATION; two new hybrid variants (hybrid_degree, hybrid_centrality)
+## 2026-08-11 — Reframe: structural graph AUGMENTATION; two new hybrid variants (hybrid_degree, hybrid_centrality)
 
-**Framing decision (supervisor meeting).** The study is presented as "when should the original graph be augmented
+**Framing decision (project meeting).** The study is presented as "when should the original graph be augmented
 with structural information, and which structural augmentation" — not "which virtual graph is best" (virtual
 graphs/embeddings already exist as an area). R1 is restated accordingly: adjusted homophily predicts when structural
 graph augmentation may help **link prediction** (low → consider augmenting; high → keep the original). Existing
@@ -2201,7 +2201,7 @@ three datasets that do name a signal are not separated by any of the seven prima
 
 ## 2026-08-13 — Module 6 at TEN seeds on 14 datasets: the first strategy rule
 
-**What changed.** The supervisor's diagnosis was that precision was never the binding constraint — the properties simply
+**What changed.** The diagnosis was that precision was never the binding constraint — the properties simply
 did not separate the winners — and that development diversity would do more than seeds. Both were raised anyway:
 **10 seeds (42–51)** and **14 datasets**, every labelled graph carrying a link-prediction score. The 2026-07-29 exclusion
 of `citeseer_linqs` / `proteins` was reversed for this module only (user, 2026-08-13): both are heavily fragmented, the
@@ -4460,7 +4460,7 @@ size (1,912–2,708 nodes) and for spanning the clamp range (12% → 89%). Not a
 
 ## 2026-09-09 — The GAT objection, measured: role edges ARE long-range, but no more so than chance
 
-**Question (supervisor).** If the edges a role graph adds join 1–2 hop neighbours, attention over the original graph
+**Question.** If the edges a role graph adds join 1–2 hop neighbours, attention over the original graph
 could already reach them and the rewiring adds nothing GAT cannot. If they join distant nodes, it adds reach.
 
 **Method.** `experiments/edge_distance.py`. For every edge the role graph ADDS (overlaps with the original are excluded —
@@ -4488,7 +4488,7 @@ graphs where augmentation wins (`twitch_es`, `squirrel_filtered`, `actor`) and w
 `lastfm_asia`) show the same ratio ~1.0, which is itself the answer to the split. 6 datasets, K=10, build-side only —
 no training. `results/edge_distance.csv`.
 
-## 2026-09-13 — Clamp rate across the STAGE-1 + STAGE-2 panels (supervisor request, pre-GATv2)
+## 2026-09-13 — Clamp rate across the STAGE-1 + STAGE-2 panels (requested pre-GATv2)
 
 **Request.** Before GATv2, report per dataset how often Fix-8's `max(λ, 1e-12)` fires, over the datasets used in Modules
 2–8 — i.e. before the degree-rule work. Panels: `DISCOVERY_PANEL`, `HELDOUT`, `GATE_PANEL`, `GATE_HELDOUT`,
@@ -4532,14 +4532,14 @@ reading of those cells must carry this caveat.
 
 **Why the rate varies so much** is visible in the sign of ρ(Ψ, degree): where the clamp is heavy it is strongly negative
 (Ψ collapsing to `−27.63k − log k!`), and `roman_empire` — the one clean graph — is also the only one with positive ρ.
-No fix is applied here; this is the measurement the supervisor asked for, ahead of the principled-λ work and GATv2.
+No fix is applied here; this is the measurement that was asked for, ahead of the principled-λ work and GATv2.
 `results/psi_clamp.csv`, `results/psi_clamp_train_s42.csv`.
 
 ## 2026-09-13 — The two proposed repairs of the clamp: both work numerically, neither improves Ψ
 
 **Arms** (`virtual_graph.PSI_ARMS`, all in `VG_SIMS`, none in `VG_SIMS_LOCKED`; `psi` verified numerically unchanged):
-`psi_qnorm` = supervisor's (a), Ω normalised over N(u); `psi_pqnorm` = (a) completed, Δ normalised too; `psi_shift` =
-supervisor's (b), λ − min(λ) over non-isolated nodes. Smoke set chosen to span the clamp range: `roman_empire` 0.0%,
+`psi_qnorm` = repair (a), Ω normalised over N(u); `psi_pqnorm` = (a) completed, Δ normalised too; `psi_shift` =
+repair (b), λ − min(λ) over non-isolated nodes. Smoke set chosen to span the clamp range: `roman_empire` 0.0%,
 `cora` 12.4%, `enzymes` 47.1%, `amherst41` 99.2%.
 
 **(a) as literally stated is counterproductive, predicted analytically and confirmed.** Normalising Ω alone sets Σq = 1
@@ -4571,7 +4571,7 @@ as does every arm. The case for it is that it is the only arm that is *mathemati
 λ ≥ 0 holds by Gibbs rather than by patching, and the one remaining floor case (k = 1) is a statable property rather
 than an unbounded artifact. `psi_shift` is the best *scorer* of the three (never worse than 2.5 σ) but it is a
 graph-level additive constant with no basis in I2V, and it raises the degree coupling to 0.677 — it hides the symptom
-the supervisor asked about while worsening the disease. `psi_qnorm` is rejected outright: worse floor rate than doing
+that was asked about, while worsening the disease. `psi_qnorm` is rejected outright: worse floor rate than doing
 nothing.
 
 **The honest headline, which the LP table forces:** no repair makes Ψ better. Ψ's scores were partly *carried* by the
@@ -4624,7 +4624,7 @@ exact — same splits, same seeds. `results/psi_omega_paired.csv`.
 
 ## 2026-09-14 — DRAFT WORDING for the paper's Ψ section (keep it short; do not over-emphasise)
 
-Supervisor's ruling (email, 2026-09-14): keep old Ψ, add a *short* note on the normalised version's performance drop;
+Decision (email, 2026-09-14): keep old Ψ, add a *short* note on the normalised version's performance drop;
 the ω sensitivity check is accepted. Below is draft prose sized for the paper — roughly three short paragraphs, not a
 subsection of its own. The full measurements stay in paper_log 2026-09-08 / 09-09 / 09-13 and are cited, not repeated.
 
@@ -4953,7 +4953,7 @@ attention is worse, only worse at those settings. 3 seeds.
 
 ## 2026-09-18 — Module 16: WHAT kind of graph still needs augmentation under a strong encoder
 
-**The supervisor's question** after Module 15: "when the graph gives the useful information by its construction, there
+**The question** after Module 15: "when the graph gives the useful information by its construction, there
 is no need for augmentation... since virtual edges are out of range of a deep enough GATv2 (otherwise we'll have
 oversmoothing), their usefulness is better. Try to give deeper insight on what properties the graphs have in both
 cases." Module 15 measured THAT the two groups exist; this asks WHAT separates them.
@@ -4979,14 +4979,14 @@ measured (never re-measured, so they cannot drift), screened against two labels 
 **Read it as one sentence: augmentation is still needed on sparse, hub-dominated, disassortative, weakly clustered
 graphs, and is not needed on denser, locally clustered, assortative ones.** Homophily, size and class count do not
 separate the groups at all (|ρ| ≤ 0.19) — this is about how the graph spreads its edges, not about its labels. That is
-the supervisor's intuition measured: a locally clustered neighbourhood already contains the signal, so attention over
+the intuition measured: a locally clustered neighbourhood already contains the signal, so attention over
 existing edges suffices; a sparse hub-dominated graph does not, and it is precisely the graph whose useful nodes sit
 beyond a 2-layer receptive field. It joins cleanly to the hop-distance diagnostic (2026-09-09): added edges are median
 3–6 hops apart, so reaching them by depth alone would need 3–6 layers and oversmooth.
 
 **Scope, stated so it is not mistaken for a rule search.** This is a DESCRIPTION of the graphs already measured. No
 threshold is proposed, nothing is frozen, and no validation set is owed — the deliverable is the profile above, which
-is what the supervisor asked for. The separation columns in `encoder_profile_rules.csv` say only how cleanly each
+is what was asked for. The separation columns in `encoder_profile_rules.csv` say only how cleanly each
 property divides the two groups; they are not cuts to apply to a new graph.
 
 **Two things to carry when quoting the profile.** (1) The three strongest properties are all **exploratory tier** and
@@ -5002,7 +5002,7 @@ Tables: `results/encoder_profile_{cells,groups,rules}.csv`. Notebook 8 §Q5. Not
 
 ## 2026-10-01 — Module 17 PRE-REGISTRATION: community structure on the social graphs (Louvain, pilot of 10)
 
-**The supervisor's question** (meeting relayed 2026-10-01, for the social-network framing of the WWW 2027 submission):
+**The question** (meeting 2026-10-01, for the social-network framing of the WWW 2027 submission):
 does a social graph's *natural community structure* add an explanation to the calls the study already makes? Three
 readings were named: (H1) low homophily plus low clustering goes with weak or fragmented communities, where
 augmentation helps; (H2) strong community structure marks the graphs where the original should be kept; (H3) when
@@ -5026,7 +5026,7 @@ The 20 social graphs are every `characterize.STUDY` entry whose domain contains 
 | **left out (5 largest)** | github, cornell5, genius, penn94, twitch_gamers |
 
 All three sets are written here and in `cfg.COMMUNITY_SOCIAL_PILOT / COMMUNITY_SOCIAL / COMMUNITY_SOCIAL_LEFT_OUT`.
-The pilot's outcome may decide **whether** the +5 are run (the supervisor's call); it may never change **which** five,
+The pilot's outcome may decide **whether** the +5 are run (a separate decision); it may never change **which** five,
 nor any metric, hypothesis or setting below.
 
 ### Graphs, partitions, metrics

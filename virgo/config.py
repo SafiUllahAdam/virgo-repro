@@ -260,7 +260,7 @@ VG_SIMS_LOCKED = ["psi", "degree", "centrality", "original", "hybrid"]
 # psi_w_deg / psi_w_ev / psi_w_delta added 2026-09-09: the same Ψ with a different reading of Eq. 3-4's ω
 # ("the structural attributes of v1", never written out in the paper). Open since 2026-06-24, notes.md:152/:209.
 # psi_qnorm / psi_pqnorm / psi_shift added 2026-09-13: the two principled repairs for Fix-8's 1e-12 clamp
-# (supervisor, pre-GATv2). qnorm = Ω normalized over N(u); pqnorm = Δ normalized too, which is what actually
+# (proposed pre-GATv2). qnorm = Ω normalized over N(u); pqnorm = Δ normalized too, which is what actually
 # guarantees λ >= 0; shift = λ - min(λ), order-preserving. All DIAGNOSTIC, none in VG_SIMS_LOCKED.
 VG_SIMS = VG_SIMS_LOCKED + ["hybrid_degree", "hybrid_centrality", "psi_lambda", "psi_w_deg", "psi_w_ev",
                             "psi_w_delta", "psi_qnorm", "psi_pqnorm", "psi_shift"]

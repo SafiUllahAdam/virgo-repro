@@ -16,10 +16,10 @@ from virgo import identity2vec_cached
 # Ψ arms: sim -> (Poisson wrapper?, reading of Eq. 3-4's ω, how p/q are normalized over N(u), shift λ so min=0?).
 # `psi` is the published one; every other arm is a diagnostic and none of them is in cfg.VG_SIMS_LOCKED.
 #   ω        OPEN item from 2026-06-24 (notes.md:152, :209) - the paper says only "the structural attributes of v1".
-#   norm     the supervisor's fix (a). 'q' normalizes Ω over N(u); 'pq' normalizes Δ too, which is what actually makes
+#   norm     proposed fix (a). 'q' normalizes Ω over N(u); 'pq' normalizes Δ too, which is what actually makes
 #            λ a true KL and so λ >= 0 by Gibbs. 'q' ALONE DOES NOT: with Σq=1 but Σp=S, the bound is S·log(S) < 0
 #            whenever S < 1, and Δ = n_d/n is small, so Ω-only normalization drives λ negative rather than fixing it.
-#   shift    the supervisor's fix (b). λ -> λ - min(λ) over the graph's non-isolated nodes: order-preserving, and the
+#   shift    proposed fix (b). λ -> λ - min(λ) over the graph's non-isolated nodes: order-preserving, and the
 #            1e-12 floor then bites ONE node (the minimum) instead of a third of them.
 PSI_ARMS = {'psi': (True, 'deg_ev', 'none', False), 'psi_lambda': (False, 'deg_ev', 'none', False),
             'psi_w_deg': (True, 'deg', 'none', False), 'psi_w_ev': (True, 'ev', 'none', False),
@@ -45,7 +45,7 @@ class VirtualGraph():
             return 0.0
         ps = [deg_dist[w] for w in neigh]                     # I2V p=Δ (degree-dist)
         qs = [ev[w] for w in neigh]                           # I2V q=Ω (eigenvector centrality)
-        if norm in ('q', 'pq'):                               # supervisor's fix (a): Ω as a distribution over N(u)
+        if norm in ('q', 'pq'):                               # proposed fix (a): Ω as a distribution over N(u)
             t = sum(qs)
             qs = [q / t for q in qs] if t > 0 else qs
         if norm == 'pq':                                      # ...and Δ too, which is what makes λ a true KL -> λ >= 0

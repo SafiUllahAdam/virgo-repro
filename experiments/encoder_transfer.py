@@ -52,7 +52,7 @@ def per_seed(datasets, encoder, seeds, k, train, sims=None):
     return pd.DataFrame(rows)
 
 
-# The professor's four cells: <encoder> alone vs <encoder>+augmentation, paired on the shared split so the gap is testable.
+# The four cells: <encoder> alone vs <encoder>+augmentation, paired on the shared split so the gap is testable.
 def four_cell(ps):
     '''Per dataset x encoder: the original graph, the best augmented graph, and their paired difference.'''
     rows = []
