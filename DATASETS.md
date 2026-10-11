@@ -8,19 +8,14 @@ lives in `virgo/config.py`; the builders in `virgo/data/`.
 
 | group | datasets | role |
 |---|---|---|
-| discovery panel | cora, enzymes, ogbn_arxiv, ogbl_ddi, roman_empire, tolokers, questions | stage-1 rules fitted here |
-| held-out (Module 3) | citeseer_linqs, proteins, pubmed, actor, minesweeper, amazon_photo, lastfm_asia, amazon_ratings, squirrel_filtered | pre-registered test of the stage-1 rules |
-| held-out (Modules 5, 7) | reed98, amherst41, johnshopkins55, cornell5 | the two-stage framework run end to end |
-| transfer test (Module 8) | the four above + chameleon_filtered, texas | the clustering exception scored on six graphs it was not fitted on — **retrospective**: all six were trained before the screen existed. `chameleon_filtered` supplies its only out-of-sample negative case (low homophily, high clustering, keeps the original) |
-| degree batch — fitting | twitch_de, chameleon, cornell_webkb | added 2026-09-01 to break the stage-2 deadlock (only two graphs in the corpus name degree as their sole winning signal). Split fixed on graph properties **before** any of them was trained |
-| degree batch — validation | deezer_europe, wisconsin, texas | held out while the degree rule is fitted; the largest graph is deliberately on this side |
-| earlier batch | twitch_pt | measured before stage 1 existed; no pre-registered call |
-| **`DEGREE_RULE_CORPUS`** (separate pool, never in the study panel) | wave 1: airports_usa, airports_europe, email_eu_core, wikics, twitch_engb, github, amazon_computers · wave 2: airports_brazil, polblogs, blogcatalog, coauthor_cs, twitch_es, twitch_fr, dblp · wave 3: coauthor_physics, twitch_ru, twitch_ptbr, cora_ml, squirrel, flickr_attr | 20 graphs ingested 2026-09-02 for the stage-2 **degree** question only, chosen for structural spread rather than expected outcome; protocol pre-registered in `docs/paper_log.md` §12. Wave 3 was trained after the degree-vs-Ψ candidate was written down, so it is that candidate's held-out test |
-
-| **`DEGREE_RULE_VALIDATION`** (the corpus's held-out half) | wiki_attr, crocodile, cora_full, penn94, genius, twitch_gamers | 6 graphs ingested 2026-09-03 to **test** what the corpus fitted, never to fit on. `degree_rule.py` refuses to fit on any of them, and every fitted cut's prediction is written to `results/paired_degree_validation_prereg.csv` **before** they are trained. Chosen on the predictor, not the outcome: three sit either side of the degree-vs-Ψ candidate's `nbr_label_entropy` cut, which the corpus tested on exactly one cell. Two disclosures travel with the set — `cora_ml` (in the corpus) is a **subgraph** of `cora_full`, and `crocodile`'s labels are quantile bins of its raw traffic target, so they correlate with degree exactly as the `airports_*` labels do |
-
-Two registered graphs carry no scoreboard row: `citeseer` (the Identity2Vec author's graph, no aligned labels) and
-`politics` (ships no labels). Both are link-prediction only.
+| discovery panel | cora, enzymes, ogbn_arxiv, ogbl_ddi, roman_empire, tolokers, questions | Stage 1 rules fitted here |
+| held-out (Module 3) | citeseer_linqs, proteins, pubmed, actor, minesweeper, amazon_photo, lastfm_asia, amazon_ratings, squirrel_filtered | test of the Stage 1 rules |
+| held-out (Modules 5, 7) | reed98, amherst41, johnshopkins55, cornell5 | test of the full two-stage framework |
+| transfer test (Module 8) | the four above, chameleon_filtered, texas | test of the clustering exception |
+| degree batch, fitting | twitch_de, chameleon, cornell_webkb | added to fit the Stage 2 degree rule |
+| degree batch, validation | deezer_europe, wisconsin, texas | held out to test the Stage 2 degree rule |
+| earlier batch | twitch_pt | measured before Stage 1 existed |
+| degree rule corpus | airports_usa, airports_europe, airports_brazil, email_eu_core, wikics, twitch_engb, twitch_es, twitch_fr, twitch_ru, twitch_ptbr, github, amazon_computers, polblogs, blogcatalog, coauthor_cs, coauthor_physics, dblp, cora_ml, squirrel, flickr_attr | 20 extra graphs used only for the Stage 2 degree rule |
 
 The Facebook100 label is **gender, missing for ~10% of users** (LINKX codes it −1). Those nodes are left out of the
 `.labels` file rather than written as a third class; the graph keeps every node.
