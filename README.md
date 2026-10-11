@@ -43,7 +43,7 @@ Three structural signals can build the role graph: **degree** (how many neighbou
 | **centrality** | adjusted neighbour-label predictability **> 0.0092** | A node's neighbours' label mix predicts its class better than chance. |
 | **degree** | neighbour-label entropy **< 0.6724** | The labels around each node are concentrated, not mixed. |
 
-**The degree rule is family-dependent**: it works only on graphs similar to the ones it was learned from, that is, small to medium-sized sparse graphs with one type of node, almost all in one connected piece, where hubs mostly connect to low-degree nodes, and with only a few classes.
+**The degree rule is family-dependent**: it works only on graphs similar to the ones it was learned from, that is, small to medium-sized graphs that are **unipartite** (one type of node), **sparse** (low density), **nearly connected** (one dominant connected component), **disassortative** (hubs mostly connect to low-degree nodes) and have only a few classes.
 
 ## Main results
 
