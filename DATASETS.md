@@ -1,21 +1,32 @@
 # Datasets
 
-Every graph is used **structurally only** — edges, plus node labels where they exist. Published node features are
+Every graph is used **structurally only**: edges, plus node labels where they exist. Published node features are
 ignored by design, so a gain cannot be credited to the attributes instead of to the rewiring under test. The registry
 lives in `virgo/config.py`; the builders in `virgo/data/`.
 
 ## Role in the study
 
-| group | datasets | role |
-|---|---|---|
-| discovery panel | cora, enzymes, ogbn_arxiv, ogbl_ddi, roman_empire, tolokers, questions | Stage 1 rules fitted here |
-| held-out (Module 3) | citeseer_linqs, proteins, pubmed, actor, minesweeper, amazon_photo, lastfm_asia, amazon_ratings, squirrel_filtered | test of the Stage 1 rules |
-| held-out (Modules 5, 7) | reed98, amherst41, johnshopkins55, cornell5 | test of the full two-stage framework |
-| transfer test (Module 8) | the four above, chameleon_filtered, texas | test of the clustering exception |
-| degree batch, fitting | twitch_de, chameleon, cornell_webkb | added to fit the Stage 2 degree rule |
-| degree batch, validation | deezer_europe, wisconsin, texas | held out to test the Stage 2 degree rule |
-| earlier batch | twitch_pt | measured before Stage 1 existed |
-| degree rule corpus | airports_usa, airports_europe, airports_brazil, email_eu_core, wikics, twitch_engb, twitch_es, twitch_fr, twitch_ru, twitch_ptbr, github, amazon_computers, polblogs, blogcatalog, coauthor_cs, coauthor_physics, dblp, cora_ml, squirrel, flickr_attr | 20 extra graphs used only for the Stage 2 degree rule |
+The framework and its analyses rest on **50 datasets**. 48 carry evidence for the decision rules (fitting or testing);
+the GATv2 comparison adds 1 and the community analysis adds 1. A dataset can appear in more than one row.
+
+| part of the study | n | datasets | role |
+|---|---|---|---|
+| Stage 1, discovery | 7 | cora, enzymes, ogbn_arxiv, ogbl_ddi, roman_empire, tolokers, questions | Stage 1 rules fitted |
+| Stage 1, held-out | 9 | citeseer_linqs, proteins, pubmed, actor, minesweeper, amazon_photo, lastfm_asia, amazon_ratings, squirrel_filtered | first test of the Stage 1 rules |
+| Stage 1, clustering-exception test | 6 | reed98, amherst41, johnshopkins55, cornell5, chameleon_filtered, texas | test of the clustering exception, on graphs trained before it was written |
+| Stage 2 centrality, fitting | 14 | the Stage 1 discovery and held-out graphs except ogbn_arxiv and ogbl_ddi | centrality rule fitted |
+| Stage 2 centrality, test | 17 | amherst41, johnshopkins55, cornell5, twitch_de, airports_europe, airports_brazil, airports_usa, coauthor_physics, penn94, genius, twitch_es, twitch_engb, blogcatalog, amazon_computers, twitch_ptbr, crocodile, twitch_gamers | held-out test of the centrality rule; the first four were collected for this question |
+| Stage 2 degree, discovery | 9 | actor, airports_europe, amazon_computers, questions, twitch_engb, blogcatalog, tolokers, twitch_de, twitch_es | degree rule fitted |
+| Stage 2 degree, validation | 7 | twitch_ptbr, wiki_attr, crocodile, cora_full, penn94, genius, twitch_gamers | held-out test of the degree rule |
+| Stage 2 degree, family test | 10 | pre-registered: genetic_fission_yeast, ppi_yeast, ppi_fly, ppi_human; scored after training: ppi_mouse, github, twitch_ru, flickr_attr, squirrel, twitch_fr | test on graphs from the same family as the discovery set |
+| GATv2 encoder transfer | 30 | enzymes, roman_empire, tolokers, questions, citeseer_linqs, proteins, pubmed, actor, minesweeper, squirrel_filtered, reed98, amherst41, johnshopkins55, cornell5, chameleon_filtered, twitch_de, deezer_europe, airports_europe, airports_brazil, airports_usa, genius, twitch_es, twitch_engb, amazon_computers, blogcatalog, twitch_ptbr, wiki_attr, crocodile, cora_full, twitch_gamers | rules checked under a stronger encoder; new here: deezer_europe |
+| community analysis | 15 | spanish_highschool_6, reed98, twitch_ptbr, amherst41, twitch_ru, twitch_es, johnshopkins55, blogcatalog, twitch_fr, twitch_engb, flickr_attr, lastfm_asia, twitch_de, cornell5, deezer_europe | explanatory only, no rule fitted; new here: spanish_highschool_6 |
+
+- flickr_attr, squirrel and twitch_fr sit above the degree cut, where the one-sided rule makes no claim; they are why its
+  Ψ side was dropped.
+- twitch_de and deezer_europe also received Stage 1 calls after the rules were frozen.
+- Not counted: graphs trained only for exploration, diagnostics or the rejected distinct-degree rule (for example the
+  other degree-corpus graphs and the Netzschleuder degree batches), and graphs ingested but never trained (jdk).
 
 The Facebook100 label is **gender, missing for ~10% of users** (LINKX codes it −1). Those nodes are left out of the
 `.labels` file rather than written as a third class; the graph keeps every node.
@@ -24,11 +35,11 @@ The Facebook100 label is **gender, missing for ~10% of users** (LINKX codes it �
 
 | dataset(s) | domain | reference |
 |---|---|---|
-| `cora`, `citeseer`, `citeseer_linqs`, `pubmed` | paper citation | Sen et al., *Collective Classification in Network Data*, AI Magazine 29(3), 2008. Cora also McCallum et al., *Information Retrieval* 3(2):127–163, 2000; PubMed also Namata et al., MLG workshop, 2012 |
-| `enzymes`, `proteins` | protein structure | Borgwardt et al., *Bioinformatics* 21(suppl_1):i47–i56, 2005. PROTEINS also Dobson & Doig, *J. Mol. Biol.* 330(4):771–783, 2003 |
+| `cora`, `citeseer`, `citeseer_linqs`, `pubmed` | paper citation | Sen et al., *Collective Classification in Network Data*, AI Magazine 29(3), 2008. Cora also McCallum et al., *Information Retrieval* 3(2):127-163, 2000; PubMed also Namata et al., MLG workshop, 2012 |
+| `enzymes`, `proteins` | protein structure | Borgwardt et al., *Bioinformatics* 21(suppl_1):i47-i56, 2005. PROTEINS also Dobson & Doig, *J. Mol. Biol.* 330(4):771-783, 2003 |
 | `politics` (rt-pol) | Twitter retweet | Rossi & Ahmed, *The Network Data Repository*, AAAI, 2015 |
 | `ogbn_arxiv` | paper citation (MAG) | Hu et al., *Open Graph Benchmark*, NeurIPS, 2020; graph from Wang et al., *Microsoft Academic Graph*, QSS 1(1), 2020 |
-| `ogbl_ddi` | drug–drug interaction | Hu et al., *Open Graph Benchmark*, NeurIPS, 2020; interactions from Wishart et al., *DrugBank 5.0*, NAR 46(D1), 2018 |
+| `ogbl_ddi` | drug-drug interaction | Hu et al., *Open Graph Benchmark*, NeurIPS, 2020; interactions from Wishart et al., *DrugBank 5.0*, NAR 46(D1), 2018 |
 | `roman_empire`, `amazon_ratings`, `minesweeper`, `tolokers`, `questions`, `squirrel_filtered` | Wikipedia text · co-purchase · synthetic grid · crowdsourcing · Q&A · Wikipedia web | Platonov et al., *A Critical Look at the Evaluation of GNNs under Heterophily*, ICLR, 2023. `squirrel_filtered` is their de-duplicated rebuild of the graph of Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021 |
 | `actor` | film co-occurrence | Pei et al., *Geom-GCN*, ICLR, 2020; induced from Tang et al., KDD, 2009 |
 | `amazon_photo` | co-purchase | Shchur et al., *Pitfalls of GNN Evaluation*, NeurIPS R2L workshop, 2018; from McAuley et al., SIGIR, 2015 |
@@ -36,28 +47,30 @@ The Facebook100 label is **gender, missing for ~10% of users** (LINKX codes it �
 | `reed98`, `amherst41`, `johnshopkins55`, `cornell5`, `penn94` | Facebook100 college social | Lim et al., *Large Scale Learning on Non-Homophilous Graphs*, NeurIPS, 2021; networks from Traud, Mucha & Porter, *Physica A* 391(16), 2012 |
 | `genius` | genius.com user network | Lim et al., *Large Scale Learning on Non-Homophilous Graphs*, NeurIPS, 2021; data from Lim & Benson, *Expertise and Dynamics within Crowdsourced Musical Knowledge Curation*, WWW, 2021 |
 | `twitch_gamers` | Twitch mutual-follower network | Rozemberczki & Sarkar, *Twitch Gamers: a Dataset for Evaluating Proximity Preserving and Structural Role-based Node Embeddings*, 2021. Built from SNAP's archive: PyG's LINKX loader for this graph asserts rather than downloading |
-| `crocodile` | Wikipedia web | Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021 — the third musae-Wikipedia graph alongside `chameleon` and `squirrel`. Ships a continuous monthly-traffic target; labelled here by binning it into 5 quantiles, the same construction Geom-GCN uses for the other two |
+| `crocodile` | Wikipedia web | Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021; the third musae-Wikipedia graph alongside `chameleon` and `squirrel`. Ships a continuous monthly-traffic target; labelled here by binning it into 5 quantiles, the same construction Geom-GCN uses for the other two |
 | `cora_full` | paper citation | Bojchevski & Günnemann, *Deep Gaussian Embedding of Graphs*, ICLR, 2018; graph from McCallum et al., *Information Retrieval* 3(2), 2000. **`cora_ml` is a subgraph of this graph** |
 | `wiki_attr` | Wikipedia web | Yang et al., *Network Representation Learning with Rich Text Information*, IJCAI, 2015, via the attributed-network collection of Huang, Li & Hu, WSDM, 2017 |
 | `texas`, `wisconsin`, `cornell_webkb`, `chameleon` | university web pages · Wikipedia web | Pei et al., *Geom-GCN*, ICLR, 2020. WebKB pages from the CMU World Wide Knowledge Base project, 1998; `chameleon` from Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021 |
-| `twitch_engb`, `twitch_es`, `twitch_fr`, `twitch_ptbr`, `twitch_ru`, `github` | streaming social · developer social | Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021 (musae) — read from SNAP, PyG's host is dead |
-| `airports_usa`, `airports_europe`, `airports_brazil` | air transport | Ribeiro, Saverese & Figueiredo, *struc2vec*, KDD, 2017 — labels are traffic quartiles, which correlate with degree (disclosed in paper_log §12) |
+| `twitch_engb`, `twitch_es`, `twitch_fr`, `twitch_ptbr`, `twitch_ru`, `github` | streaming social · developer social | Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021 (musae), read from SNAP, PyG's host is dead |
+| `airports_usa`, `airports_europe`, `airports_brazil` | air transport | Ribeiro, Saverese & Figueiredo, *struc2vec*, KDD, 2017; labels are traffic quartiles, which correlate with degree (disclosed in paper_log §12) |
 | `wikics` | Wikipedia articles | Mernyei & Cangea, *Wiki-CS*, ICML GRL workshop, 2020 |
 | `coauthor_cs`, `coauthor_physics`, `amazon_computers` | coauthorship · co-purchase | Shchur et al., *Pitfalls of GNN Evaluation*, NeurIPS R2L workshop, 2018 |
 | `email_eu_core` | email | Leskovec, Kleinberg & Faloutsos, TKDD 1(1), 2007; Yin et al., KDD, 2017 |
 | `polblogs` | political blogs | Adamic & Glance, *LinkKDD*, 2005 |
 | `blogcatalog`, `flickr_attr` | social | Huang, Li & Hu, *Label Informed Attributed Network Embedding*, WSDM, 2017 |
 | `dblp`, `cora_ml` | paper citation | Bojchevski & Günnemann, *Deep Gaussian Embedding of Graphs*, ICLR, 2018 |
-| `squirrel` | Wikipedia | Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021 — the ORIGINAL geom-gcn copy; `squirrel_filtered` is the de-duplicated one |
+| `squirrel` | Wikipedia | Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021; the ORIGINAL geom-gcn copy; `squirrel_filtered` is the de-duplicated one |
 | `twitch_de`, `deezer_europe` | streaming social · music social | Rozemberczki, Allen & Sarkar, *J. Complex Networks* 9(2), 2021 (Twitch); Rozemberczki & Sarkar, *Characteristic Functions on Graphs*, CIKM, 2020 (Deezer) |
+| `genetic_fission_yeast`, `ppi_yeast`, `ppi_fly`, `ppi_human`, `ppi_mouse` | genetic interaction · protein interaction | Hu et al., *Molecular Interaction Search Tool (MIST)*, Nucleic Acids Research, 2018, via the Netzschleuder catalogue (Peixoto, *The Netzschleuder network catalogue and repository*, 2020) |
+| `spanish_highschool_6` | school friendship | Netzschleuder network `spanish_highschools`, subnetwork 6 (Peixoto, *The Netzschleuder network catalogue and repository*, 2020); label = gender |
 
 **How they were obtained.** `cora`, `citeseer`, `enzymes`, `proteins` and `politics` come from the Identity2Vec
 author's `input.zip` (Network Repository files); their labels are rebuilt from LINQS (`cora`, `citeseer_linqs`) or
 Network Repository (`enzymes`, `proteins`). `pubmed`, `actor`, `amazon_photo`, the four LINKX graphs and the four
-Geom-GCN web/Wikipedia graphs are built through `torch_geometric`; `lastfm_asia`, `twitch_de` and `deezer_europe` from
+Geom-GCN web/Wikipedia graphs are built through `torch_geometric`; the six Netzschleuder graphs through `virgo/data/make_netzschleuder.py`; `lastfm_asia`, `twitch_de` and `deezer_europe` from
 SNAP directly (PyG's `graphmining.ai` host returns 503 for all three); the six Platonov graphs from the authors' `.npz`
 release; the two OGB graphs through `ogb`.
 
 Two name collisions worth stating once: **`cornell_webkb` (183 web pages) is not `cornell5`** (18,660-node Facebook100
 network), and **`chameleon` is the original Geom-GCN copy** whose duplicate nodes Platonov's `chameleon_filtered`
-removes — both are registered, and any result on `chameleon` carries that caveat.
+removes; both are registered, and any result on `chameleon` carries that caveat.
