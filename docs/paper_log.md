@@ -4,6 +4,8 @@
 
 Maintained automatically: a new entry is added whenever something research-significant happens, dated, newest at the bottom. Every result records its seed(s), dataset, encoder, and any caveat that limits its interpretation.
 
+> **Final Stage 2 conclusion (2026-10-12).** Stage 2 looked for a separate rule for each structural signal. Centrality has a clear rule (`FROZEN_STRATEGY`), degree has a family-dependent rule (`FROZEN_DEGREE_ONESIDED`, valid within `FAMILY`), and no rule was found for Ψ. The degree-vs-Ψ comparisons recorded below (2026-09-01 to 2026-09-08) were the steps by which the degree cut was found; the two-sided version (`FROZEN_ENTROPY`) is retired, and the study makes no degree-vs-Ψ claim. The entries below are kept unchanged as the dated record.
+
 ---
 
 ## Contribution & research question
@@ -2797,6 +2799,8 @@ get more measurement, never which answer they are allowed to give.
 
 ### §13 · The tie problem, the paired band, and a PRE-REGISTERED degree-vs-Ψ candidate (2026-09-02)
 
+> **Note (2026-10-12):** this degree-vs-Ψ step is how the degree cut was found; it is not a claim of the study. Final Stage 2 conclusion: see the top of this log.
+
 **The problem waves 1-2 exposed.** Fourteen corpus graphs, **13 of them augmenting** — but the winning signal was a tie
 on eight. Five were `degree|psi` gaps of 0.08-0.66 sem. More seeds cannot close those: the band shrinks as 1/sqrt(n), so
 a 0.08-sem gap needs ~3750 seeds to reach 2 sem. The instrument, not the sample, was the limit.
@@ -2996,6 +3000,8 @@ does not move it out of the exploratory tier, and `nbr_label_entropy` is explora
 **Nothing here is trained yet.** The order is the locked one: build → predict → train → score. Steps 1 and 2 are done.
 
 ### §17 · The validation set runs: stage 1 goes 5/5, and the degree-vs-Ψ candidate FAILS (2026-09-04)
+
+> **Note (2026-10-12):** this degree-vs-Ψ step is how the degree cut was found; it is not a claim of the study. Final Stage 2 conclusion: see the top of this log.
 
 All six graphs of `cfg.DEGREE_RULE_VALIDATION` trained under the unchanged pipeline (GraphSAGE, K=10, 3 seeds, link
 prediction, seven variants), then re-scored paired with `tie_break.py`. Predictions were on disk before any of it ran
@@ -4250,6 +4256,8 @@ Nothing was frozen; `virgo/frozen_rules.py` still carries only `FROZEN_ENTROPY` 
 ---
 
 ## 2026-09-08 — FROZEN: the ONE-SIDED degree rule `nbr_label_entropy < 0.6724 ⇒ degree` (no claim above the cut)
+
+> **Note (2026-10-12):** this is the degree rule the study reports, as a family-dependent rule. The study makes no degree-vs-Ψ claim; final Stage 2 conclusion at the top of this log.
 
 **The rule.** Given that stage 1 says augment: `nbr_label_entropy < 0.6724 ⇒ use the DEGREE role graph`. Above the cut
 the rule makes **no claim** — this is not "else Ψ". `frozen_rules.FROZEN_DEGREE_ONESIDED`, cut unchanged from Module 10

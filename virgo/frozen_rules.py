@@ -5,7 +5,12 @@ exception that replaced it (locked 2026-09-01).
 Nothing here is recomputed. The point and interval of each rule are the exact numbers candidate_rules() produced on the
 panel (results/candidate_rules.csv, link-prediction credible rows) and must NEVER be re-derived from data that includes an
 unseen dataset - that would make Module 3 circular. Prediction uses the POINT midpoint (deterministic); the interval is
-carried only for honest reporting, since every cut inside it fits the panel equally well.'''
+carried only for honest reporting, since every cut inside it fits the panel equally well.
+
+FINAL STAGE 2 CONCLUSION (2026-10-12): one rule was searched for per signal. Centrality has a clear rule
+(FROZEN_STRATEGY), degree has a family-dependent rule (FROZEN_DEGREE_ONESIDED, valid within FAMILY), and no rule was
+found for psi. FROZEN_ENTROPY and FROZEN_DEGREE are retired candidates, kept only because the recorded tables were
+produced with them; the study makes no degree-vs-psi claim.'''
 
 from collections import namedtuple
 
@@ -196,6 +201,8 @@ def predict_degree(props):
 
 
 # --- Module 14: the FAMILY-SCOPED degree candidate, frozen 2026-09-07 --------------------------------------------------
+# RETIRED (2026-10-12): kept only because degree_family.py scores it and the recorded tables carry its calls; not a
+# claim of the study (see the module docstring).
 # Module 10 fitted `nbr_label_entropy < 0.6724 => degree` on nine cells and Module 11 falsified it as a UNIVERSAL rule
 # (1/3 on six pre-registered graphs, beaten 3/3 by a constant "always psi"). The user's 2026-09-07 instruction is not to
 # refit it - the cut stays EXACTLY where it was - but to ask the narrower question it was never asked:
