@@ -22,8 +22,7 @@ the GATv2 comparison adds 1 and the community analysis adds 1. A dataset can app
 | GATv2 encoder transfer | 30 | enzymes, roman_empire, tolokers, questions, citeseer_linqs, proteins, pubmed, actor, minesweeper, squirrel_filtered, reed98, amherst41, johnshopkins55, cornell5, chameleon_filtered, twitch_de, deezer_europe, airports_europe, airports_brazil, airports_usa, genius, twitch_es, twitch_engb, amazon_computers, blogcatalog, twitch_ptbr, wiki_attr, crocodile, cora_full, twitch_gamers | rules checked under a stronger encoder; new here: deezer_europe |
 | community analysis | 15 | spanish_highschool_6, reed98, twitch_ptbr, amherst41, twitch_ru, twitch_es, johnshopkins55, blogcatalog, twitch_fr, twitch_engb, flickr_attr, lastfm_asia, twitch_de, cornell5, deezer_europe | explanatory only, no rule fitted; new here: spanish_highschool_6 |
 
-- flickr_attr, squirrel and twitch_fr sit above the degree cut, where the one-sided rule makes no claim; they are why its
-  Ψ side was dropped.
+- flickr_attr, squirrel and twitch_fr sit above the degree cut, so the degree rule makes no call on them.
 - twitch_de and deezer_europe also received Stage 1 calls after the rules were frozen.
 - Not counted: graphs trained only for exploration, diagnostics or the rejected distinct-degree rule (for example the
   other degree-corpus graphs and the Netzschleuder degree batches), and graphs ingested but never trained (jdk).

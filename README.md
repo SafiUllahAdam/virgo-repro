@@ -34,12 +34,13 @@ Both stages read properties of the **original graph** only, so nothing is built 
 
 ### Stage 2 - which signal? *(only when stage 1 says augment)*
 
-Three structural signals can build the role graph: **degree** (how many neighbours a node has), **eigenvector centrality** (how influential a node is through well-connected neighbours), and **Ψ** (Identity2Vec's score comparing the shape of two nodes' neighbourhoods).
+Three structural signals can build the role graph: **degree** (how many neighbours a node has), **eigenvector centrality** (how influential a node is through well-connected neighbours), and **Ψ** (Identity2Vec's score comparing the shape of two nodes' neighbourhoods). We searched for a separate rule for each signal: centrality has a clear rule, degree has a family-dependent rule, and no rule was found for Ψ.
 
 | signal | rule | reading |
 |---|---|---|
 | **centrality** | adjusted neighbour-label predictability **> 0.0092** | A node's neighbours' label mix predicts its class better than chance. |
 | **degree** | neighbour-label entropy **< 0.6724** | The labels around each node are concentrated, not mixed. |
+| **Ψ** | no rule found | No graph property predicts when Ψ is the best signal. |
 
 **The degree rule is family-dependent**: it works only on graphs similar to the ones it was learned from, that is, small to medium-sized graphs that are **unipartite** (one type of node), **sparse** (low density), **nearly connected** (one dominant connected component), **disassortative** (hubs mostly connect to low-degree nodes) and have only a few classes.
 
